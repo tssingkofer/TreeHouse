@@ -21,6 +21,7 @@
 		68CFAD72181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
 		68CFAD7A181F4510004C7A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD78181F4510004C7A81 /* InfoPlist.strings */; };
 		68CFAD7C181F4510004C7A81 /* TreeHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */; };
+		70E00AF1181F4DEA00526281 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E00AF0181F4DEA00526281 /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		68CFAD77181F4510004C7A81 /* TreeHouseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeHouseTests-Info.plist"; sourceTree = "<group>"; };
 		68CFAD79181F4510004C7A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeHouseTests.m; sourceTree = "<group>"; };
+		70E00AEF181F4DEA00526281 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		70E00AF0181F4DEA00526281 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				68CFAD5F181F4510004C7A81 /* AppDelegate.h */,
 				68CFAD60181F4510004C7A81 /* AppDelegate.m */,
 				68CFAD62181F4510004C7A81 /* Main.storyboard */,
+				70E00AEF181F4DEA00526281 /* WelcomeViewController.h */,
+				70E00AF0181F4DEA00526281 /* WelcomeViewController.m */,
 				68CFAD65181F4510004C7A81 /* ViewController.h */,
 				68CFAD66181F4510004C7A81 /* ViewController.m */,
 				68CFAD68181F4510004C7A81 /* Images.xcassets */,
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CFAD67181F4510004C7A81 /* ViewController.m in Sources */,
+				70E00AF1181F4DEA00526281 /* WelcomeViewController.m in Sources */,
 				68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */,
 				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 			);
@@ -462,6 +468,7 @@
 				68CFAD81181F4510004C7A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68CFAD82181F4510004C7A81 /* Build configuration list for PBXNativeTarget "TreeHouseTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				68CFAD84181F4510004C7A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
