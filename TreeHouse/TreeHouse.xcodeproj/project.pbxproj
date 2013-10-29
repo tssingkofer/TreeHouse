@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68CFAD51181F4510004C7A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD50181F4510004C7A81 /* Foundation.framework */; };
+		68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD52181F4510004C7A81 /* CoreGraphics.framework */; };
+		68CFAD55181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
+		68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD59181F4510004C7A81 /* InfoPlist.strings */; };
+		68CFAD5D181F4510004C7A81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD5C181F4510004C7A81 /* main.m */; };
+		68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD60181F4510004C7A81 /* AppDelegate.m */; };
+		68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD62181F4510004C7A81 /* Main.storyboard */; };
+		68CFAD67181F4510004C7A81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD66181F4510004C7A81 /* ViewController.m */; };
+		68CFAD69181F4510004C7A81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD68181F4510004C7A81 /* Images.xcassets */; };
+		68CFAD70181F4510004C7A81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD6F181F4510004C7A81 /* XCTest.framework */; };
+		68CFAD71181F4510004C7A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD50181F4510004C7A81 /* Foundation.framework */; };
+		68CFAD72181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
+		68CFAD7A181F4510004C7A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD78181F4510004C7A81 /* InfoPlist.strings */; };
+		68CFAD7C181F4510004C7A81 /* TreeHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68CFAD73181F4510004C7A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68CFAD45181F4510004C7A81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68CFAD4C181F4510004C7A81;
+			remoteInfo = TreeHouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68CFAD4D181F4510004C7A81 /* TreeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CFAD50181F4510004C7A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68CFAD52181F4510004C7A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68CFAD54181F4510004C7A81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68CFAD58181F4510004C7A81 /* TreeHouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeHouse-Info.plist"; sourceTree = "<group>"; };
+		68CFAD5A181F4510004C7A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68CFAD5C181F4510004C7A81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68CFAD5E181F4510004C7A81 /* TreeHouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TreeHouse-Prefix.pch"; sourceTree = "<group>"; };
+		68CFAD5F181F4510004C7A81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68CFAD60181F4510004C7A81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68CFAD63181F4510004C7A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68CFAD65181F4510004C7A81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68CFAD66181F4510004C7A81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68CFAD68181F4510004C7A81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68CFAD6E181F4510004C7A81 /* TreeHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CFAD6F181F4510004C7A81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		68CFAD77181F4510004C7A81 /* TreeHouseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeHouseTests-Info.plist"; sourceTree = "<group>"; };
+		68CFAD79181F4510004C7A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeHouseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68CFAD4A181F4510004C7A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */,
+				68CFAD55181F4510004C7A81 /* UIKit.framework in Frameworks */,
+				68CFAD51181F4510004C7A81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CFAD6B181F4510004C7A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFAD70181F4510004C7A81 /* XCTest.framework in Frameworks */,
+				68CFAD72181F4510004C7A81 /* UIKit.framework in Frameworks */,
+				68CFAD71181F4510004C7A81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68CFAD44181F4510004C7A81 = {
+			isa = PBXGroup;
+			children = (
+				68CFAD56181F4510004C7A81 /* TreeHouse */,
+				68CFAD75181F4510004C7A81 /* TreeHouseTests */,
+				68CFAD4F181F4510004C7A81 /* Frameworks */,
+				68CFAD4E181F4510004C7A81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68CFAD4E181F4510004C7A81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68CFAD4D181F4510004C7A81 /* TreeHouse.app */,
+				68CFAD6E181F4510004C7A81 /* TreeHouseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68CFAD4F181F4510004C7A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68CFAD50181F4510004C7A81 /* Foundation.framework */,
+				68CFAD52181F4510004C7A81 /* CoreGraphics.framework */,
+				68CFAD54181F4510004C7A81 /* UIKit.framework */,
+				68CFAD6F181F4510004C7A81 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68CFAD56181F4510004C7A81 /* TreeHouse */ = {
+			isa = PBXGroup;
+			children = (
+				68CFAD5F181F4510004C7A81 /* AppDelegate.h */,
+				68CFAD60181F4510004C7A81 /* AppDelegate.m */,
+				68CFAD62181F4510004C7A81 /* Main.storyboard */,
+				68CFAD65181F4510004C7A81 /* ViewController.h */,
+				68CFAD66181F4510004C7A81 /* ViewController.m */,
+				68CFAD68181F4510004C7A81 /* Images.xcassets */,
+				68CFAD57181F4510004C7A81 /* Supporting Files */,
+			);
+			path = TreeHouse;
+			sourceTree = "<group>";
+		};
+		68CFAD57181F4510004C7A81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68CFAD58181F4510004C7A81 /* TreeHouse-Info.plist */,
+				68CFAD59181F4510004C7A81 /* InfoPlist.strings */,
+				68CFAD5C181F4510004C7A81 /* main.m */,
+				68CFAD5E181F4510004C7A81 /* TreeHouse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68CFAD75181F4510004C7A81 /* TreeHouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */,
+				68CFAD76181F4510004C7A81 /* Supporting Files */,
+			);
+			path = TreeHouseTests;
+			sourceTree = "<group>";
+		};
+		68CFAD76181F4510004C7A81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68CFAD77181F4510004C7A81 /* TreeHouseTests-Info.plist */,
+				68CFAD78181F4510004C7A81 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68CFAD4C181F4510004C7A81 /* TreeHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CFAD7F181F4510004C7A81 /* Build configuration list for PBXNativeTarget "TreeHouse" */;
+			buildPhases = (
+				68CFAD49181F4510004C7A81 /* Sources */,
+				68CFAD4A181F4510004C7A81 /* Frameworks */,
+				68CFAD4B181F4510004C7A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreeHouse;
+			productName = TreeHouse;
+			productReference = 68CFAD4D181F4510004C7A81 /* TreeHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68CFAD6D181F4510004C7A81 /* TreeHouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CFAD82181F4510004C7A81 /* Build configuration list for PBXNativeTarget "TreeHouseTests" */;
+			buildPhases = (
+				68CFAD6A181F4510004C7A81 /* Sources */,
+				68CFAD6B181F4510004C7A81 /* Frameworks */,
+				68CFAD6C181F4510004C7A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68CFAD74181F4510004C7A81 /* PBXTargetDependency */,
+			);
+			name = TreeHouseTests;
+			productName = TreeHouseTests;
+			productReference = 68CFAD6E181F4510004C7A81 /* TreeHouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68CFAD45181F4510004C7A81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tyler Singkofer";
+				TargetAttributes = {
+					68CFAD6D181F4510004C7A81 = {
+						TestTargetID = 68CFAD4C181F4510004C7A81;
+					};
+				};
+			};
+			buildConfigurationList = 68CFAD48181F4510004C7A81 /* Build configuration list for PBXProject "TreeHouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68CFAD44181F4510004C7A81;
+			productRefGroup = 68CFAD4E181F4510004C7A81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68CFAD4C181F4510004C7A81 /* TreeHouse */,
+				68CFAD6D181F4510004C7A81 /* TreeHouseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68CFAD4B181F4510004C7A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFAD69181F4510004C7A81 /* Images.xcassets in Resources */,
+				68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */,
+				68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CFAD6C181F4510004C7A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFAD7A181F4510004C7A81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CFAD49181F4510004C7A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFAD67181F4510004C7A81 /* ViewController.m in Sources */,
+				68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */,
+				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CFAD6A181F4510004C7A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFAD7C181F4510004C7A81 /* TreeHouseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68CFAD74181F4510004C7A81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68CFAD4C181F4510004C7A81 /* TreeHouse */;
+			targetProxy = 68CFAD73181F4510004C7A81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68CFAD59181F4510004C7A81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CFAD5A181F4510004C7A81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68CFAD62181F4510004C7A81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CFAD63181F4510004C7A81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68CFAD78181F4510004C7A81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CFAD79181F4510004C7A81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68CFAD7D181F4510004C7A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		68CFAD7E181F4510004C7A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68CFAD80181F4510004C7A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeHouse/TreeHouse-Prefix.pch";
+				INFOPLIST_FILE = "TreeHouse/TreeHouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68CFAD81181F4510004C7A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeHouse/TreeHouse-Prefix.pch";
+				INFOPLIST_FILE = "TreeHouse/TreeHouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		68CFAD83181F4510004C7A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TreeHouse.app/TreeHouse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeHouse/TreeHouse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TreeHouseTests/TreeHouseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		68CFAD84181F4510004C7A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TreeHouse.app/TreeHouse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeHouse/TreeHouse-Prefix.pch";
+				INFOPLIST_FILE = "TreeHouseTests/TreeHouseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CFAD48181F4510004C7A81 /* Build configuration list for PBXProject "TreeHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CFAD7D181F4510004C7A81 /* Debug */,
+				68CFAD7E181F4510004C7A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CFAD7F181F4510004C7A81 /* Build configuration list for PBXNativeTarget "TreeHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CFAD80181F4510004C7A81 /* Debug */,
+				68CFAD81181F4510004C7A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68CFAD82181F4510004C7A81 /* Build configuration list for PBXNativeTarget "TreeHouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CFAD83181F4510004C7A81 /* Debug */,
+				68CFAD84181F4510004C7A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68CFAD45181F4510004C7A81 /* Project object */;
+}
