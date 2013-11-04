@@ -28,6 +28,7 @@
 		68FD799D18284EC600CC7B69 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD799418284EC600CC7B69 /* PersonalViewController.m */; };
 		68FD799E18284EC600CC7B69 /* ReferredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD799618284EC600CC7B69 /* ReferredViewController.m */; };
 		68FD799F18284EC600CC7B69 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD799818284EC600CC7B69 /* WelcomeViewController.m */; };
+		70CD153118285BA1002DDD84 /* Test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70CD153018285BA1002DDD84 /* Test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		68FD799618284EC600CC7B69 /* ReferredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferredViewController.m; sourceTree = "<group>"; };
 		68FD799718284EC600CC7B69 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		68FD799818284EC600CC7B69 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		70CD153018285BA1002DDD84 /* Test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		68CFAD56181F4510004C7A81 /* TreeHouse */ = {
 			isa = PBXGroup;
 			children = (
+				70CD153018285BA1002DDD84 /* Test.txt */,
 				68FD798A18284EC600CC7B69 /* ViewControllers */,
 				68CFAD5F181F4510004C7A81 /* AppDelegate.h */,
 				68CFAD60181F4510004C7A81 /* AppDelegate.m */,
@@ -273,6 +276,7 @@
 			files = (
 				68CFAD69181F4510004C7A81 /* Images.xcassets in Resources */,
 				68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */,
+				70CD153118285BA1002DDD84 /* Test.txt in Resources */,
 				68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
