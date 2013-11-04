@@ -21,6 +21,12 @@
 		68CFAD72181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
 		68CFAD7A181F4510004C7A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD78181F4510004C7A81 /* InfoPlist.strings */; };
 		68CFAD7C181F4510004C7A81 /* TreeHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */; };
+		70D36BDF182843F200F44624 /* EthnicityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D36BD4182843F200F44624 /* EthnicityViewController.m */; };
+		70D36BE0182843F200F44624 /* HomeLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D36BD6182843F200F44624 /* HomeLocationViewController.m */; };
+		70D36BE1182843F200F44624 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D36BD8182843F200F44624 /* HomeViewController.m */; };
+		70D36BE2182843F200F44624 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D36BDA182843F200F44624 /* ParentViewController.m */; };
+		70D36BE3182843F200F44624 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D36BDC182843F200F44624 /* PersonalViewController.m */; };
+		70D36BE4182843F200F44624 /* ReferredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D36BDE182843F200F44624 /* ReferredViewController.m */; };
 		70E00AF1181F4DEA00526281 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E00AF0181F4DEA00526281 /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,18 @@
 		68CFAD77181F4510004C7A81 /* TreeHouseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeHouseTests-Info.plist"; sourceTree = "<group>"; };
 		68CFAD79181F4510004C7A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeHouseTests.m; sourceTree = "<group>"; };
+		70D36BD3182843F200F44624 /* EthnicityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EthnicityViewController.h; path = TreeHouse/EthnicityViewController.h; sourceTree = "<group>"; };
+		70D36BD4182843F200F44624 /* EthnicityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EthnicityViewController.m; path = TreeHouse/EthnicityViewController.m; sourceTree = "<group>"; };
+		70D36BD5182843F200F44624 /* HomeLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeLocationViewController.h; path = TreeHouse/HomeLocationViewController.h; sourceTree = "<group>"; };
+		70D36BD6182843F200F44624 /* HomeLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeLocationViewController.m; path = TreeHouse/HomeLocationViewController.m; sourceTree = "<group>"; };
+		70D36BD7182843F200F44624 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = TreeHouse/HomeViewController.h; sourceTree = "<group>"; };
+		70D36BD8182843F200F44624 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = TreeHouse/HomeViewController.m; sourceTree = "<group>"; };
+		70D36BD9182843F200F44624 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentViewController.h; path = TreeHouse/ParentViewController.h; sourceTree = "<group>"; };
+		70D36BDA182843F200F44624 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentViewController.m; path = TreeHouse/ParentViewController.m; sourceTree = "<group>"; };
+		70D36BDB182843F200F44624 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonalViewController.h; path = TreeHouse/PersonalViewController.h; sourceTree = "<group>"; };
+		70D36BDC182843F200F44624 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonalViewController.m; path = TreeHouse/PersonalViewController.m; sourceTree = "<group>"; };
+		70D36BDD182843F200F44624 /* ReferredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferredViewController.h; path = TreeHouse/ReferredViewController.h; sourceTree = "<group>"; };
+		70D36BDE182843F200F44624 /* ReferredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferredViewController.m; path = TreeHouse/ReferredViewController.m; sourceTree = "<group>"; };
 		70E00AEF181F4DEA00526281 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		70E00AF0181F4DEA00526281 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +103,18 @@
 		68CFAD44181F4510004C7A81 = {
 			isa = PBXGroup;
 			children = (
+				70D36BD3182843F200F44624 /* EthnicityViewController.h */,
+				70D36BD4182843F200F44624 /* EthnicityViewController.m */,
+				70D36BD5182843F200F44624 /* HomeLocationViewController.h */,
+				70D36BD6182843F200F44624 /* HomeLocationViewController.m */,
+				70D36BD7182843F200F44624 /* HomeViewController.h */,
+				70D36BD8182843F200F44624 /* HomeViewController.m */,
+				70D36BD9182843F200F44624 /* ParentViewController.h */,
+				70D36BDA182843F200F44624 /* ParentViewController.m */,
+				70D36BDB182843F200F44624 /* PersonalViewController.h */,
+				70D36BDC182843F200F44624 /* PersonalViewController.m */,
+				70D36BDD182843F200F44624 /* ReferredViewController.h */,
+				70D36BDE182843F200F44624 /* ReferredViewController.m */,
 				68CFAD56181F4510004C7A81 /* TreeHouse */,
 				68CFAD75181F4510004C7A81 /* TreeHouseTests */,
 				68CFAD4F181F4510004C7A81 /* Frameworks */,
@@ -254,9 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D36BE3182843F200F44624 /* PersonalViewController.m in Sources */,
 				68CFAD67181F4510004C7A81 /* ViewController.m in Sources */,
+				70D36BDF182843F200F44624 /* EthnicityViewController.m in Sources */,
+				70D36BE4182843F200F44624 /* ReferredViewController.m in Sources */,
+				70D36BE2182843F200F44624 /* ParentViewController.m in Sources */,
+				70D36BE0182843F200F44624 /* HomeLocationViewController.m in Sources */,
 				70E00AF1181F4DEA00526281 /* WelcomeViewController.m in Sources */,
 				68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */,
+				70D36BE1182843F200F44624 /* HomeViewController.m in Sources */,
 				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
