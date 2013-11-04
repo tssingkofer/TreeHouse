@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A364449182864E700C1CF01 /* CheckInViewController.m */; };
 		68CFAD51181F4510004C7A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD50181F4510004C7A81 /* Foundation.framework */; };
 		68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD52181F4510004C7A81 /* CoreGraphics.framework */; };
 		68CFAD55181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A364448182864E700C1CF01 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
+		5A364449182864E700C1CF01 /* CheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInViewController.m; sourceTree = "<group>"; };
 		68CFAD4D181F4510004C7A81 /* TreeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CFAD50181F4510004C7A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68CFAD52181F4510004C7A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,6 +144,8 @@
 				68CFAD60181F4510004C7A81 /* AppDelegate.m */,
 				68CFAD62181F4510004C7A81 /* Main.storyboard */,
 				68CFAD65181F4510004C7A81 /* ViewController.h */,
+				5A364448182864E700C1CF01 /* CheckInViewController.h */,
+				5A364449182864E700C1CF01 /* CheckInViewController.m */,
 				68CFAD66181F4510004C7A81 /* ViewController.m */,
 				68CFAD68181F4510004C7A81 /* Images.xcassets */,
 				68CFAD57181F4510004C7A81 /* Supporting Files */,
@@ -305,6 +310,7 @@
 				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 				68FD799A18284EC600CC7B69 /* HomeLocationViewController.m in Sources */,
 				68FD799D18284EC600CC7B69 /* PersonalViewController.m in Sources */,
+				5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */,
 				68FD799B18284EC600CC7B69 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
