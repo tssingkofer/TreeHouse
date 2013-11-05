@@ -10,7 +10,8 @@
 
 @interface ParentViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (strong, nonatomic) NSArray *livingLocation;
-@property (weak, nonatomic) IBOutlet UIPickerView *locationPicker;
+@property (strong, nonatomic) NSArray *livesWith;
+@property (strong, nonatomic) IBOutlet UIPickerView *livesPicker;
+
 
 @end
