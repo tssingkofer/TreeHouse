@@ -21,7 +21,7 @@ static NSString *CellIdentifier = @"Cell";
     if (self) {
         // Custom initialization
         self.title = @"Check-in";
-        self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
+
     }
     return self;
 }
@@ -29,7 +29,7 @@ static NSString *CellIdentifier = @"Cell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
 	// Do any additional setup after loading the view.
 }
 
@@ -59,14 +59,16 @@ static NSString *CellIdentifier = @"Cell";
 {
     return [self.youth count];
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-
-    return nil;
-}
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell==nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+    }
+    cell.textLabel.text = self.youth[indexPath.row];
+    //cell.textLabel.font = [UIFont boldSystemFontOfSize:40];
+    return cell;
 }
 @end

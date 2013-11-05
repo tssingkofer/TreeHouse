@@ -938,9 +938,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="e1W-Vb-dnL"/>
-                    <connections>
-                        <outlet property="youthConnect" destination="dab-Ja-W79" id="bxO-rF-Wpw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDo-Jv-5SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
