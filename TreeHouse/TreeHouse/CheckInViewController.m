@@ -7,6 +7,7 @@
 //
 
 #import "CheckInViewController.h"
+static NSString *CellIdentifier = @"Cell";
 
 @interface CheckInViewController ()
 
@@ -20,7 +21,7 @@
     if (self) {
         // Custom initialization
         self.title = @"Check-in";
-        //self.youth = "";
+        self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
     }
     return self;
 }
@@ -53,5 +54,19 @@
 -(void)viewDidDisappear:(BOOL)animated
 {
     
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.youth count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+
+    return nil;
+}
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    return nil;
 }
 @end
