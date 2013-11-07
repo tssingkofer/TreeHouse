@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CheckInViewController : UIViewController
-<UITableViewDataSource, UITableViewDelegate>
+<UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *youthConnect;
 @property (copy, nonatomic) NSArray *youth;
+
 @end

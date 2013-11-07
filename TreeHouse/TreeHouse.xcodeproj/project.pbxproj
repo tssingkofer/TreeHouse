@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A364449182864E700C1CF01 /* CheckInViewController.m */; };
+		5AB16DDE182B1D76002EDD92 /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16DDD182B1D76002EDD92 /* XMLParse.m */; };
+		5AB16DE1182B1E1A002EDD92 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16DE0182B1E1A002EDD92 /* User.m */; };
 		684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 684FF84818288F3D001EA067 /* TreeHouse_Logo.png */; };
 		68CFAD51181F4510004C7A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD50181F4510004C7A81 /* Foundation.framework */; };
 		68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD52181F4510004C7A81 /* CoreGraphics.framework */; };
@@ -46,6 +48,10 @@
 /* Begin PBXFileReference section */
 		5A364448182864E700C1CF01 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
 		5A364449182864E700C1CF01 /* CheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInViewController.m; sourceTree = "<group>"; };
+		5AB16DDC182B1D76002EDD92 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
+		5AB16DDD182B1D76002EDD92 /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParse.m; sourceTree = "<group>"; };
+		5AB16DDF182B1E1A002EDD92 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5AB16DE0182B1E1A002EDD92 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		684FF84818288F3D001EA067 /* TreeHouse_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo.png; sourceTree = "<group>"; };
 		68CFAD4D181F4510004C7A81 /* TreeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CFAD50181F4510004C7A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -157,6 +163,10 @@
 				68CFAD65181F4510004C7A81 /* ViewController.h */,
 				5A364448182864E700C1CF01 /* CheckInViewController.h */,
 				5A364449182864E700C1CF01 /* CheckInViewController.m */,
+				5AB16DDC182B1D76002EDD92 /* XMLParse.h */,
+				5AB16DDD182B1D76002EDD92 /* XMLParse.m */,
+				5AB16DDF182B1E1A002EDD92 /* User.h */,
+				5AB16DE0182B1E1A002EDD92 /* User.m */,
 				68CFAD66181F4510004C7A81 /* ViewController.m */,
 				68CFAD68181F4510004C7A81 /* Images.xcassets */,
 				68CFAD57181F4510004C7A81 /* Supporting Files */,
@@ -313,7 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB16DE1182B1E1A002EDD92 /* User.m in Sources */,
 				68FD799918284EC600CC7B69 /* EthnicityViewController.m in Sources */,
+				5AB16DDE182B1D76002EDD92 /* XMLParse.m in Sources */,
 				68CFAD67181F4510004C7A81 /* ViewController.m in Sources */,
 				68FD799C18284EC600CC7B69 /* ParentViewController.m in Sources */,
 				68FD799E18284EC600CC7B69 /* ReferredViewController.m in Sources */,

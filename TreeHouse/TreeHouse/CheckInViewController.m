@@ -7,13 +7,14 @@
 //
 
 #import "CheckInViewController.h"
+#import "XMLParse.h"
 static NSString *CellIdentifier = @"Cell";
 
-@interface CheckInViewController ()
+@interface CheckInViewController () <NSXMLParserDelegate>
 
 @end
 
-@implementation CheckInViewController
+@implementation CheckInViewController 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +31,8 @@ static NSString *CellIdentifier = @"Cell";
 {
     [super viewDidLoad];
     self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
+
+
 	// Do any additional setup after loading the view.
 }
 
