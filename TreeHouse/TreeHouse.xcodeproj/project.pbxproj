@@ -48,10 +48,10 @@
 /* Begin PBXFileReference section */
 		5A364448182864E700C1CF01 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
 		5A364449182864E700C1CF01 /* CheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInViewController.m; sourceTree = "<group>"; };
-		5AB16DDC182B1D76002EDD92 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
-		5AB16DDD182B1D76002EDD92 /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParse.m; sourceTree = "<group>"; };
-		5AB16DDF182B1E1A002EDD92 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		5AB16DE0182B1E1A002EDD92 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5AB16DDC182B1D76002EDD92 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParse.h; path = ../XMLParse.h; sourceTree = "<group>"; };
+		5AB16DDD182B1D76002EDD92 /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParse.m; path = ../XMLParse.m; sourceTree = "<group>"; };
+		5AB16DDF182B1E1A002EDD92 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		5AB16DE0182B1E1A002EDD92 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
 		684FF84818288F3D001EA067 /* TreeHouse_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo.png; sourceTree = "<group>"; };
 		68CFAD4D181F4510004C7A81 /* TreeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CFAD50181F4510004C7A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +113,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB16DE2182B26CB002EDD92 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				5AB16DDC182B1D76002EDD92 /* XMLParse.h */,
+				5AB16DDD182B1D76002EDD92 /* XMLParse.m */,
+				5AB16DDF182B1E1A002EDD92 /* User.h */,
+				5AB16DE0182B1E1A002EDD92 /* User.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		684FF84718288F3D001EA067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,10 +174,7 @@
 				68CFAD65181F4510004C7A81 /* ViewController.h */,
 				5A364448182864E700C1CF01 /* CheckInViewController.h */,
 				5A364449182864E700C1CF01 /* CheckInViewController.m */,
-				5AB16DDC182B1D76002EDD92 /* XMLParse.h */,
-				5AB16DDD182B1D76002EDD92 /* XMLParse.m */,
-				5AB16DDF182B1E1A002EDD92 /* User.h */,
-				5AB16DE0182B1E1A002EDD92 /* User.m */,
+				5AB16DE2182B26CB002EDD92 /* Parser */,
 				68CFAD66181F4510004C7A81 /* ViewController.m */,
 				68CFAD68181F4510004C7A81 /* Images.xcassets */,
 				68CFAD57181F4510004C7A81 /* Supporting Files */,
