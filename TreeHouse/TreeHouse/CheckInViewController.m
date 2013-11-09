@@ -74,7 +74,7 @@ static NSString *CellIdentifier = @"Cell";
 {
     XMLParse *xml = [[XMLParse alloc]init];
     
-    return [self.viewDidLoad];
+    return [xml.users count];
 }
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
