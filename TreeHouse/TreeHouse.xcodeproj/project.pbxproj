@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A01ABF8182C3C350085D02D /* Test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A01ABF7182C3C350085D02D /* Test.xml */; };
 		5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A364449182864E700C1CF01 /* CheckInViewController.m */; };
 		5AB16DDE182B1D76002EDD92 /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16DDD182B1D76002EDD92 /* XMLParse.m */; };
 		5AB16DE1182B1E1A002EDD92 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16DE0182B1E1A002EDD92 /* User.m */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A01ABF7182C3C350085D02D /* Test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Test.xml; sourceTree = "<group>"; };
 		5A364448182864E700C1CF01 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
 		5A364449182864E700C1CF01 /* CheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInViewController.m; sourceTree = "<group>"; };
 		5AB16DDC182B1D76002EDD92 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParse.h; path = ../XMLParse.h; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				68CFAD65181F4510004C7A81 /* ViewController.h */,
 				5A364448182864E700C1CF01 /* CheckInViewController.h */,
 				5A364449182864E700C1CF01 /* CheckInViewController.m */,
+				5A01ABF7182C3C350085D02D /* Test.xml */,
 				5AB16DE2182B26CB002EDD92 /* Parser */,
 				68CFAD66181F4510004C7A81 /* ViewController.m */,
 				68CFAD68181F4510004C7A81 /* Images.xcassets */,
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CFAD69181F4510004C7A81 /* Images.xcassets in Resources */,
+				5A01ABF8182C3C350085D02D /* Test.xml in Resources */,
 				68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */,
 				70CD153118285BA1002DDD84 /* Test.txt in Resources */,
 				68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */,

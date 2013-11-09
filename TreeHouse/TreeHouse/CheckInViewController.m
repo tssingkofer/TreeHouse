@@ -14,8 +14,12 @@ static NSString *CellIdentifier = @"Cell";
 
 @end
 
-@implementation CheckInViewController 
+@class XMLParse;
 
+@implementation CheckInViewController 
+{
+
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,8 +34,16 @@ static NSString *CellIdentifier = @"Cell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"xml"];
+    NSData *fileContents = [NSData dataWithContentsOfFile:filepath];
+    
+    XMLParse *xml = [[XMLParse alloc]init];
+    [xml doParse:fileContents];
+    NSLog(@"Count of users : %i", [xml.users count]);
+    self.sFName = @[@"",@""];
     self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
-
+    
 
 	// Do any additional setup after loading the view.
 }
@@ -60,7 +72,9 @@ static NSString *CellIdentifier = @"Cell";
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.youth count];
+    XMLParse *xml = [[XMLParse alloc]init];
+    
+    return [self.viewDidLoad];
 }
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -70,7 +84,9 @@ static NSString *CellIdentifier = @"Cell";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
     }
-    cell.textLabel.text = self.youth[indexPath.row];
+    
+    XMLParse *xml = [[XMLParse alloc]init];
+    cell.textLabel.text = xml.users[indexPath.row];
     //cell.textLabel.font = [UIFont boldSystemFontOfSize:40];
     return cell;
 }

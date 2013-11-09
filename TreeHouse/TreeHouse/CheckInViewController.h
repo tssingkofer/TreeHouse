@@ -12,5 +12,10 @@
 <UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *youthConnect;
 @property (copy, nonatomic) NSArray *youth;
+@property (copy, nonatomic) NSArray *sFName;
+
+@property (copy, nonatomic) NSString *filepath;
+@property (copy, nonatomic)NSError *error;
+@property (copy, nonatomic)NSData *fileContents;
 
 @end
