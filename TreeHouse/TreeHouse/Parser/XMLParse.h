@@ -13,22 +13,24 @@
 @class User;
 
 @interface XMLParse : NSObject <NSXMLParserDelegate> //got this from http://stackoverflow.com/questions/11147239/xcode-appdelegate-const-strong-to-parameter-of-incompatible-type-error
+// Other info on fetching a url is https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html#//apple_ref/doc/uid/10000165i
 {
 
     // an ad hoc string to hold element value
     NSMutableString *currentElementValue;
     // user object
-    User *student;
+    User *user;
     // array of user objects
     NSMutableArray *users;
 }
 
 
-@property (nonatomic, retain) User *student;
+@property (nonatomic, retain) User *user;
 @property (nonatomic, retain) NSMutableArray *users;
+@property (copy, nonatomic) NSArray *trans;
 
 - (XMLParse *) initXMLParser;
-- (void) doParse:(NSData *)data;
+- (NSMutableArray *) doParse:(NSData *)data;
 
 -(void)parser:(NSXMLParser *)parser
 didStartElement:(NSString *)elementName

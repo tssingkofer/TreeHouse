@@ -7,7 +7,7 @@
 //
 
 #import "CheckInViewController.h"
-#import "XMLParse.h"
+
 static NSString *CellIdentifier = @"Cell";
 
 @interface CheckInViewController () <NSXMLParserDelegate>
@@ -34,13 +34,14 @@ static NSString *CellIdentifier = @"Cell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"xml"];
     NSData *fileContents = [NSData dataWithContentsOfFile:filepath];
     
+    
     XMLParse *xml = [[XMLParse alloc]init];
-    [xml doParse:fileContents];
-    NSLog(@"Count of users : %i", [xml.users count]);
+    self.users = [[xml doParse:fileContents] mutableCopy];
+    _users2 = [self.users mutableCopy];
+    NSLog(@"Count of users : %i", [self.users2 count]);
     self.sFName = @[@"",@""];
     self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
     
@@ -72,9 +73,9 @@ static NSString *CellIdentifier = @"Cell";
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    XMLParse *xml = [[XMLParse alloc]init];
+    //XMLParse *xml = [[XMLParse alloc]init];
     
-    return [xml.users count];
+    return [self.users2 count];
 }
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -85,9 +86,18 @@ static NSString *CellIdentifier = @"Cell";
         
     }
     
-    XMLParse *xml = [[XMLParse alloc]init];
-    cell.textLabel.text = xml.users[indexPath.row];
+    cell.textLabel.text = nil;//self.users2[0];//indexPath.row];
     //cell.textLabel.font = [UIFont boldSystemFontOfSize:40];
     return cell;
 }
+/*- (void)grabURL
+{
+    NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    NSError *error = [request error];
+    if (!error) {
+        NSString *response = [request responseString];
+    }
+}*/
 @end

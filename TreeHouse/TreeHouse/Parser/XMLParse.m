@@ -25,7 +25,7 @@
 
 @implementation XMLParse
 
-@synthesize student, users;
+@synthesize user, users;
 
 - (XMLParse *) initXMLParser {
     //[super init];
@@ -43,9 +43,9 @@ namespaceURI:(NSString *)namespaceURI
 qualifiedName:(NSString *)qualifiedName
 attributes:(NSDictionary *)attributeDict {
 	
-    if ([elementName isEqualToString:@"student"]) {
+    if ([elementName isEqualToString:@"user"]) {
         NSLog(@"user element found – create a new instance of User class...");
-        student = [[User alloc] init];
+        user = [[User alloc] init];
         //We do not have any attributes in the user elements, but if
         // you do, you can extract them here:
         // user.att = [[attributeDict objectForKey:@"<att name>"] ...];
@@ -58,7 +58,12 @@ attributes:(NSDictionary *)attributeDict {
         currentElementValue = [[NSMutableString alloc] initWithString:string];
     } else {
         // append value to the ad hoc string
-        [currentElementValue appendString:string];
+        //currentElementValue = nil;
+        currentElementValue = [[NSMutableString alloc] initWithString:string];
+        //string = [string stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+        //string = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+        //[currentElementValue appendString:string];
+        //currentElementValue = nil;
     }
     NSLog(@"Processing value for : %@", string);
 }  
@@ -69,25 +74,29 @@ attributes:(NSDictionary *)attributeDict {
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName {
     
-    if ([elementName isEqualToString:@"user"]) {
+    if ([elementName isEqualToString:@"users"]) {
         // We reached the end of the XML document
         return;
+        
     }
     
-    if ([elementName isEqualToString:@"student"]) {
+    if ([elementName isEqualToString:@"user"]) {
         // We are done with user entry – add the parsed user
         // object to our user array
-        [users addObject:student];
+        [users addObject:user];
+        currentElementValue = nil;
     } else {
         // The parser hit one of the element values.
         // This syntax is possible because User object
         // property names match the XML user element names
-        [student setValue:currentElementValue forKey:elementName];
+        [user setValue:currentElementValue forKey:elementName];
+        currentElementValue = nil;
     }
+    currentElementValue = nil;
 }
 
 
-- (void) doParse:(NSData *)data {
+- (NSMutableArray *) doParse:(NSData *)data {
     
     // create and init NSXMLParser object
     NSXMLParser *nsXmlParser = [[NSXMLParser alloc] initWithData:data];
@@ -105,9 +114,19 @@ attributes:(NSDictionary *)attributeDict {
     if (success) {
         NSLog(@"No errors - user count : %i", [parser.users count]);
         // get array of users here
-        users = [parser users];
+        NSLog(@"Here is: %@", [parser.users[1] lastName]);
+        
+        //int x = 0;
+        //while (x < [parser.users count]) {
+            
+            
+            //x+=x;
+        //}
+        return [parser.users mutableCopy];
     } else {
         NSLog(@"Error parsing document!");
+        return nil;
     }
+    
 }
 @end
