@@ -8,20 +8,20 @@
 
 #import "HomeViewController.h"
 
-@interface HomeViewController ()
+/*@interface HomeViewController ()
 
-@end
+@end*/
 
 @implementation HomeViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {

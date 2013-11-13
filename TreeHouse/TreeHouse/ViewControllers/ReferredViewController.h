@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReferredViewController : UIViewController
+@interface ReferredViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (strong, nonatomic) NSArray *referral;
+@property (weak, nonatomic) IBOutlet UIPickerView *referralPicker;
 
 @end
