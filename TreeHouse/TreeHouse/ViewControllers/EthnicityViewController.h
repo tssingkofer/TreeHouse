@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) NSArray *ethnicity;
 @property (weak, nonatomic) IBOutlet UIPickerView *ethicityPicker;
-
-
+@property (strong, nonatomic) IBOutlet UIPickerView *referredPicker;
+@property (strong, nonatomic) NSArray *referral;
 
 @end

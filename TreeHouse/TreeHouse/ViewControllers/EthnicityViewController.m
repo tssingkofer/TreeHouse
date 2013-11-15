@@ -29,9 +29,13 @@
 	// Do any additional setup after loading the view.
     self.ethnicity = @[@"American Indian/Alaska Native", @"Black/African American", @"Asian", @"Native Hawaiian/PacificIslander", @"White"
                        ];
+    self.referral = @[@"Other Teen/Friend", @"Parent/Other Family Member", @"Teacher/School Counselor/School Staff", @"Pastor/Minister/Church Staff", @"Therapist/Social Worker", @"Probation Officer", @"Treehouse staff"
+                      ];//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(print_Message)];
     
 }
-
+/*-(void)print_Message {
+    NSLog(@"Eh up, someone just pressed the button!");
+}*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -46,12 +50,28 @@
 }
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [self.ethnicity count];
+    if ([pickerView tag] == 1) {
+        return [self.ethnicity count];
+    }
+    else //if([pickerView tag] == 2)
+    {
+        return [self.referral count];
+    }
+    
 }
+
 #pragma mark Picker Delegate Methods
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return self.ethnicity[row];
+    if ([pickerView tag] == 1) {
+        return self.ethnicity[row];
+    }
+    else //if([pickerView tag] == 2)
+    {
+        return self.referral[row];
+    }
+    
 }
+
 
 @end
