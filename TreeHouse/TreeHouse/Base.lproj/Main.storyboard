@@ -106,13 +106,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ethnicity" id="3jC-e9-WeC">
-                        <barButtonItem key="rightBarButtonItem" title="Done!" id="z90-7P-kkb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done!" id="z90-7P-kkb">
+                            <connections>
+                                <segue destination="e3w-hs-1mK" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="DVL-ll-ySL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="referredPicker" destination="dvO-AQ-Bkc" id="1tX-AE-PtZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvW-XQ-EMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="e3w-hs-1mK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3576" y="-233"/>
         </scene>

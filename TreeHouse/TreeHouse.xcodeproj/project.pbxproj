@@ -33,6 +33,7 @@
 		68FD799D18284EC600CC7B69 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD799418284EC600CC7B69 /* PersonalViewController.m */; };
 		68FD799E18284EC600CC7B69 /* ReferredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD799618284EC600CC7B69 /* ReferredViewController.m */; };
 		68FD799F18284EC600CC7B69 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD799818284EC600CC7B69 /* WelcomeViewController.m */; };
+		707852FA1836F7BB00C3B90E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707852F91836F7BB00C3B90E /* MainMenuViewController.m */; };
 		70CD153118285BA1002DDD84 /* Test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70CD153018285BA1002DDD84 /* Test.txt */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,8 @@
 		68FD799618284EC600CC7B69 /* ReferredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferredViewController.m; sourceTree = "<group>"; };
 		68FD799718284EC600CC7B69 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		68FD799818284EC600CC7B69 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		707852F81836F7BB00C3B90E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		707852F91836F7BB00C3B90E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		70CD153018285BA1002DDD84 /* Test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +220,8 @@
 		68FD798A18284EC600CC7B69 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				707852F81836F7BB00C3B90E /* MainMenuViewController.h */,
+				707852F91836F7BB00C3B90E /* MainMenuViewController.m */,
 				68FD798B18284EC600CC7B69 /* EthnicityViewController.h */,
 				68FD798C18284EC600CC7B69 /* EthnicityViewController.m */,
 				68FD798D18284EC600CC7B69 /* HomeLocationViewController.h */,
@@ -341,6 +346,7 @@
 				68FD799E18284EC600CC7B69 /* ReferredViewController.m in Sources */,
 				5A757417183170BD004A39C3 /* XMLParse.m in Sources */,
 				68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */,
+				707852FA1836F7BB00C3B90E /* MainMenuViewController.m in Sources */,
 				68FD799F18284EC600CC7B69 /* WelcomeViewController.m in Sources */,
 				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 				68FD799A18284EC600CC7B69 /* HomeLocationViewController.m in Sources */,
