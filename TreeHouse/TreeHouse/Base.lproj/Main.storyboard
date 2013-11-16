@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Referred View Controller - Referred-->
@@ -69,9 +69,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="C9a-bc-8m5" kind="push" id="6C7-jO-pbj"/>
-                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-t7-vj1">
                                 <rect key="frame" x="373" y="134" width="51" height="31"/>
@@ -106,9 +103,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ethnicity" id="3jC-e9-WeC">
-                        <barButtonItem key="rightBarButtonItem" title="Done!" id="z90-7P-kkb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z90-7P-kkb">
                             <connections>
-                                <segue destination="e3w-hs-1mK" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="DVL-ll-ySL"/>
+                                <segue destination="e3w-hs-1mK" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="Ldi-Zh-NlK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -677,10 +674,10 @@
             </objects>
             <point key="canvasLocation" x="1611" y="-233"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hY2-m5-wNM"/>
                         <viewControllerLayoutGuide type="bottom" id="qLW-Tg-iEA"/>
