@@ -1,23 +1,13 @@
+<users>
+    <user>
+        <userName>mspeller</userName>
+        <firstName>Mike</firstName>
+        <lastName>Speller</lastName>
+    </user>
+    <user>
+        <userName>mgdan</userName>
+        <firstName>Mila</firstName>
+        <lastName>Gdan</lastName>
+    </user>
+</users>
 
-
-<user>
-<student>
-    <firstName>Christopher</firstName>
-</student>
-
-<student>
-    <firstName>Jeff</firstName>
-</student>
-
-<student>
-    <firstName>Bob</firstName>
-</student>
-
-<student>
-    <firstName>Dan</firstName>
-</student>
-
-<student>
-    <firstName>Jim</firstName>
-</student>
-</user>

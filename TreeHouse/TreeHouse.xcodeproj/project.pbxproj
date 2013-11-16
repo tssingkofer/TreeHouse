@@ -11,7 +11,13 @@
 		5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A364449182864E700C1CF01 /* CheckInViewController.m */; };
 		5A757416183170BD004A39C3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757413183170BD004A39C3 /* User.m */; };
 		5A757417183170BD004A39C3 /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757415183170BD004A39C3 /* XMLParse.m */; };
+		681377A31834383E00641BDF /* Settings@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6813779F1834383E00641BDF /* Settings@1x.png */; };
+		681377A41834383E00641BDF /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A01834383E00641BDF /* Settings@2x.png */; };
+		681377A91834388000641BDF /* spotlight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A71834388000641BDF /* spotlight@1x.png */; };
+		681377AA1834388000641BDF /* Spotlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A81834388000641BDF /* Spotlight@2x.png */; };
 		684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 684FF84818288F3D001EA067 /* TreeHouse_Logo.png */; };
+		68ADD8DB18340B1B00A5BD38 /* TreeHouse Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */; };
+		68ADD8DD18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */; };
 		68CFAD51181F4510004C7A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD50181F4510004C7A81 /* Foundation.framework */; };
 		68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD52181F4510004C7A81 /* CoreGraphics.framework */; };
 		68CFAD55181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
@@ -55,7 +61,13 @@
 		5A757413183170BD004A39C3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5A757414183170BD004A39C3 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
 		5A757415183170BD004A39C3 /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParse.m; sourceTree = "<group>"; };
+		6813779F1834383E00641BDF /* Settings@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@1x.png"; sourceTree = "<group>"; };
+		681377A01834383E00641BDF /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
+		681377A71834388000641BDF /* spotlight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight@1x.png"; sourceTree = "<group>"; };
+		681377A81834388000641BDF /* Spotlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotlight@2x.png"; sourceTree = "<group>"; };
 		684FF84818288F3D001EA067 /* TreeHouse_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo.png; sourceTree = "<group>"; };
+		68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TreeHouse Icon.png"; sourceTree = "<group>"; };
+		68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TreeHouse Icon_nonRetina.png"; sourceTree = "<group>"; };
 		68CFAD4D181F4510004C7A81 /* TreeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CFAD50181F4510004C7A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68CFAD52181F4510004C7A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +144,12 @@
 		684FF84718288F3D001EA067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				681377A71834388000641BDF /* spotlight@1x.png */,
+				681377A81834388000641BDF /* Spotlight@2x.png */,
+				6813779F1834383E00641BDF /* Settings@1x.png */,
+				681377A01834383E00641BDF /* Settings@2x.png */,
+				68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */,
+				68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */,
 				684FF84818288F3D001EA067 /* TreeHouse_Logo.png */,
 			);
 			path = Resources;
@@ -317,10 +335,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CFAD69181F4510004C7A81 /* Images.xcassets in Resources */,
+				68ADD8DD18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png in Resources */,
 				5A01ABF8182C3C350085D02D /* Test.xml in Resources */,
 				68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */,
+				68ADD8DB18340B1B00A5BD38 /* TreeHouse Icon.png in Resources */,
 				70CD153118285BA1002DDD84 /* Test.txt in Resources */,
 				68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */,
+				681377AA1834388000641BDF /* Spotlight@2x.png in Resources */,
+				681377A41834383E00641BDF /* Settings@2x.png in Resources */,
+				681377A91834388000641BDF /* spotlight@1x.png in Resources */,
+				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
 				684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
