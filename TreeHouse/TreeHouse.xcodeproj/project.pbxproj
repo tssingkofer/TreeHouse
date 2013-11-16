@@ -11,6 +11,8 @@
 		5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A364449182864E700C1CF01 /* CheckInViewController.m */; };
 		5A757416183170BD004A39C3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757413183170BD004A39C3 /* User.m */; };
 		5A757417183170BD004A39C3 /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757415183170BD004A39C3 /* XMLParse.m */; };
+		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
+		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
 		681377A31834383E00641BDF /* Settings@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6813779F1834383E00641BDF /* Settings@1x.png */; };
 		681377A41834383E00641BDF /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A01834383E00641BDF /* Settings@2x.png */; };
 		681377A91834388000641BDF /* spotlight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A71834388000641BDF /* spotlight@1x.png */; };
@@ -61,6 +63,10 @@
 		5A757413183170BD004A39C3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5A757414183170BD004A39C3 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
 		5A757415183170BD004A39C3 /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParse.m; sourceTree = "<group>"; };
+		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		68128E911838267800947C56 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		6813779F1834383E00641BDF /* Settings@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@1x.png"; sourceTree = "<group>"; };
 		681377A01834383E00641BDF /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
 		681377A71834388000641BDF /* spotlight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight@1x.png"; sourceTree = "<group>"; };
@@ -137,6 +143,10 @@
 				5A757413183170BD004A39C3 /* User.m */,
 				5A757414183170BD004A39C3 /* XMLParse.h */,
 				5A757415183170BD004A39C3 /* XMLParse.m */,
+				68128E8D1838263F00947C56 /* XMLParser.h */,
+				68128E8E1838263F00947C56 /* XMLParser.m */,
+				68128E901838267800947C56 /* Data.h */,
+				68128E911838267800947C56 /* Data.m */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -368,12 +378,14 @@
 				68CFAD67181F4510004C7A81 /* ViewController.m in Sources */,
 				68FD799C18284EC600CC7B69 /* ParentViewController.m in Sources */,
 				68FD799E18284EC600CC7B69 /* ReferredViewController.m in Sources */,
+				68128E8F1838263F00947C56 /* XMLParser.m in Sources */,
 				5A757417183170BD004A39C3 /* XMLParse.m in Sources */,
 				68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */,
 				707852FA1836F7BB00C3B90E /* MainMenuViewController.m in Sources */,
 				68FD799F18284EC600CC7B69 /* WelcomeViewController.m in Sources */,
 				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 				68FD799A18284EC600CC7B69 /* HomeLocationViewController.m in Sources */,
+				68128E921838267800947C56 /* Data.m in Sources */,
 				5A757416183170BD004A39C3 /* User.m in Sources */,
 				68FD799D18284EC600CC7B69 /* PersonalViewController.m in Sources */,
 				5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */,
