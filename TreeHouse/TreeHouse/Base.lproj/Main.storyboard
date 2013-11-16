@@ -4,36 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Referred View Controller - Referred-->
-        <scene sceneID="7c8-r7-gDq">
-            <objects>
-                <viewController title="Referred" id="C9a-bc-8m5" customClass="ReferredViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pwP-1e-p7m"/>
-                        <viewControllerLayoutGuide type="bottom" id="4vu-he-jm4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vnr-lW-HXz">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZJ-im-flq">
-                                <rect key="frame" x="0.0" y="153" width="768" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="C9a-bc-8m5" id="wkQ-Dq-q6g"/>
-                                    <outlet property="delegate" destination="C9a-bc-8m5" id="hNI-Fr-umV"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="How did you find out about Treehouse?" id="2SA-no-0Or"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d5N-Dl-ma1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4437" y="-233"/>
-        </scene>
         <!--Ethnicity View Controller - Ethnicity-->
         <scene sceneID="eaC-Ue-c5z">
             <objects>
