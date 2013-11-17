@@ -1,18 +1,18 @@
 //
-//  MainMenuViewController.m
+//  SpecificEventViewController.m
 //  TreeHouse
 //
-//  Created by Snell, Luke J on 2013-11-15.
+//  Created by Micah Mogler on 11/12/13.
 //  Copyright (c) 2013 Tyler Singkofer. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "SpecificEventViewController.h"
 
-@interface MainMenuViewController ()
+@interface SpecificEventViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation SpecificEventViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,8 +34,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender{
-    NSLog(@"Back to Main Menu!");
+-(IBAction)unwindBackToEventListViewController:(UIStoryboardSegue *)segue;
+{
+    printf("unwindBackToEventListViewController!");
 }
+
 
 @end

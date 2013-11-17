@@ -6,9 +6,135 @@
 //  Copyright (c) 2013 Tyler Singkofer. All rights reserved.
 //
 
+#import "ViewController.h"
 #import "CheckInViewController.h"
+#import "XMLParser.h"
 
-static NSString *CellIdentifier = @"Cell";
+@implementation CheckInViewController
+@synthesize dataTableView;
+
+XMLParser *xmlParser;
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Release any cached data, images, etc that aren't in use.
+}
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        self.title = @"Check-in";
+        
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[xmlParser data] count];
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *CellIdentifier = @"Cell";
+	Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+        
+        
+        cell.textLabel.text = [currentEntry firstName];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+        return cell;
+    }
+    else {
+        return cell;
+    }
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    //the following url needs to point at whatever server script you are testing against.
+    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://localhost:8888/projects/please_work.php?ID=1"];
+    
+    self.title = @"Check-In";
+}
+
+
+- (void)viewDidUnload
+{
+    [self setDataTableView:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*static NSString *CellIdentifier = @"Cell";
 
 @interface CheckInViewController () <NSXMLParserDelegate>
 
@@ -99,5 +225,6 @@ static NSString *CellIdentifier = @"Cell";
     if (!error) {
         NSString *response = [request responseString];
     }
-}*/
+}
 @end
+*/

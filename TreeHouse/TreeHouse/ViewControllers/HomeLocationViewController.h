@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIPickerView *homePicker;
 @property (strong, nonatomic) NSArray *liveWith;
--(IBAction)buttonPressed;
+
 
 @end

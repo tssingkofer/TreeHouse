@@ -11,6 +11,19 @@
 		5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A364449182864E700C1CF01 /* CheckInViewController.m */; };
 		5A757416183170BD004A39C3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757413183170BD004A39C3 /* User.m */; };
 		5A757417183170BD004A39C3 /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757415183170BD004A39C3 /* XMLParse.m */; };
+		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
+		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
+		68128E9418386B2000947C56 /* Logo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9318386B2000947C56 /* Logo_Background.png */; };
+		68128E9718386E6800947C56 /* right 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9518386E6800947C56 /* right 1.png */; };
+		68128E9818386E6800947C56 /* smile_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9618386E6800947C56 /* smile_64.png */; };
+		68128E9A18386FC400947C56 /* male +.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9918386FC400947C56 /* male +.png */; };
+		68128E9C1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */; };
+		68128E9F18395C8500947C56 /* NewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E9E18395C8500947C56 /* NewEventViewController.m */; };
+		68128EA218395D1F00947C56 /* SpecificEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128EA118395D1F00947C56 /* SpecificEventViewController.m */; };
+		68128EA918395D4200947C56 /* ConfirmCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128EA418395D4200947C56 /* ConfirmCheckInViewController.m */; };
+		68128EAA18395D4200947C56 /* EventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128EA618395D4200947C56 /* EventListViewController.m */; };
+		68128EAB18395D4200947C56 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128EA818395D4200947C56 /* SearchViewController.m */; };
+		68128EAE18395D6E00947C56 /* CoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128EAD18395D6E00947C56 /* CoreViewController.m */; };
 		681377A31834383E00641BDF /* Settings@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6813779F1834383E00641BDF /* Settings@1x.png */; };
 		681377A41834383E00641BDF /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A01834383E00641BDF /* Settings@2x.png */; };
 		681377A91834388000641BDF /* spotlight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A71834388000641BDF /* spotlight@1x.png */; };
@@ -61,6 +74,27 @@
 		5A757413183170BD004A39C3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5A757414183170BD004A39C3 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
 		5A757415183170BD004A39C3 /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParse.m; sourceTree = "<group>"; };
+		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		68128E911838267800947C56 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		68128E9318386B2000947C56 /* Logo_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Background.png; sourceTree = "<group>"; };
+		68128E9518386E6800947C56 /* right 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right 1.png"; sourceTree = "<group>"; };
+		68128E9618386E6800947C56 /* smile_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile_64.png; sourceTree = "<group>"; };
+		68128E9918386FC400947C56 /* male +.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "male +.png"; sourceTree = "<group>"; };
+		68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo_Horizontal_White.png; sourceTree = "<group>"; };
+		68128E9D18395C8500947C56 /* NewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventViewController.h; sourceTree = "<group>"; };
+		68128E9E18395C8500947C56 /* NewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventViewController.m; sourceTree = "<group>"; };
+		68128EA018395D1F00947C56 /* SpecificEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificEventViewController.h; sourceTree = "<group>"; };
+		68128EA118395D1F00947C56 /* SpecificEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificEventViewController.m; sourceTree = "<group>"; };
+		68128EA318395D4200947C56 /* ConfirmCheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmCheckInViewController.h; sourceTree = "<group>"; };
+		68128EA418395D4200947C56 /* ConfirmCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmCheckInViewController.m; sourceTree = "<group>"; };
+		68128EA518395D4200947C56 /* EventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListViewController.h; sourceTree = "<group>"; };
+		68128EA618395D4200947C56 /* EventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListViewController.m; sourceTree = "<group>"; };
+		68128EA718395D4200947C56 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		68128EA818395D4200947C56 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		68128EAC18395D6E00947C56 /* CoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreViewController.h; sourceTree = "<group>"; };
+		68128EAD18395D6E00947C56 /* CoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreViewController.m; sourceTree = "<group>"; };
 		6813779F1834383E00641BDF /* Settings@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@1x.png"; sourceTree = "<group>"; };
 		681377A01834383E00641BDF /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
 		681377A71834388000641BDF /* spotlight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight@1x.png"; sourceTree = "<group>"; };
@@ -137,6 +171,10 @@
 				5A757413183170BD004A39C3 /* User.m */,
 				5A757414183170BD004A39C3 /* XMLParse.h */,
 				5A757415183170BD004A39C3 /* XMLParse.m */,
+				68128E8D1838263F00947C56 /* XMLParser.h */,
+				68128E8E1838263F00947C56 /* XMLParser.m */,
+				68128E901838267800947C56 /* Data.h */,
+				68128E911838267800947C56 /* Data.m */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -144,6 +182,11 @@
 		684FF84718288F3D001EA067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */,
+				68128E9918386FC400947C56 /* male +.png */,
+				68128E9518386E6800947C56 /* right 1.png */,
+				68128E9618386E6800947C56 /* smile_64.png */,
+				68128E9318386B2000947C56 /* Logo_Background.png */,
 				681377A71834388000641BDF /* spotlight@1x.png */,
 				681377A81834388000641BDF /* Spotlight@2x.png */,
 				6813779F1834383E00641BDF /* Settings@1x.png */,
@@ -238,6 +281,18 @@
 		68FD798A18284EC600CC7B69 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				68128EAC18395D6E00947C56 /* CoreViewController.h */,
+				68128EAD18395D6E00947C56 /* CoreViewController.m */,
+				68128EA318395D4200947C56 /* ConfirmCheckInViewController.h */,
+				68128EA418395D4200947C56 /* ConfirmCheckInViewController.m */,
+				68128EA518395D4200947C56 /* EventListViewController.h */,
+				68128EA618395D4200947C56 /* EventListViewController.m */,
+				68128EA718395D4200947C56 /* SearchViewController.h */,
+				68128EA818395D4200947C56 /* SearchViewController.m */,
+				68128EA018395D1F00947C56 /* SpecificEventViewController.h */,
+				68128EA118395D1F00947C56 /* SpecificEventViewController.m */,
+				68128E9D18395C8500947C56 /* NewEventViewController.h */,
+				68128E9E18395C8500947C56 /* NewEventViewController.m */,
 				707852F81836F7BB00C3B90E /* MainMenuViewController.h */,
 				707852F91836F7BB00C3B90E /* MainMenuViewController.m */,
 				68FD798B18284EC600CC7B69 /* EthnicityViewController.h */,
@@ -339,13 +394,18 @@
 				5A01ABF8182C3C350085D02D /* Test.xml in Resources */,
 				68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */,
 				68ADD8DB18340B1B00A5BD38 /* TreeHouse Icon.png in Resources */,
+				68128E9418386B2000947C56 /* Logo_Background.png in Resources */,
 				70CD153118285BA1002DDD84 /* Test.txt in Resources */,
+				68128E9A18386FC400947C56 /* male +.png in Resources */,
 				68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */,
+				68128E9C1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png in Resources */,
 				681377AA1834388000641BDF /* Spotlight@2x.png in Resources */,
 				681377A41834383E00641BDF /* Settings@2x.png in Resources */,
 				681377A91834388000641BDF /* spotlight@1x.png in Resources */,
 				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
+				68128E9818386E6800947C56 /* smile_64.png in Resources */,
 				684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */,
+				68128E9718386E6800947C56 /* right 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,16 +428,24 @@
 				68CFAD67181F4510004C7A81 /* ViewController.m in Sources */,
 				68FD799C18284EC600CC7B69 /* ParentViewController.m in Sources */,
 				68FD799E18284EC600CC7B69 /* ReferredViewController.m in Sources */,
+				68128E8F1838263F00947C56 /* XMLParser.m in Sources */,
 				5A757417183170BD004A39C3 /* XMLParse.m in Sources */,
 				68CFAD61181F4510004C7A81 /* AppDelegate.m in Sources */,
 				707852FA1836F7BB00C3B90E /* MainMenuViewController.m in Sources */,
 				68FD799F18284EC600CC7B69 /* WelcomeViewController.m in Sources */,
 				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 				68FD799A18284EC600CC7B69 /* HomeLocationViewController.m in Sources */,
+				68128E921838267800947C56 /* Data.m in Sources */,
 				5A757416183170BD004A39C3 /* User.m in Sources */,
+				68128EAB18395D4200947C56 /* SearchViewController.m in Sources */,
+				68128EA218395D1F00947C56 /* SpecificEventViewController.m in Sources */,
 				68FD799D18284EC600CC7B69 /* PersonalViewController.m in Sources */,
+				68128EA918395D4200947C56 /* ConfirmCheckInViewController.m in Sources */,
 				5A36444A182864E700C1CF01 /* CheckInViewController.m in Sources */,
+				68128EAA18395D4200947C56 /* EventListViewController.m in Sources */,
 				68FD799B18284EC600CC7B69 /* HomeViewController.m in Sources */,
+				68128E9F18395C8500947C56 /* NewEventViewController.m in Sources */,
+				68128EAE18395D6E00947C56 /* CoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

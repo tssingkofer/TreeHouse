@@ -1,18 +1,18 @@
 //
-//  MainMenuViewController.m
+//  ConfirmCheckInViewController.m
 //  TreeHouse
 //
-//  Created by Snell, Luke J on 2013-11-15.
+//  Created by Micah Mogler on 11/12/13.
 //  Copyright (c) 2013 Tyler Singkofer. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "ConfirmCheckInViewController.h"
 
-@interface MainMenuViewController ()
+@interface ConfirmCheckInViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation ConfirmCheckInViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,8 +34,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender{
-    NSLog(@"Back to Main Menu!");
+-(IBAction)unwindBackToSpecificEventViewController:(UIStoryboardSegue *)segue;
+{
+    printf("unwindBackToSpecificEventViewController!");
 }
 
 @end
