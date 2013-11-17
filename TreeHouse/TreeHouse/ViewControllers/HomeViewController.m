@@ -13,6 +13,9 @@
 @end*/
 
 @implementation HomeViewController
+@synthesize fNameText;
+@synthesize MIText;
+@synthesize lNameText;
 
 /*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,11 +25,35 @@
     }
     return self;
 }*/
-
+/*- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if(textField == self.fNameText) {
+        [self.MIText becomeFirstResponder];
+        [self.fNameText resignFirstResponder];
+    } else if (textField == self.self.MIText) {
+        [textField resignFirstResponder];
+    }
+    
+    return NO;
+}*/
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
+{
+    NSInteger nextTag = textField.tag + 1;
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        [nextResponder becomeFirstResponder];
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [fNameText becomeFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -9,5 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+{
+    
+    IBOutlet UITextField *fNameText;
+    
+    IBOutlet UITextField *MIText;
+    
+    IBOutlet UITextField *lNameText;
+    
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField;
+@property (strong, nonatomic) IBOutlet UITextField *fNameText;
+@property (strong, nonatomic) IBOutlet UITextField *MIText;
+@property (strong, nonatomic) IBOutlet UITextField *lNameText;
 
+//@property (strong, nonatomic) IBOutlet UITextField *fNameText;
+//@property (strong, nonatomic) IBOutlet UITextField *MIText;
+//@property (strong, nonatomic) IBOutlet UITextField *lNameText;
 @end
