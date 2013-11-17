@@ -13,6 +13,11 @@
 		5A757417183170BD004A39C3 /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A757415183170BD004A39C3 /* XMLParse.m */; };
 		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
 		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
+		68128E9418386B2000947C56 /* Logo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9318386B2000947C56 /* Logo_Background.png */; };
+		68128E9718386E6800947C56 /* right 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9518386E6800947C56 /* right 1.png */; };
+		68128E9818386E6800947C56 /* smile_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9618386E6800947C56 /* smile_64.png */; };
+		68128E9A18386FC400947C56 /* male +.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9918386FC400947C56 /* male +.png */; };
+		68128E9C1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */; };
 		681377A31834383E00641BDF /* Settings@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6813779F1834383E00641BDF /* Settings@1x.png */; };
 		681377A41834383E00641BDF /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A01834383E00641BDF /* Settings@2x.png */; };
 		681377A91834388000641BDF /* spotlight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A71834388000641BDF /* spotlight@1x.png */; };
@@ -67,6 +72,11 @@
 		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		68128E911838267800947C56 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		68128E9318386B2000947C56 /* Logo_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Background.png; sourceTree = "<group>"; };
+		68128E9518386E6800947C56 /* right 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right 1.png"; sourceTree = "<group>"; };
+		68128E9618386E6800947C56 /* smile_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile_64.png; sourceTree = "<group>"; };
+		68128E9918386FC400947C56 /* male +.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "male +.png"; sourceTree = "<group>"; };
+		68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo_Horizontal_White.png; sourceTree = "<group>"; };
 		6813779F1834383E00641BDF /* Settings@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@1x.png"; sourceTree = "<group>"; };
 		681377A01834383E00641BDF /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
 		681377A71834388000641BDF /* spotlight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight@1x.png"; sourceTree = "<group>"; };
@@ -154,6 +164,11 @@
 		684FF84718288F3D001EA067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */,
+				68128E9918386FC400947C56 /* male +.png */,
+				68128E9518386E6800947C56 /* right 1.png */,
+				68128E9618386E6800947C56 /* smile_64.png */,
+				68128E9318386B2000947C56 /* Logo_Background.png */,
 				681377A71834388000641BDF /* spotlight@1x.png */,
 				681377A81834388000641BDF /* Spotlight@2x.png */,
 				6813779F1834383E00641BDF /* Settings@1x.png */,
@@ -349,13 +364,18 @@
 				5A01ABF8182C3C350085D02D /* Test.xml in Resources */,
 				68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */,
 				68ADD8DB18340B1B00A5BD38 /* TreeHouse Icon.png in Resources */,
+				68128E9418386B2000947C56 /* Logo_Background.png in Resources */,
 				70CD153118285BA1002DDD84 /* Test.txt in Resources */,
+				68128E9A18386FC400947C56 /* male +.png in Resources */,
 				68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */,
+				68128E9C1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png in Resources */,
 				681377AA1834388000641BDF /* Spotlight@2x.png in Resources */,
 				681377A41834383E00641BDF /* Settings@2x.png in Resources */,
 				681377A91834388000641BDF /* spotlight@1x.png in Resources */,
 				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
+				68128E9818386E6800947C56 /* smile_64.png in Resources */,
 				684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */,
+				68128E9718386E6800947C56 /* right 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

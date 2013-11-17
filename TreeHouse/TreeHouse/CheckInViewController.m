@@ -78,7 +78,7 @@ XMLParser *xmlParser;
 {
     [super viewDidLoad];
     //the following url needs to point at whatever server script you are testing against.
-    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://localhost:8888/projects/please_work.php?ID=1"];
+    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://192.168.1.103:8888/projects/please_work.php?ID=1"];
     
     self.title = @"Check-In";
 }
