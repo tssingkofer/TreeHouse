@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--Referred View Controller - Referred-->
-        <scene sceneID="7c8-r7-gDq">
-            <objects>
-                <viewController title="Referred" id="C9a-bc-8m5" customClass="ReferredViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pwP-1e-p7m"/>
-                        <viewControllerLayoutGuide type="bottom" id="4vu-he-jm4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vnr-lW-HXz">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZJ-im-flq">
-                                <rect key="frame" x="0.0" y="153" width="768" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="C9a-bc-8m5" id="wkQ-Dq-q6g"/>
-                                    <outlet property="delegate" destination="C9a-bc-8m5" id="hNI-Fr-umV"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="How did you find out about Treehouse?" id="2SA-no-0Or"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d5N-Dl-ma1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4437" y="-233"/>
-        </scene>
         <!--Ethnicity View Controller - Ethnicity-->
         <scene sceneID="eaC-Ue-c5z">
             <objects>
@@ -63,16 +33,6 @@
                                     <outlet property="delegate" destination="z01-DM-Ng7" id="U2l-pB-nlH"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3N-yB-RzH">
-                                <rect key="frame" x="368" y="897" width="32" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="C9a-bc-8m5" kind="push" id="6C7-jO-pbj"/>
-                                </connections>
-                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-t7-vj1">
                                 <rect key="frame" x="373" y="134" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,11 +56,9 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="c3N-yB-RzH" secondAttribute="bottom" constant="97" id="ECr-4O-0QR"/>
                             <constraint firstItem="jtg-IK-ePc" firstAttribute="leading" secondItem="gDi-di-JHH" secondAttribute="leading" id="Gch-c6-QRw"/>
                             <constraint firstItem="jtg-IK-ePc" firstAttribute="top" secondItem="gDi-di-JHH" secondAttribute="top" constant="246" id="LqK-3H-Xww"/>
                             <constraint firstItem="xP4-1B-WDG" firstAttribute="top" secondItem="gDi-di-JHH" secondAttribute="top" constant="199" id="ROD-or-dwP"/>
-                            <constraint firstItem="c3N-yB-RzH" firstAttribute="leading" secondItem="gDi-di-JHH" secondAttribute="leading" constant="370" id="bKb-Ik-Chh"/>
                             <constraint firstItem="xP4-1B-WDG" firstAttribute="leading" secondItem="gDi-di-JHH" secondAttribute="leading" constant="20" symbolic="YES" id="jIE-HJ-Bda"/>
                             <constraint firstItem="jtg-IK-ePc" firstAttribute="trailing" secondItem="gDi-di-JHH" secondAttribute="trailing" id="wgg-3k-6uw"/>
                         </constraints>
@@ -133,16 +91,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-3c-wSL">
-                                <rect key="frame" x="368" y="891" width="32" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="z01-DM-Ng7" kind="push" id="79D-Yd-jwp"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Parent or Guardian Cell Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzg-c9-xV3">
                                 <rect key="frame" x="70" y="476" width="307" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -224,7 +172,6 @@
                             <constraint firstAttribute="trailing" secondItem="Vsh-vp-FCe" secondAttribute="trailing" constant="127" id="78o-v7-7U5"/>
                             <constraint firstAttribute="bottom" secondItem="ZXN-fc-u0y" secondAttribute="bottom" constant="447" id="7Wg-un-pxu"/>
                             <constraint firstItem="UKv-aS-b2P" firstAttribute="leading" secondItem="FDG-4a-8Jz" secondAttribute="leading" id="96g-Je-zPh"/>
-                            <constraint firstItem="6LF-pQ-MsC" firstAttribute="centerX" secondItem="KSv-3c-wSL" secondAttribute="centerX" id="9s9-r0-TQw"/>
                             <constraint firstItem="2dR-Xk-fxR" firstAttribute="trailing" secondItem="eVQ-Eo-iBR" secondAttribute="trailing" id="B2r-ep-3bt"/>
                             <constraint firstItem="UKv-aS-b2P" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="178" id="B7n-UL-LNW"/>
                             <constraint firstAttribute="bottom" secondItem="6LF-pQ-MsC" secondAttribute="bottom" constant="210" id="CgQ-Tt-kzf"/>
@@ -246,7 +193,6 @@
                             <constraint firstItem="Vsh-vp-FCe" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="416" id="fDh-Xb-TIR"/>
                             <constraint firstItem="5mZ-1j-JUx" firstAttribute="leading" secondItem="Vsh-vp-FCe" secondAttribute="leading" id="h9b-Ep-GOc"/>
                             <constraint firstItem="yzg-c9-xV3" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="476" id="nRV-yK-Hq2"/>
-                            <constraint firstAttribute="bottom" secondItem="KSv-3c-wSL" secondAttribute="bottom" constant="69" id="poQ-JH-mAQ"/>
                             <constraint firstItem="2dR-Xk-fxR" firstAttribute="leading" secondItem="u0Q-dh-hIM" secondAttribute="leading" constant="200" id="vn3-zr-LLc"/>
                             <constraint firstItem="FDG-4a-8Jz" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="102" id="wDS-bV-Wbs"/>
                         </constraints>
@@ -644,20 +590,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bh-Bl-6xx">
-                                <rect key="frame" x="265" y="667" width="274" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="N21-Yn-WQh"/>
-                                    <constraint firstAttribute="width" constant="274" id="ZUi-cV-q80"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="S0C-NF-EzC" kind="push" id="BdE-cb-CrX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -798,7 +730,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="gbQ-A4-umf"/>
-        <segue reference="BdE-cb-CrX"/>
-        <segue reference="HAO-ZD-yeh"/>
     </inferredMetricsTieBreakers>
 </document>
