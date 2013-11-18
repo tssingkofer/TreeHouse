@@ -16,6 +16,7 @@
 @synthesize fNameText;
 @synthesize MIText;
 @synthesize lNameText;
+//@synthesize btnNext;
 
 /*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,9 +36,11 @@
     
     return NO;
 }*/
+
+
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
 {
-    NSInteger nextTag = textField.tag + 1;
+    NSInteger nextTag = 10;
     // Try to find next responder
     UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
     if (nextResponder) {
@@ -61,5 +64,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//self.alabel.text
 @end

@@ -253,8 +253,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICk-VN-r9D">
-                                <rect key="frame" x="112" y="102" width="171" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICk-VN-r9D">
+                                <rect key="frame" x="113" y="102" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -468,7 +468,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOJ-0E-11s">
+                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOJ-0E-11s">
                                 <rect key="frame" x="333" y="102" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -489,9 +489,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MIText" destination="cOJ-0E-11s" id="797-9M-vRr"/>
-                        <outlet property="fNameText" destination="ICk-VN-r9D" id="aMn-ir-4gU"/>
-                        <outlet property="lNameText" destination="cEF-OR-VaS" id="6k3-6C-nw1"/>
+                        <outlet property="MIText" destination="cOJ-0E-11s" id="vGF-hk-d4W"/>
+                        <outlet property="btnNext" destination="HOg-hI-eS7" id="52p-pF-CBB"/>
+                        <outlet property="fNameText" destination="ICk-VN-r9D" id="jmZ-Fh-RIx"/>
+                        <outlet property="lNameText" destination="cEF-OR-VaS" id="PKF-Qd-oli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mm-bB-Lkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
