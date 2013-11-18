@@ -216,7 +216,7 @@ XMLParser *xmlParser;
     //cell.textLabel.font = [UIFont boldSystemFontOfSize:40];
     return cell;
 }
-/*- (void)grabURL
+- (void)grabURL
 {
     NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
