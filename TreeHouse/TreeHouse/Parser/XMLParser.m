@@ -41,7 +41,7 @@ bool            isResults;
 		currentEntry = [Data alloc];
         isResults = YES;
 	}
-	if ([elementname isEqualToString:@"race"])
+	if ([elementname isEqualToString:@"DOB"])
 	{
         isResults = NO;
 	}
@@ -51,11 +51,11 @@ bool            isResults;
 {
     if (isResults)
     {
-        if ([elementname isEqualToString:@"first_name"])
+        if ([elementname isEqualToString:@"FirstName"])
         {
             currentEntry.firstName = currentNodeContent;
         }
-        if ([elementname isEqualToString:@"last_name"])
+        if ([elementname isEqualToString:@"LastName"])
         {
             currentEntry.lastName = currentNodeContent;
         }
