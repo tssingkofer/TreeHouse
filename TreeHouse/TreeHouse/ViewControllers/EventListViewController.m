@@ -23,6 +23,10 @@
     return self;
 }
 
+- (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender{
+    NSLog(@"unwind back to EventListViewController");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

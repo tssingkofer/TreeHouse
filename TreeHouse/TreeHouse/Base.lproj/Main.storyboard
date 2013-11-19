@@ -517,7 +517,7 @@
                                 <color key="tintColor" red="0.16470588743686676" green="0.45098042488098145" blue="0.24705883860588074" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Welcome to Treehouse" image="male +.png"/>
                                 <connections>
-                                    <segue destination="XS3-uR-r6L" kind="push" id="KU6-ep-fIC"/>
+                                    <segue destination="XS3-uR-r6L" kind="push" id="1BS-iy-7OW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-Cu-qrP">
@@ -541,7 +541,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DrA-8m-DCs" kind="push" id="wKR-nZ-IVn"/>
+                                    <segue destination="DrA-8m-DCs" kind="push" id="IkO-NG-ZU8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -577,7 +577,7 @@
         <!--Check In View Controller-->
         <scene sceneID="1l9-35-0Ly">
             <objects>
-                <viewController id="XUT-PK-vtd" customClass="CheckInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckInViewController" id="XUT-PK-vtd" customClass="CheckInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SWv-Vz-IJK"/>
                         <viewControllerLayoutGuide type="bottom" id="k1L-Kt-AIo"/>
@@ -803,7 +803,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Special Events" id="XZp-B8-Lu6">
-                        <barButtonItem key="rightBarButtonItem" title="New Event" id="iQg-Tk-mGp"/>
+                        <barButtonItem key="rightBarButtonItem" title="New Event" id="iQg-Tk-mGp">
+                            <connections>
+                                <segue destination="9lv-Zp-j4c" kind="push" id="Qrb-ui-VOW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -1077,22 +1081,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="360" y="855" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-3k-PsR">
-                                <rect key="frame" x="340" y="930" width="88" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Create">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveAndDismiss:" destination="9lv-Zp-j4c" eventType="touchUpInside" id="FNh-r8-4bL"/>
-                                    <segue destination="cxt-1U-MX3" kind="unwind" unwindAction="unwindBackToEventCheckInViewController:" id="OtM-Dz-2xd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rwt-lD-s1E"/>
+                    <navigationItem key="navigationItem" id="rwt-lD-s1E">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="dEp-yh-nsu">
+                            <connections>
+                                <segue destination="cxt-1U-MX3" kind="unwind" unwindAction="unwindBackToEventListViewController:" id="MLp-NL-ZbH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHe-Ro-GeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cxt-1U-MX3" userLabel="Exit" sceneMemberID="exit"/>

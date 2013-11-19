@@ -7,12 +7,24 @@
 //
 
 #import "MainMenuViewController.h"
+#import "CheckInViewController.h"
 
 @interface MainMenuViewController ()
 
 @end
 
 @implementation MainMenuViewController
+@synthesize textLastName;
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (textLastName != nil){
+    CheckInViewController *vc = [segue destinationViewController];
+    vc.stringFromAlertView = textLastName;
+    }
+    else {
+        textLastName = nil;
+    }
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +39,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,10 +59,12 @@
 #pragma mark AlertView Delegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    textLastName = [[alertView textFieldAtIndex:0] text];
+    NSLog(@"Variable contains: %@", textLastName);
     NSLog(@"Entered: %@",[[alertView textFieldAtIndex:0] text]);
-    
     [self performSegueWithIdentifier:@"segue.push.alert" sender:self];
     
 }
+
 
 @end

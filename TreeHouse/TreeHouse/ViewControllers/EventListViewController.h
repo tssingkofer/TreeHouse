@@ -10,5 +10,5 @@
 #import "CoreViewController.h"
 
 @interface EventListViewController : CoreViewController 
-
+- (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender;
 @end

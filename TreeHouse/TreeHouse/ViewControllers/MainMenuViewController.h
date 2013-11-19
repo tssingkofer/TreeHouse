@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MainMenuViewController : UIViewController
+{
+    NSString *textLastName;
+}
 - (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender;
 - (IBAction)showCheckInAlert:(id)sender;
-
+@property (retain) NSString *textLastName;
 @end
