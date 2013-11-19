@@ -10,5 +10,6 @@
 
 @interface MainMenuViewController : UIViewController
 - (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender;
+- (IBAction)showCheckInAlert:(id)sender;
 
 @end

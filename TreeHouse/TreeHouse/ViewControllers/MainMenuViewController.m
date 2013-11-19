@@ -38,4 +38,18 @@
     NSLog(@"Back to Main Menu!");
 }
 
+- (IBAction)showCheckInAlert:(id)sender {
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Check-In" message:@"Enter Last Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Search", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+}
+#pragma mark AlertView Delegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"Entered: %@",[[alertView textFieldAtIndex:0] text]);
+    
+    [self performSegueWithIdentifier:@"segue.push.alert" sender:self];
+    
+}
+
 @end
