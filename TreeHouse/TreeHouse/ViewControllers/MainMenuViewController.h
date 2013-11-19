@@ -14,5 +14,8 @@
 }
 - (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender;
 - (IBAction)showCheckInAlert:(id)sender;
+- (IBAction)WelcomeButtonPressed:(id)sender;
+- (IBAction)EventButtonPressed:(id)sender;
+
 @property (retain) NSString *textLastName;
 @end
