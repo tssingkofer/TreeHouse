@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Ethnicity View Controller - Ethnicity-->
@@ -482,15 +482,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="HOg-hI-eS7">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="t7P-8d-dzy">
                             <connections>
-                                <segue destination="S0C-NF-EzC" kind="push" id="67K-R5-3OB"/>
+                                <segue destination="S0C-NF-EzC" kind="push" id="fwX-S4-Msk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="MIText" destination="cOJ-0E-11s" id="vGF-hk-d4W"/>
-                        <outlet property="btnNext" destination="HOg-hI-eS7" id="52p-pF-CBB"/>
                         <outlet property="fNameText" destination="ICk-VN-r9D" id="jmZ-Fh-RIx"/>
                         <outlet property="lNameText" destination="cEF-OR-VaS" id="PKF-Qd-oli"/>
                     </connections>
