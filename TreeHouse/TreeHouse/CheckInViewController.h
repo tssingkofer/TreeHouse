@@ -32,5 +32,7 @@
 @property (nonatomic, retain) UIImageView *customImage;
 
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
-
+@property (weak, nonatomic) IBOutlet UITextField *searchLNameText;
+@property (weak, nonatomic) NSString *queryString;
+- (NSMutableArray *)updateText;
 @end
