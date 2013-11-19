@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLParser.h"
+#import "Data.h"
+#import "MainMenuViewController.h"
 
 @interface SearchViewController : UIViewController
 

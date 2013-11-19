@@ -23,7 +23,7 @@
     return self;
 }
 
-- (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender{
+- (IBAction)unwindBackToEventListViewController:(UIStoryboardSegue *)sender{
     NSLog(@"unwind back to EventListViewController");
 }
 
