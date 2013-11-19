@@ -13,10 +13,9 @@
 @end
 
 @implementation HomeViewController
+
 @synthesize fNameText;
-@synthesize MIText;
-@synthesize lNameText;
-//@synthesize btnNext;
+
 
 /*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,4 +64,11 @@
     // Dispose of any resources that can be recreated.
 }
 //self.alabel.text
+- (IBAction)btnNext:(id)sender
+{
+    
+    NSLog(@"text: %@", fNameText.text);
+
+}
+
 @end
