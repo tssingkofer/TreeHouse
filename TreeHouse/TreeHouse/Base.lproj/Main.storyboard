@@ -622,11 +622,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchButtonLastName:" destination="XUT-PK-vtd" eventType="touchUpInside" id="bbP-sb-WjC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.33333334329999997" green="0.19215688110000001" blue="0.090196080509999998" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="e1W-Vb-dnL"/>
+                    <connections>
+                        <outlet property="searchLNameText" destination="NgD-PI-EQf" id="qPd-YH-kRg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDo-Jv-5SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4ee-9h-0Ob" userLabel="Exit" sceneMemberID="exit"/>

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CheckInViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
