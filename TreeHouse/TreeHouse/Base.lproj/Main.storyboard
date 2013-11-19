@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Ethnicity View Controller - Ethnicity-->
@@ -253,8 +253,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICk-VN-r9D">
-                                <rect key="frame" x="112" y="102" width="171" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICk-VN-r9D">
+                                <rect key="frame" x="113" y="102" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -468,7 +468,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOJ-0E-11s">
+                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOJ-0E-11s">
                                 <rect key="frame" x="333" y="102" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -482,16 +482,26 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="HOg-hI-eS7">
-                            <connections>
-                                <segue destination="S0C-NF-EzC" kind="push" id="67K-R5-3OB"/>
-                            </connections>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="IR5-hl-2qH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ovz-Z9-Vb6">
+                                <rect key="frame" x="582" y="5" width="170" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNext:" destination="XS3-uR-r6L" eventType="touchUpInside" id="3Id-W2-a53"/>
+                                    <segue destination="S0C-NF-EzC" kind="push" id="Mls-bh-iAQ"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MIText" destination="cOJ-0E-11s" id="797-9M-vRr"/>
-                        <outlet property="fNameText" destination="ICk-VN-r9D" id="aMn-ir-4gU"/>
-                        <outlet property="lNameText" destination="cEF-OR-VaS" id="6k3-6C-nw1"/>
+                        <outlet property="MIName" destination="cOJ-0E-11s" id="o9C-Y5-5C5"/>
+                        <outlet property="MIText" destination="cOJ-0E-11s" id="vGF-hk-d4W"/>
+                        <outlet property="fNameText" destination="ICk-VN-r9D" id="Yjm-DZ-wRK"/>
+                        <outlet property="lNameText" destination="cEF-OR-VaS" id="PKF-Qd-oli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mm-bB-Lkk" userLabel="First Responder" sceneMemberID="firstResponder"/>

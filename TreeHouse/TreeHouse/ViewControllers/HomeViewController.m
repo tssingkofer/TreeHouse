@@ -8,14 +8,14 @@
 
 #import "HomeViewController.h"
 
-/*@interface HomeViewController ()
+@interface HomeViewController ()
 
-@end*/
+@end
 
 @implementation HomeViewController
+
 @synthesize fNameText;
-@synthesize MIText;
-@synthesize lNameText;
+
 
 /*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,9 +35,11 @@
     
     return NO;
 }*/
+
+
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
 {
-    NSInteger nextTag = textField.tag + 1;
+    NSInteger nextTag = 10;
     // Try to find next responder
     UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
     if (nextResponder) {
@@ -60,6 +62,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+//self.alabel.text
+- (IBAction)btnNext:(id)sender
+{
+    
+    NSLog(@"text: %@, %@", fNameText.text, MIText.text);
+
 }
 
 @end

@@ -18,12 +18,10 @@
     IBOutlet UITextField *lNameText;
     
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)theTextField;
-@property (strong, nonatomic) IBOutlet UITextField *fNameText;
-@property (strong, nonatomic) IBOutlet UITextField *MIText;
-@property (strong, nonatomic) IBOutlet UITextField *lNameText;
 
-//@property (strong, nonatomic) IBOutlet UITextField *fNameText;
-//@property (strong, nonatomic) IBOutlet UITextField *MIText;
-//@property (strong, nonatomic) IBOutlet UITextField *lNameText;
+//- (IBAction)btnNext:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *fNameText;
+@property (strong, nonatomic) IBOutlet UITextField *MIName;
+- (IBAction)btnNext:(id)sender;
+
 @end
