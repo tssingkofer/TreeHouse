@@ -67,7 +67,7 @@
 - (IBAction)btnNext:(id)sender
 {
     
-    NSLog(@"text: %@", fNameText.text);
+    NSLog(@"text: %@, %@", fNameText.text, MIText.text);
 
 }
 

@@ -498,6 +498,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="MIName" destination="cOJ-0E-11s" id="o9C-Y5-5C5"/>
                         <outlet property="MIText" destination="cOJ-0E-11s" id="vGF-hk-d4W"/>
                         <outlet property="fNameText" destination="ICk-VN-r9D" id="Yjm-DZ-wRK"/>
                         <outlet property="lNameText" destination="cEF-OR-VaS" id="PKF-Qd-oli"/>
