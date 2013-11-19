@@ -8,9 +8,9 @@
 
 #import "HomeViewController.h"
 
-/*@interface HomeViewController ()
+@interface HomeViewController ()
 
-@end*/
+@end
 
 @implementation HomeViewController
 @synthesize fNameText;
