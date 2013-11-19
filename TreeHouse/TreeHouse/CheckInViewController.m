@@ -11,7 +11,7 @@
 #import "XMLParser.h"
 
 @implementation CheckInViewController
-@synthesize dataTableView;
+@synthesize searchLNameText, queryString, dataTableView;
 
 XMLParser *xmlParser;
 
@@ -26,7 +26,6 @@ XMLParser *xmlParser;
     if (self) {
         // Custom initialization
         self.title = @"Check-in";
-        
     }
     return self;
 }
@@ -78,7 +77,8 @@ XMLParser *xmlParser;
 {
     [super viewDidLoad];
     //the following url needs to point at whatever server script you are testing against.
-    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://10.6.1.123:8888/projects/youth_checkin_query.php?LastName=Singkofer"];
+
+
     
     self.title = @"Check-In";
 }
@@ -117,7 +117,30 @@ XMLParser *xmlParser;
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+- (NSMutableArray *)updateText {
+    
+    NSUInteger cellsCount = [self.dataTableView numberOfRowsInSection:0];
+    NSMutableArray *cellTextArray = [[NSMutableArray alloc] initWithCapacity:cellsCount];
+    
+    for(NSInteger i = 0; i < cellsCount; i++) {
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
+        //UITableViewCell *cell = [self.dataTableView cellForRowAtIndexPath:indexPath];
+        
+        	Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
+        [cellTextArray insertObject:[currentEntry firstName] atIndex:i];
+    }
+    
+    return cellTextArray;
+}
 
+- (IBAction)searchButtonLastName:(id)sender {
+    NSLog(@"text: %@", searchLNameText.text);
+    queryString = @"http://10.6.1.123:8888/projects/youth_checkin_query.php?LastName=";
+    queryString = [queryString stringByAppendingString:searchLNameText.text];
+    NSLog(@"%@",queryString);
+    xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
+}
 @end
 
 
