@@ -80,9 +80,10 @@ XMLParser *xmlParser;
     
     //the following url needs to point at whatever server script you are testing against.
     NSLog(@"text: %@", stringFromAlertView);
-    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
-    NSLog(@"%@",queryString);
-    queryString = [queryString stringByAppendingString:self.stringFromAlertView];
+//    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
+    queryString = [NSString stringWithFormat:@"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+//    NSLog(@"%@",queryString);
+//    queryString = [queryString stringByAppendingString:stringFromAlertView];
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
     
@@ -140,13 +141,15 @@ XMLParser *xmlParser;
     return cellTextArray;
 }
 
-- (IBAction)searchButtonLastName:(id)sender {
+/*
+ - (IBAction)searchButtonLastName:(id)sender {
     NSLog(@"text: %@", searchLNameText.text);
     queryString = @"http://10.6.1.123:8888/projects/youth_checkin_query.php?LastName=";
     queryString = [queryString stringByAppendingString:searchLNameText.text];
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
 }
+ */
 @end
 
 

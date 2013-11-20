@@ -21,9 +21,7 @@
     CheckInViewController *vc = [segue destinationViewController];
     vc.stringFromAlertView = textLastName;
     }
-    else {
-        textLastName = nil;
-    }
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,7 +37,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    textLastName = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +47,7 @@
 }
 - (IBAction)unwindBackToMainMenuViewController:(UIStoryboardSegue *)sender{
     NSLog(@"Back to Main Menu!");
+    textLastName = nil;
 }
 
 - (IBAction)showCheckInAlert:(id)sender {
@@ -56,14 +55,26 @@
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [alert show];
 }
+
+- (IBAction)WelcomeButtonPressed:(id)sender {
+    textLastName = nil;
+}
+
+- (IBAction)EventButtonPressed:(id)sender {
+    textLastName = nil;
+}
 #pragma mark AlertView Delegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+        [alertView dismissWithClickedButtonIndex:0 animated:YES];
+    }
+    else {
     textLastName = [[alertView textFieldAtIndex:0] text];
     NSLog(@"Variable contains: %@", textLastName);
     NSLog(@"Entered: %@",[[alertView textFieldAtIndex:0] text]);
     [self performSegueWithIdentifier:@"segue.push.alert" sender:self];
-    
+    }
 }
 
 
