@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Tyler Singkofer. All rights reserved.
 //
 
-#import "ViewController.h"
+
 #import "CheckInViewController.h"
 #import "XMLParser.h"
 
@@ -95,8 +95,6 @@ XMLParser *xmlParser;
 {
     [self setDataTableView:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -141,122 +139,4 @@ XMLParser *xmlParser;
     return cellTextArray;
 }
 
-/*
- - (IBAction)searchButtonLastName:(id)sender {
-    NSLog(@"text: %@", searchLNameText.text);
-    queryString = @"http://10.6.1.123:8888/projects/youth_checkin_query.php?LastName=";
-    queryString = [queryString stringByAppendingString:searchLNameText.text];
-    NSLog(@"%@",queryString);
-    xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
-}
- */
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*static NSString *CellIdentifier = @"Cell";
-
-@interface CheckInViewController () <NSXMLParserDelegate>
-
-@end
-
-@class XMLParse;
-
-@implementation CheckInViewController 
-{
-
-}
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        self.title = @"Check-in";
-
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"xml"];
-    NSData *fileContents = [NSData dataWithContentsOfFile:filepath];
-    
-    
-    XMLParse *xml = [[XMLParse alloc]init];
-    self.users = [[xml doParse:fileContents] mutableCopy];
-    _users2 = [self.users mutableCopy];
-    NSLog(@"Count of users : %i", [self.users2 count]);
-    self.sFName = @[@"",@""];
-    self.youth = @[@"Youth 1", @"Youth 2", @"Youth 3"];
-    
-
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void) viewWillAppear:(BOOL)animated
-{
-    
-}
--(void) viewDidAppear:(BOOL)animated
-{
-    
-}
--(void) viewWillDisappear:(BOOL)animated
-{
-    
-}
--(void)viewDidDisappear:(BOOL)animated
-{
-    
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    //XMLParse *xml = [[XMLParse alloc]init];
-    
-    return [self.users2 count];
-}
--(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell==nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        
-    }
-    
-    cell.textLabel.text = nil;//self.users2[0];//indexPath.row];
-    //cell.textLabel.font = [UIFont boldSystemFontOfSize:40];
-    return cell;
-}
-- (void)grabURL
-{
-    NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com"];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request startSynchronous];
-    NSError *error = [request error];
-    if (!error) {
-        NSString *response = [request responseString];
-    }
-}
-@end
-*/

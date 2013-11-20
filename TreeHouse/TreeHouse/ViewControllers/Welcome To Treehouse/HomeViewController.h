@@ -19,7 +19,6 @@
     
 }
 
-//- (IBAction)btnNext:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *fNameText;
 @property (strong, nonatomic) IBOutlet UITextField *MIName;
 - (IBAction)btnNext:(id)sender;

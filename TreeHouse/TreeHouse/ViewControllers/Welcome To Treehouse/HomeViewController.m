@@ -16,27 +16,6 @@
 
 @synthesize fNameText;
 
-
-/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}*/
-/*- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if(textField == self.fNameText) {
-        [self.MIText becomeFirstResponder];
-        [self.fNameText resignFirstResponder];
-    } else if (textField == self.self.MIText) {
-        [textField resignFirstResponder];
-    }
-    
-    return NO;
-}*/
-
-
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
 {
     NSInteger nextTag = 10;

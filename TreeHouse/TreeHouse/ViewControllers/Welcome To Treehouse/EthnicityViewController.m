@@ -12,15 +12,6 @@
 
 @end
 
-/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
- {
- self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
- if (self) {
- // Custom initialization
- }
- return self;
- }*/
-
 @implementation EthnicityViewController
 
 - (void)viewDidLoad
@@ -30,12 +21,9 @@
     self.ethnicity = @[@"American Indian/Alaska Native", @"Black/African American", @"Asian", @"Native Hawaiian/PacificIslander", @"White"
                        ];
     self.referral = @[@"Other Teen/Friend", @"Parent/Other Family Member", @"Teacher/School Counselor/School Staff", @"Pastor/Minister/Church Staff", @"Therapist/Social Worker", @"Probation Officer", @"Treehouse staff"
-                      ];//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(print_Message)];
-    
+                      ];
 }
-/*-(void)print_Message {
-    NSLog(@"Eh up, someone just pressed the button!");
-}*/
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
