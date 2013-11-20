@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SpecificEventViewController : UIViewController
-
+- (IBAction)unwindBackToSpecificEventViewController:(UIStoryboardSegue *)sender;
 @end

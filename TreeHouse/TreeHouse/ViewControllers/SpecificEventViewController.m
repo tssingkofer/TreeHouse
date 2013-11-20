@@ -34,9 +34,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(IBAction)unwindBackToEventListViewController:(UIStoryboardSegue *)segue;
+-(IBAction)unwindBackToSpecificEventViewController:(UIStoryboardSegue *)segue;
 {
-    printf("unwindBackToEventListViewController!");
+    printf("unwindBackToSpecificEventViewController!");
 }
 
 
