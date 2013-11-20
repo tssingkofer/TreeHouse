@@ -81,7 +81,7 @@ XMLParser *xmlParser;
     //the following url needs to point at whatever server script you are testing against.
     NSLog(@"text: %@", stringFromAlertView);
 //    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
-    queryString = [NSString stringWithFormat:@"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+    queryString = [NSString stringWithFormat:@"http://10.6.13.50:8888/projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
 //    NSLog(@"%@",queryString);
 //    queryString = [queryString stringByAppendingString:stringFromAlertView];
     NSLog(@"%@",queryString);
