@@ -481,7 +481,13 @@
                             <constraint firstItem="mD6-Xo-u79" firstAttribute="leading" secondItem="Uo3-7V-ovW" secondAttribute="leading" constant="366" id="oSm-ee-323"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl"/>
+                    <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="XXQ-OD-w4o">
+                            <connections>
+                                <segue destination="S0C-NF-EzC" kind="push" id="H18-jb-SKM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="MIName" destination="cOJ-0E-11s" id="o9C-Y5-5C5"/>
                         <outlet property="MIText" destination="cOJ-0E-11s" id="vGF-hk-d4W"/>
