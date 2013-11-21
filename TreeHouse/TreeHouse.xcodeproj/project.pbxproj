@@ -18,6 +18,7 @@
 		681377A41834383E00641BDF /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A01834383E00641BDF /* Settings@2x.png */; };
 		681377A91834388000641BDF /* spotlight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A71834388000641BDF /* spotlight@1x.png */; };
 		681377AA1834388000641BDF /* Spotlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681377A81834388000641BDF /* Spotlight@2x.png */; };
+		6837441E183DA58A00339977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6837441D183DA58A00339977 /* main.m */; };
 		684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 684FF84818288F3D001EA067 /* TreeHouse_Logo.png */; };
 		68ADD8DB18340B1B00A5BD38 /* TreeHouse Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */; };
 		68ADD8DD18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */; };
@@ -25,7 +26,6 @@
 		68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD52181F4510004C7A81 /* CoreGraphics.framework */; };
 		68CFAD55181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
 		68CFAD5B181F4510004C7A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD59181F4510004C7A81 /* InfoPlist.strings */; };
-		68CFAD5D181F4510004C7A81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD5C181F4510004C7A81 /* main.m */; };
 		68CFAD64181F4510004C7A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD62181F4510004C7A81 /* Main.storyboard */; };
 		68CFAD69181F4510004C7A81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD68181F4510004C7A81 /* Images.xcassets */; };
 		68CFAD70181F4510004C7A81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD6F181F4510004C7A81 /* XCTest.framework */; };
@@ -34,7 +34,6 @@
 		68CFAD7A181F4510004C7A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFAD78181F4510004C7A81 /* InfoPlist.strings */; };
 		68CFAD7C181F4510004C7A81 /* TreeHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */; };
 		68DBB7B0183D581C0043FB36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB790183D581B0043FB36 /* AppDelegate.m */; };
-		68DBB7B1183D581C0043FB36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB791183D581B0043FB36 /* main.m */; };
 		68DBB7B2183D581C0043FB36 /* Test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68DBB792183D581B0043FB36 /* Test.txt */; };
 		68DBB7B3183D581C0043FB36 /* Test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 68DBB793183D581B0043FB36 /* Test.xml */; };
 		68DBB7B4183D581C0043FB36 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB797183D581B0043FB36 /* CheckInViewController.m */; };
@@ -75,6 +74,7 @@
 		681377A01834383E00641BDF /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
 		681377A71834388000641BDF /* spotlight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight@1x.png"; sourceTree = "<group>"; };
 		681377A81834388000641BDF /* Spotlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotlight@2x.png"; sourceTree = "<group>"; };
+		6837441D183DA58A00339977 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684FF84818288F3D001EA067 /* TreeHouse_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo.png; sourceTree = "<group>"; };
 		68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TreeHouse Icon.png"; sourceTree = "<group>"; };
 		68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TreeHouse Icon_nonRetina.png"; sourceTree = "<group>"; };
@@ -84,7 +84,6 @@
 		68CFAD54181F4510004C7A81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68CFAD58181F4510004C7A81 /* TreeHouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeHouse-Info.plist"; sourceTree = "<group>"; };
 		68CFAD5A181F4510004C7A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68CFAD5C181F4510004C7A81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68CFAD5E181F4510004C7A81 /* TreeHouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TreeHouse-Prefix.pch"; sourceTree = "<group>"; };
 		68CFAD63181F4510004C7A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68CFAD68181F4510004C7A81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -95,7 +94,6 @@
 		68CFAD7B181F4510004C7A81 /* TreeHouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeHouseTests.m; sourceTree = "<group>"; };
 		68DBB78F183D581B0043FB36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68DBB790183D581B0043FB36 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		68DBB791183D581B0043FB36 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68DBB792183D581B0043FB36 /* Test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.txt; sourceTree = "<group>"; };
 		68DBB793183D581B0043FB36 /* Test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Test.xml; sourceTree = "<group>"; };
 		68DBB796183D581B0043FB36 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
@@ -211,6 +209,7 @@
 		68CFAD56181F4510004C7A81 /* TreeHouse */ = {
 			isa = PBXGroup;
 			children = (
+				6837441D183DA58A00339977 /* main.m */,
 				68DBB78E183D581B0043FB36 /* Additional Files */,
 				68DBB794183D581B0043FB36 /* ViewControllers */,
 				684FF84718288F3D001EA067 /* Resources */,
@@ -227,7 +226,6 @@
 			children = (
 				68CFAD58181F4510004C7A81 /* TreeHouse-Info.plist */,
 				68CFAD59181F4510004C7A81 /* InfoPlist.strings */,
-				68CFAD5C181F4510004C7A81 /* main.m */,
 				68CFAD5E181F4510004C7A81 /* TreeHouse-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -256,7 +254,6 @@
 			children = (
 				68DBB78F183D581B0043FB36 /* AppDelegate.h */,
 				68DBB790183D581B0043FB36 /* AppDelegate.m */,
-				68DBB791183D581B0043FB36 /* main.m */,
 				68DBB792183D581B0043FB36 /* Test.txt */,
 				68DBB793183D581B0043FB36 /* Test.xml */,
 			);
@@ -432,14 +429,13 @@
 				68DBB7BB183D581C0043FB36 /* SpecificEventViewController.m in Sources */,
 				68DBB7B5183D581C0043FB36 /* CoreViewController.m in Sources */,
 				68DBB7BF183D581C0043FB36 /* ReferredViewController.m in Sources */,
-				68DBB7B1183D581C0043FB36 /* main.m in Sources */,
 				68DBB7B7183D581C0043FB36 /* ConfirmCheckInViewController.m in Sources */,
 				68DBB7B0183D581C0043FB36 /* AppDelegate.m in Sources */,
 				68DBB7B9183D581C0043FB36 /* NewEventViewController.m in Sources */,
+				6837441E183DA58A00339977 /* main.m in Sources */,
 				68128E8F1838263F00947C56 /* XMLParser.m in Sources */,
 				68DBB7B6183D581C0043FB36 /* MainMenuViewController.m in Sources */,
 				68DBB7BD183D581C0043FB36 /* HomeViewController.m in Sources */,
-				68CFAD5D181F4510004C7A81 /* main.m in Sources */,
 				68DBB7BE183D581C0043FB36 /* ParentViewController.m in Sources */,
 				68DBB7B8183D581C0043FB36 /* EventListViewController.m in Sources */,
 				68DBB7B4183D581C0043FB36 /* CheckInViewController.m in Sources */,
