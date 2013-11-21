@@ -481,22 +481,7 @@
                             <constraint firstItem="mD6-Xo-u79" firstAttribute="leading" secondItem="Uo3-7V-ovW" secondAttribute="leading" constant="366" id="oSm-ee-323"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="IR5-hl-2qH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ovz-Z9-Vb6">
-                                <rect key="frame" x="582" y="5" width="170" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnNext:" destination="XS3-uR-r6L" eventType="touchUpInside" id="3Id-W2-a53"/>
-                                    <segue destination="S0C-NF-EzC" kind="push" id="Mls-bh-iAQ"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl"/>
                     <connections>
                         <outlet property="MIName" destination="cOJ-0E-11s" id="o9C-Y5-5C5"/>
                         <outlet property="MIText" destination="cOJ-0E-11s" id="vGF-hk-d4W"/>
@@ -543,8 +528,8 @@
                                     <action selector="showCheckInAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHH-XB-YdW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeTreeHouse.png" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-eP-2sr">
-                                <rect key="frame" x="0.0" y="64" width="768" height="169"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeTreeHouse.png" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-eP-2sr">
+                                <rect key="frame" x="5" y="66" width="758" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-Cc-B4V">
@@ -566,6 +551,9 @@
                                 <state key="normal" title="App Info" image="italic.png">
                                     <color key="titleColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PeT-eT-0ZJ" kind="push" id="DQz-WT-E2D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
@@ -578,6 +566,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="391" y="-136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uOq-j6-xwk">
+            <objects>
+                <viewController id="PeT-eT-0ZJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qTO-45-e1I"/>
+                        <viewControllerLayoutGuide type="bottom" id="fgg-ss-NJs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SVO-4x-CKA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7fe-4L-k6e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pod-hP-iVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="1010"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R5P-7u-caM">
@@ -610,7 +617,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dab-Ja-W79">
-                                <rect key="frame" x="0.0" y="113" width="768" height="629"/>
+                                <rect key="frame" x="0.0" y="65" width="768" height="445"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -620,42 +627,20 @@
                                     <outlet property="delegate" destination="XUT-PK-vtd" id="ML9-j5-qJn"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-02-CUa">
-                                <rect key="frame" x="306" y="791" width="156" height="51"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-02-CUa">
+                                <rect key="frame" x="242" y="512" width="296" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Check-in Youth">
-                                    <color key="titleColor" red="0.1647058874" green="0.45098042490000001" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Check-in" image="right 1.png"/>
                                 <connections>
                                     <segue destination="4ee-9h-0Ob" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="Q08-Yx-aSy"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgD-PI-EQf">
-                                <rect key="frame" x="282" y="75" width="205" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-TH-tom">
-                                <rect key="frame" x="516" y="75" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="searchButtonLastName:" destination="XUT-PK-vtd" eventType="touchUpInside" id="bbP-sb-WjC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="e1W-Vb-dnL"/>
-                    <connections>
-                        <outlet property="searchLNameText" destination="NgD-PI-EQf" id="qPd-YH-kRg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDo-Jv-5SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4ee-9h-0Ob" userLabel="Exit" sceneMemberID="exit"/>
