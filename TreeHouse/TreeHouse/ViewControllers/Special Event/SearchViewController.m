@@ -7,7 +7,6 @@
 //
 
 #import "SearchViewController.h"
-#import "CheckInViewController.h"
 #import "XMLParser.h"
 
 @interface SearchViewController ()
@@ -35,7 +34,7 @@
 
 //Will set up a table view to view upcoming events
 
-/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    return [[xmlParser data] count];
 }
@@ -65,7 +64,7 @@
         return cell;
     }
 }
- */
+
 
 - (void)viewDidLoad
 {

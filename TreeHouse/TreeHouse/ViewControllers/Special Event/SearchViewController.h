@@ -12,5 +12,5 @@
 #import "MainMenuViewController.h"
 
 @interface SearchViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 @end
