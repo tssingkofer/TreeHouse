@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "ParentViewController.h"
 
 @interface HomeViewController ()
 
@@ -15,6 +16,13 @@
 @implementation HomeViewController
 
 @synthesize fNameText;
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *fNameString = fNameText.text;
+    ParentViewController *PVC = [segue destinationViewController];
+    PVC.firstName = fNameString;
+}
 
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
 {
@@ -49,5 +57,4 @@
     NSLog(@"text: %@, %@", fNameText.text, MIText.text);
 
 }
-
 @end
