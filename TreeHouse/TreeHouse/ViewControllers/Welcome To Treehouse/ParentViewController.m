@@ -14,12 +14,15 @@
 
 @implementation ParentViewController
 
+@synthesize firstName;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.livesWith = @[@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"
                        ];
+    NSLog(@"text: %@", firstName);
     
 }
 

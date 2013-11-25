@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) NSArray *livesWith;
 @property (strong, nonatomic) IBOutlet UIPickerView *livesPicker;
-
+@property (weak,nonatomic) NSString *firstName;
 
 @end

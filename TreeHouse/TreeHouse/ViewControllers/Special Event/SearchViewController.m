@@ -34,7 +34,7 @@
 
 //Will set up a table view to view upcoming events
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    return [[xmlParser data] count];
 }
@@ -63,7 +63,7 @@
     else {
         return cell;
     }
-}
+}*/
 
 
 - (void)viewDidLoad
