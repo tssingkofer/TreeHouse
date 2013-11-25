@@ -11,7 +11,7 @@
 #import "XMLParser.h"
 
 @implementation CheckInViewController
-@synthesize searchLNameText, queryString, dataTableView, stringFromAlertView;
+@synthesize searchLNameText, queryString, dataTableView, stringFromAlertView, tbList;
 
 XMLParser *xmlParser;
 
@@ -81,12 +81,14 @@ XMLParser *xmlParser;
     //the following url needs to point at whatever server script you are testing against.
     NSLog(@"text: %@", stringFromAlertView);
 //    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
-    queryString = [NSString stringWithFormat:@"http://10.6.13.50:8888/projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+    queryString = [NSString stringWithFormat:@"http://10.6.3.79:8888/projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
 //    NSLog(@"%@",queryString);
 //    queryString = [queryString stringByAppendingString:stringFromAlertView];
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
-    
+    for (xmlParser in tbList) {
+        NSLog(@"%@", tbList);
+    }
     self.title = @"Check-In";
 }
 
