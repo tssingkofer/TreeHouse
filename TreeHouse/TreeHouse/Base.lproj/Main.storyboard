@@ -103,39 +103,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian Cell Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mZ-1j-JUx">
-                                <rect key="frame" x="70" y="433" width="436" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian Work Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vsh-vp-FCe">
-                                <rect key="frame" x="70" y="353" width="436" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="qNg-nr-cko"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
-                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Parent or Guardian Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-4a-8Jz">
                                 <rect key="frame" x="70" y="102" width="299" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dR-Xk-fxR">
-                                <rect key="frame" x="70" y="181" width="436" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="34N-3X-nXq"/>
-                                    <constraint firstAttribute="width" constant="436" id="Evc-9V-lNl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVQ-Eo-iBR">
-                                <rect key="frame" x="70" y="269" width="436" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                            </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LF-pQ-MsC">
                                 <rect key="frame" x="0.0" y="598" width="768" height="216"/>
                                 <connections>
@@ -154,22 +127,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian Work Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjt-kc-9h0">
+                                <rect key="frame" x="70" y="353" width="436" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian Home Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-8p-VSX">
+                                <rect key="frame" x="70" y="440" width="436" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4H-JZ-eHU">
+                                <rect key="frame" x="70" y="158" width="436" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent/Guardian Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzh-dA-4st">
+                                <rect key="frame" x="70" y="252" width="436" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Vsh-vp-FCe" secondAttribute="trailing" constant="127" id="78o-v7-7U5"/>
                             <constraint firstAttribute="bottom" secondItem="ZXN-fc-u0y" secondAttribute="bottom" constant="447" id="7Wg-un-pxu"/>
-                            <constraint firstItem="2dR-Xk-fxR" firstAttribute="trailing" secondItem="eVQ-Eo-iBR" secondAttribute="trailing" id="B2r-ep-3bt"/>
                             <constraint firstAttribute="bottom" secondItem="6LF-pQ-MsC" secondAttribute="bottom" constant="210" id="CgQ-Tt-kzf"/>
                             <constraint firstItem="FDG-4a-8Jz" firstAttribute="leading" secondItem="u0Q-dh-hIM" secondAttribute="leading" constant="70" id="Je1-pV-inO"/>
-                            <constraint firstItem="2dR-Xk-fxR" firstAttribute="leading" secondItem="eVQ-Eo-iBR" secondAttribute="leading" id="SOf-sd-yp7"/>
-                            <constraint firstItem="5mZ-1j-JUx" firstAttribute="trailing" secondItem="Vsh-vp-FCe" secondAttribute="trailing" id="TUw-d5-QVi"/>
                             <constraint firstItem="6LF-pQ-MsC" firstAttribute="trailing" secondItem="u0Q-dh-hIM" secondAttribute="trailing" id="WOn-LU-Lda"/>
                             <constraint firstItem="6LF-pQ-MsC" firstAttribute="leading" secondItem="u0Q-dh-hIM" secondAttribute="leading" id="WkX-6n-sWs"/>
-                            <constraint firstItem="eVQ-Eo-iBR" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="278" id="Zbh-LU-ptb"/>
-                            <constraint firstItem="Vsh-vp-FCe" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="416" id="fDh-Xb-TIR"/>
-                            <constraint firstItem="5mZ-1j-JUx" firstAttribute="leading" secondItem="Vsh-vp-FCe" secondAttribute="leading" id="h9b-Ep-GOc"/>
-                            <constraint firstItem="2dR-Xk-fxR" firstAttribute="leading" secondItem="u0Q-dh-hIM" secondAttribute="leading" constant="200" id="vn3-zr-LLc"/>
                             <constraint firstItem="FDG-4a-8Jz" firstAttribute="top" secondItem="u0Q-dh-hIM" secondAttribute="top" constant="102" id="wDS-bV-Wbs"/>
                         </constraints>
                     </view>
