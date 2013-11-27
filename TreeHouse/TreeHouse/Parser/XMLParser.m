@@ -43,7 +43,7 @@ bool            isResults;
 	}
 	if ([elementname isEqualToString:@"DOB"])
 	{
-        isResults = NO;
+        //isResults = NO;
 	}
 }
 
@@ -51,6 +51,10 @@ bool            isResults;
 {
     if (isResults)
     {
+        if ([elementname isEqualToString:@"YouthId"])
+        {
+            currentEntry.youthID = currentNodeContent;
+        }
         if ([elementname isEqualToString:@"FirstName"])
         {
             currentEntry.firstName = currentNodeContent;
@@ -58,6 +62,10 @@ bool            isResults;
         if ([elementname isEqualToString:@"LastName"])
         {
             currentEntry.lastName = currentNodeContent;
+        }
+        if ([elementname isEqualToString:@"DOB"])
+        {
+            currentEntry.dob = currentNodeContent;
         }
     }
 	if ([elementname isEqualToString:@"student"])

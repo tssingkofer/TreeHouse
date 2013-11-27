@@ -59,10 +59,19 @@ XMLParser *xmlParser;
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
+
+        NSMutableArray *lastName = [[NSMutableArray alloc] initWithObjects:currentEntry.lastName, nil];
+        NSMutableArray *firstName = [[NSMutableArray alloc] initWithObjects:currentEntry.firstName, nil];
+        NSMutableArray *dob = [[NSMutableArray alloc] initWithObjects:currentEntry.dob, nil];
+        //NSMutableArray *youthId = [[NSMutableArray alloc] initWithObjects:currentEntry.youthID, nil];
+
+        NSString * students = [NSString stringWithFormat:@"%@ %@ %@",
+                                            [firstName objectAtIndex:0],
+                               [lastName objectAtIndex:0],
+                                            [dob objectAtIndex:0]];
+
         
-        
-        cell.textLabel.text = [currentEntry firstName];
-        
+        cell.textLabel.text = students;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
         return cell;
@@ -125,9 +134,9 @@ XMLParser *xmlParser;
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
+}/*
 - (NSMutableArray *)updateText {
-    
+  
     NSUInteger cellsCount = [self.dataTableView numberOfRowsInSection:0];
     NSMutableArray *cellTextArray = [[NSMutableArray alloc] initWithCapacity:cellsCount];
     
@@ -137,10 +146,11 @@ XMLParser *xmlParser;
         //UITableViewCell *cell = [self.dataTableView cellForRowAtIndexPath:indexPath];
         
         	Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
+        
         [cellTextArray insertObject:[currentEntry firstName] atIndex:i];
     }
     
     return cellTextArray;
-}
+}*/
 
 @end
