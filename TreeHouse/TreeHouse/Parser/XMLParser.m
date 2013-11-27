@@ -36,7 +36,7 @@ bool            isResults;
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementname namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-	if ([elementname isEqualToString:@"results"])
+	if ([elementname isEqualToString:@"student"])
 	{
 		currentEntry = [Data alloc];
         isResults = YES;
@@ -60,7 +60,7 @@ bool            isResults;
             currentEntry.lastName = currentNodeContent;
         }
     }
-	if ([elementname isEqualToString:@"results"])
+	if ([elementname isEqualToString:@"student"])
 	{
 		[self.data addObject:currentEntry];
 		currentEntry = nil;

@@ -43,6 +43,7 @@ XMLParser *xmlParser;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [[xmlParser data] count];
+
 }
 
 
@@ -81,15 +82,16 @@ XMLParser *xmlParser;
     //the following url needs to point at whatever server script you are testing against.
     NSLog(@"text: %@", stringFromAlertView);
 //    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
-    queryString = [NSString stringWithFormat:@"http://10.6.3.79:8888/projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+    
+    queryString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
 //    NSLog(@"%@",queryString);
 //    queryString = [queryString stringByAppendingString:stringFromAlertView];
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
-    for (xmlParser in tbList) {
-        NSLog(@"%@", tbList);
-    }
+
     self.title = @"Check-In";
+    //Data *currentEntry = [[xmlParser data];
+        //NSLog(@"The number of objects in data is: %lu", [currentEntry firstName]);
 }
 
 
