@@ -97,7 +97,7 @@ XMLParser *xmlParser2;
     
     queryString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
 
-    _pushString = @"test";
+    pushString = @"test";
 
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
@@ -160,7 +160,7 @@ XMLParser *xmlParser2;
 {
     //tblSelect = (NSString *)indexPath;
     Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
-    _pushString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?id=%@", currentEntry.youthID];
+    pushString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?id=%@", currentEntry.youthID];
     NSLog(@"YouthID is %@", currentEntry.youthID);
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
