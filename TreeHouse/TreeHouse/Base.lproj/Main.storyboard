@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -473,7 +473,7 @@
                                 <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Check-in" image="right 1.png"/>
                                 <connections>
-                                    <segue destination="4ee-9h-0Ob" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="Q08-Yx-aSy"/>
+                                    <segue destination="4ee-9h-0Ob" kind="unwind" identifier="Check-in" unwindAction="unwindBackToMainMenuViewController:" id="Q08-Yx-aSy"/>
                                 </connections>
                             </button>
                         </subviews>

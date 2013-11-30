@@ -11,9 +11,10 @@
 #import "XMLParser.h"
 
 @implementation CheckInViewController
-@synthesize searchLNameText, queryString, dataTableView, stringFromAlertView, tbList;
+@synthesize searchLNameText, queryString, dataTableView, stringFromAlertView, tbList, pushString, tblSelect;
 
 XMLParser *xmlParser;
+XMLParser *xmlParser2;
 
 - (void)didReceiveMemoryWarning
 {
@@ -42,6 +43,7 @@ XMLParser *xmlParser;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"Number of elements %lu", (unsigned long)[[xmlParser data] count]);
     return [[xmlParser data] count];
 
 }
@@ -64,6 +66,7 @@ XMLParser *xmlParser;
         NSMutableArray *firstName = [[NSMutableArray alloc] initWithObjects:currentEntry.firstName, nil];
         NSMutableArray *dob = [[NSMutableArray alloc] initWithObjects:currentEntry.dob, nil];
         //NSMutableArray *youthId = [[NSMutableArray alloc] initWithObjects:currentEntry.youthID, nil];
+        //NSLog(@"The number of objects in data is: %@", [currentEntry firstName]);
 
         NSString * students = [NSString stringWithFormat:@"%@ %@ %@",
                                             [firstName objectAtIndex:0],
@@ -93,14 +96,15 @@ XMLParser *xmlParser;
 //    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
     
     queryString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
-//    NSLog(@"%@",queryString);
-//    queryString = [queryString stringByAppendingString:stringFromAlertView];
+
+    _pushString = @"test";
+
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
 
     self.title = @"Check-In";
-    //Data *currentEntry = [[xmlParser data];
-        //NSLog(@"The number of objects in data is: %lu", [currentEntry firstName]);
+    //Data *currentEntry = [[xmlParser data] objectAtIndex:0];
+    
 }
 
 
@@ -152,5 +156,19 @@ XMLParser *xmlParser;
     
     return cellTextArray;
 }*/
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //tblSelect = (NSString *)indexPath;
+    Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
+    _pushString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?id=%@", currentEntry.youthID];
+    NSLog(@"YouthID is %@", currentEntry.youthID);
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"Prepare for Segue");
+    if ([[segue identifier] isEqualToString:@"Check-in"])
+    {
+        xmlParser2 = [[XMLParser alloc] loadXMLByURL:self.pushString];
+    }
+}
 @end

@@ -18,8 +18,10 @@
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 @property (weak, nonatomic) IBOutlet UITextField *searchLNameText;
 @property (weak, nonatomic) NSString *queryString;
+@property (retain, nonatomic) NSString *pushString;
 @property (retain, nonatomic) NSMutableArray *tbList;
-- (NSMutableArray *)updateText;
+@property (retain, nonatomic) NSString *tblSelect;
+//- (NSMutableArray *)updateText;
 
 
 
