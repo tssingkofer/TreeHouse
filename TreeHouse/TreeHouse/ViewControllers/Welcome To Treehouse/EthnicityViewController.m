@@ -41,7 +41,7 @@
     if ([pickerView tag] == 1) {
         return [self.ethnicity count];
     }
-    else //if([pickerView tag] == 2)
+    else
     {
         return [self.referral count];
     }
@@ -54,7 +54,7 @@
     if ([pickerView tag] == 1) {
         return self.ethnicity[row];
     }
-    else //if([pickerView tag] == 2)
+    else
     {
         return self.referral[row];
     }

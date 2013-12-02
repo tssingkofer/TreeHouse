@@ -12,5 +12,6 @@
 
 @synthesize firstName = _firstName;
 @synthesize lastName = _lastName;
-
+@synthesize youthID = _youthID;
+@synthesize dob = _dob;
 @end
