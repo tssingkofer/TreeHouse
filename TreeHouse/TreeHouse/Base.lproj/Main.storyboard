@@ -89,7 +89,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvW-XQ-EMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="e3w-hs-1mK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3576" y="-233"/>
+            <point key="canvasLocation" x="3579" y="-191"/>
         </scene>
         <!--Parent View Controller-->
         <scene sceneID="NdC-pP-WHJ">
@@ -311,7 +311,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your Information" id="d1A-LX-CTl">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="XXQ-OD-w4o">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="XXQ-OD-w4o">
                             <connections>
                                 <segue destination="S0C-NF-EzC" kind="push" identifier="segue1" id="H18-jb-SKM"/>
                             </connections>
