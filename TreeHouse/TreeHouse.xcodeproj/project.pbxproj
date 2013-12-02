@@ -27,6 +27,7 @@
 		684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 684FF84818288F3D001EA067 /* TreeHouse_Logo.png */; };
 		68ADD8DB18340B1B00A5BD38 /* TreeHouse Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */; };
 		68ADD8DD18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */; };
+		68CA2882184D3E97001D85D6 /* Singkofer-photo-crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68CA2881184D3E97001D85D6 /* Singkofer-photo-crop.jpg */; };
 		68CFAD51181F4510004C7A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD50181F4510004C7A81 /* Foundation.framework */; };
 		68CFAD53181F4510004C7A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD52181F4510004C7A81 /* CoreGraphics.framework */; };
 		68CFAD55181F4510004C7A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFAD54181F4510004C7A81 /* UIKit.framework */; };
@@ -88,6 +89,7 @@
 		684FF84818288F3D001EA067 /* TreeHouse_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeHouse_Logo.png; sourceTree = "<group>"; };
 		68ADD8DA18340B1B00A5BD38 /* TreeHouse Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TreeHouse Icon.png"; sourceTree = "<group>"; };
 		68ADD8DC18340C3000A5BD38 /* TreeHouse Icon_nonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TreeHouse Icon_nonRetina.png"; sourceTree = "<group>"; };
+		68CA2881184D3E97001D85D6 /* Singkofer-photo-crop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Singkofer-photo-crop.jpg"; sourceTree = "<group>"; };
 		68CFAD4D181F4510004C7A81 /* TreeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CFAD50181F4510004C7A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68CFAD52181F4510004C7A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 		684FF84718288F3D001EA067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68CA2881184D3E97001D85D6 /* Singkofer-photo-crop.jpg */,
 				68334E3D184D252000017CD7 /* loadingscreen_regular.png */,
 				68334E3E184D252000017CD7 /* loadingscreen_retina.png */,
 				68374421183DA69F00339977 /* italic.png */,
@@ -425,6 +428,7 @@
 				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
 				68334E3F184D252000017CD7 /* loadingscreen_regular.png in Resources */,
 				68128E9818386E6800947C56 /* smile_64.png in Resources */,
+				68CA2882184D3E97001D85D6 /* Singkofer-photo-crop.jpg in Resources */,
 				68374420183DA63800339977 /* HomeTreeHouse.png in Resources */,
 				684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */,
 				68128E9718386E6800947C56 /* right 1.png in Resources */,
