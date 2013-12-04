@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParseInterface.h"
 
 @interface HomeViewController : UIViewController
 
@@ -21,6 +22,6 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *fNameText;
 @property (strong, nonatomic) IBOutlet UITextField *MIName;
-
+@property (strong, nonatomic) NSMutableArray *insert;
 
 @end

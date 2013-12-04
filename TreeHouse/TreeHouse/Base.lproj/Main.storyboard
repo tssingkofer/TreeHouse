@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Ethnicity View Controller - Ethnicity-->
@@ -514,7 +514,7 @@
                                 <rect key="frame" x="174" y="110" width="113" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-8P-RyP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChristopherDadisman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-8P-RyP">
                                 <rect key="frame" x="174" y="295" width="113" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -527,12 +527,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jn-fx-Rpd">
-                                <rect key="frame" x="353" y="341" width="240" height="59"/>
+                                <rect key="frame" x="353" y="341" width="240" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Chris Dadisman
+                                        <string key="content">Christopher Dadisman
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -555,7 +555,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">email@gmail.com
+                                        <string key="content">cdadisman15@hotmail.com
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -577,10 +577,9 @@
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="http://www.linkedin.com/in/tylersingkofer">
+                                    <fragment content="http://www.linkedin.com/in/christopherdadisman">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
-                                            <url key="NSLink" string="http://www.linkedin.com/in/tylersingkofer"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2">
                                                 <tabStops>
                                                     <textTab alignment="left" location="36"/>
@@ -1347,6 +1346,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
+        <image name="ChristopherDadisman.jpg" width="627" height="770"/>
         <image name="HomeTreeHouse.png" width="768" height="172"/>
         <image name="Singkofer-photo-crop.jpg" width="643" height="877"/>
         <image name="bbaks.jpg" width="2466" height="2969"/>

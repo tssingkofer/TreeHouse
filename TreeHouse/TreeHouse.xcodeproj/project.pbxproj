@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */; };
+		5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */; };
 		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
 		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
 		68128E9418386B2000947C56 /* Logo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9318386B2000947C56 /* Logo_Background.png */; };
@@ -70,6 +71,7 @@
 /* Begin PBXFileReference section */
 		5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInterface.h; sourceTree = "<group>"; };
 		5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInterface.m; sourceTree = "<group>"; };
+		5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChristopherDadisman.jpg; sourceTree = "<group>"; };
 		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				68128E9B1838765200947C56 /* TreeHouse_Logo_Horizontal_White.png */,
 				68128E9918386FC400947C56 /* male +.png */,
 				68128E9518386E6800947C56 /* right 1.png */,
+				5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */,
 				68128E9618386E6800947C56 /* smile_64.png */,
 				68128E9318386B2000947C56 /* Logo_Background.png */,
 				681377A71834388000641BDF /* spotlight@1x.png */,
@@ -432,6 +435,7 @@
 				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
 				68334E3F184D252000017CD7 /* loadingscreen_regular.png in Resources */,
 				68128E9818386E6800947C56 /* smile_64.png in Resources */,
+				5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */,
 				68CA2882184D3E97001D85D6 /* Singkofer-photo-crop.jpg in Resources */,
 				68374420183DA63800339977 /* HomeTreeHouse.png in Resources */,
 				684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */,

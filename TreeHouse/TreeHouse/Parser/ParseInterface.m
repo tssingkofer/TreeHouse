@@ -16,7 +16,7 @@ XMLParser *xmlParser;
 
 - (void) submitName: (NSString *) field databaseT:(NSString *) table
 {
-    pushString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/youth_checkin_query.php?%@=%@", table,field];
+    pushString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/welcometotreehouse.php?%@=%@", table,field];
     NSLog(@"Sent data %@", pushString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:pushString];
     

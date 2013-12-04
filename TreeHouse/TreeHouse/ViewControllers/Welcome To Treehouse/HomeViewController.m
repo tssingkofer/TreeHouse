@@ -15,7 +15,7 @@
 
 @implementation HomeViewController
 
-@synthesize fNameText;
+@synthesize fNameText, insert;
 //@synthesize MIName;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -23,6 +23,24 @@
     NSString *fNameString = fNameText.text;
     ParentViewController *PVC = [segue destinationViewController];
     PVC.firstName = fNameString;
+
+        NSLog(@"Prepare for Segue");
+        if ([[segue identifier] isEqualToString:@"done"]) //enter button name
+        {
+            [insert addObject:@{@"FirstName": @"Their Name"}];
+            [insert addObject:@{@"LastName": @"Their LName"}];
+            [insert addObject:@{@"MI": @"Their MI"}];
+            [insert addObject:@{@"Adress": @"Their Adress"}];
+            [insert addObject:@{@"City": @"Their City"}];
+            [insert addObject:@{@"State": @"Their State"}];
+            [insert addObject:@{@"Zip": @"Their Zip Code"}];
+            [insert addObject:@{@"PhoneHome": @"Their Phone"}];
+            [insert addObject:@{@"PhoneMobile": @"Their Cell"}];
+            [insert addObject:@{@"Email": @"Their Email"}];
+            [insert addObject:@{@"DOB": @"Their Birthday"}];
+            [insert addObject:@{@"Age": @"Their Age"}];
+            [insert addObject:@{@"Gender": @"Their Gender"}];
+        }
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
@@ -43,6 +61,7 @@
 {
     [super viewDidLoad];
     [fNameText becomeFirstResponder];
+    ParseInterface *parse = [ParseInterface alloc];
     
 }
 
