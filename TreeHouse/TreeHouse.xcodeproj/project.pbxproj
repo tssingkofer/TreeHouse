@@ -54,7 +54,6 @@
 		68DBB7BC183D581C0043FB36 /* EthnicityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7A9183D581B0043FB36 /* EthnicityViewController.m */; };
 		68DBB7BD183D581C0043FB36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7AB183D581B0043FB36 /* HomeViewController.m */; };
 		68DBB7BE183D581C0043FB36 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7AD183D581C0043FB36 /* ParentViewController.m */; };
-		68DBB7BF183D581C0043FB36 /* ReferredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7AF183D581C0043FB36 /* ReferredViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,8 +131,6 @@
 		68DBB7AB183D581B0043FB36 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		68DBB7AC183D581C0043FB36 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
 		68DBB7AD183D581C0043FB36 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
-		68DBB7AE183D581C0043FB36 /* ReferredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferredViewController.h; sourceTree = "<group>"; };
-		68DBB7AF183D581C0043FB36 /* ReferredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferredViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,8 +327,6 @@
 				68DBB7AB183D581B0043FB36 /* HomeViewController.m */,
 				68DBB7AC183D581C0043FB36 /* ParentViewController.h */,
 				68DBB7AD183D581C0043FB36 /* ParentViewController.m */,
-				68DBB7AE183D581C0043FB36 /* ReferredViewController.h */,
-				68DBB7AF183D581C0043FB36 /* ReferredViewController.m */,
 			);
 			path = "Welcome To Treehouse";
 			sourceTree = "<group>";
@@ -456,7 +451,6 @@
 			files = (
 				68DBB7BB183D581C0043FB36 /* SpecificEventViewController.m in Sources */,
 				68DBB7B5183D581C0043FB36 /* CoreViewController.m in Sources */,
-				68DBB7BF183D581C0043FB36 /* ReferredViewController.m in Sources */,
 				68DBB7B7183D581C0043FB36 /* ConfirmCheckInViewController.m in Sources */,
 				68DBB7B0183D581C0043FB36 /* AppDelegate.m in Sources */,
 				68DBB7B9183D581C0043FB36 /* NewEventViewController.m in Sources */,

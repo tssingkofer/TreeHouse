@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+
 {
-    
-    IBOutlet UITextField *fNameText;
+    //IBOutlet UITextField *fNameText;
     
     IBOutlet UITextField *MIText;
     
     IBOutlet UITextField *lNameText;
-    
 }
+
 
 @property (strong, nonatomic) IBOutlet UITextField *fNameText;
 @property (strong, nonatomic) IBOutlet UITextField *MIName;
