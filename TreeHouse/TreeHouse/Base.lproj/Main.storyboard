@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="2635" y="-191"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="S4t-yx-3an">
             <objects>
-                <viewController id="OOf-eP-4GW" sceneMemberID="viewController">
+                <viewController id="OOf-eP-4GW" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HP8-qx-U12"/>
                         <viewControllerLayoutGuide type="bottom" id="LDe-Tl-YDb"/>
