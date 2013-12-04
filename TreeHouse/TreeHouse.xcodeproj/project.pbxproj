@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */; };
 		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
 		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
 		68128E9418386B2000947C56 /* Logo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9318386B2000947C56 /* Logo_Background.png */; };
@@ -67,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInterface.h; sourceTree = "<group>"; };
+		5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInterface.m; sourceTree = "<group>"; };
 		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				68128E8E1838263F00947C56 /* XMLParser.m */,
 				68128E901838267800947C56 /* Data.h */,
 				68128E911838267800947C56 /* Data.m */,
+				5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */,
+				5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				68DBB7B9183D581C0043FB36 /* NewEventViewController.m in Sources */,
 				6837441E183DA58A00339977 /* main.m in Sources */,
 				68128E8F1838263F00947C56 /* XMLParser.m in Sources */,
+				5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */,
 				68DBB7B6183D581C0043FB36 /* MainMenuViewController.m in Sources */,
 				68DBB7BD183D581C0043FB36 /* HomeViewController.m in Sources */,
 				68DBB7BE183D581C0043FB36 /* ParentViewController.m in Sources */,

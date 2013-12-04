@@ -95,9 +95,8 @@ XMLParser *xmlParser2;
     NSLog(@"text: %@", stringFromAlertView);
 //    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
     
-    queryString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+    queryString = [NSString stringWithFormat:@"http://localhost/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
 
-    pushString = @"test";
 
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
