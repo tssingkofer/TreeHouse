@@ -57,6 +57,7 @@
 		68DBB7BC183D581C0043FB36 /* EthnicityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7A9183D581B0043FB36 /* EthnicityViewController.m */; };
 		68DBB7BD183D581C0043FB36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7AB183D581B0043FB36 /* HomeViewController.m */; };
 		68DBB7BE183D581C0043FB36 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DBB7AD183D581C0043FB36 /* ParentViewController.m */; };
+		70F61F63184FF52D0044A2B9 /* LukeSnell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F61F62184FF52D0044A2B9 /* LukeSnell.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		68DBB7AB183D581B0043FB36 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		68DBB7AC183D581C0043FB36 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
 		68DBB7AD183D581C0043FB36 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		70F61F62184FF52D0044A2B9 /* LukeSnell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LukeSnell.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		684FF84718288F3D001EA067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				70F61F62184FF52D0044A2B9 /* LukeSnell.jpg */,
 				681BAA81184F9F8D00DD37DD /* bbaks.jpg */,
 				111088CC184F9E830052574B /* MicahMogler.jpg */,
 				68CA2881184D3E97001D85D6 /* Singkofer-photo-crop.jpg */,
@@ -436,6 +439,7 @@
 				681377A41834383E00641BDF /* Settings@2x.png in Resources */,
 				681377A91834388000641BDF /* spotlight@1x.png in Resources */,
 				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
+				70F61F63184FF52D0044A2B9 /* LukeSnell.jpg in Resources */,
 				68334E3F184D252000017CD7 /* loadingscreen_regular.png in Resources */,
 				68128E9818386E6800947C56 /* smile_64.png in Resources */,
 				5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */,
