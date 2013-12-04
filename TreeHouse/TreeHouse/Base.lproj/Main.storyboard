@@ -418,7 +418,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Singkofer-photo-crop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UVO-x1-jsJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Singkofer-photo-crop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UVO-x1-jsJ">
                                 <rect key="frame" x="174" y="110" width="113" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -440,7 +440,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Tyler Singkofer
+                                        <string key="content">Chris Dadisman
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -463,7 +463,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">tssingkofer@gmail.com
+                                        <string key="content">email@gmail.com
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -516,7 +516,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Tyler Singkofer
+                                        <string key="content">Micah Mogler
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -539,7 +539,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">tssingkofer@gmail.com
+                                        <string key="content">micah.mogler@gmail.com
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -592,7 +592,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Tyler Singkofer
+                                        <string key="content">Luke Snell
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -615,7 +615,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">tssingkofer@gmail.com
+                                        <string key="content">ljsnell7@gmail.com
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -739,7 +739,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-yS-uoF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bbaks.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-yS-uoF">
                                 <rect key="frame" x="174" y="852" width="113" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -772,7 +772,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">email@gmail.com
+                                        <string key="content">thebbaks@gmail.com
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -1258,6 +1258,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="HomeTreeHouse.png" width="768" height="172"/>
         <image name="Logo_Background.png" width="265" height="261"/>
         <image name="Singkofer-photo-crop.jpg" width="643" height="877"/>
+        <image name="bbaks.jpg" width="2466" height="2969"/>
         <image name="italic.png" width="128" height="128"/>
         <image name="male +.png" width="128" height="128"/>
         <image name="monthly calendar.png" width="128" height="128"/>
