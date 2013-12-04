@@ -12,8 +12,12 @@
 #import "MainMenuViewController.h"
 
 @interface SearchViewController : UIViewController
+@property (weak, nonatomic) NSString *stringFromAlertView;
+@property (nonatomic, retain) UIImageView *customImage;
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 @property (weak, nonatomic) IBOutlet UITextField *searchLNameText;
 @property (weak, nonatomic) NSString *queryString;
- -(NSMutableArray *)updateText;
+@property (retain, nonatomic) NSString *pushString;
+@property (retain, nonatomic) NSMutableArray *tbList;
+@property (retain, nonatomic) NSString *tblSelect;
 @end

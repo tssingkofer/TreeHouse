@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Ethnicity View Controller - Ethnicity-->
@@ -506,7 +506,7 @@
                         <viewControllerLayoutGuide type="top" id="qTO-45-e1I"/>
                         <viewControllerLayoutGuide type="bottom" id="fgg-ss-NJs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SVO-4x-CKA">
+                    <view key="view" contentMode="scaleAspectFill" id="SVO-4x-CKA">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -522,7 +522,7 @@
                                 <rect key="frame" x="174" y="482" width="113" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M30-k4-cyL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MicahMogler.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="M30-k4-cyL">
                                 <rect key="frame" x="174" y="669" width="113" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -630,34 +630,10 @@
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">micah.mogler@gmail.com
-</string>
+                                    <fragment content="micah.mogler@gmail.com">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="36"/>
-                                                    <textTab alignment="left" location="72"/>
-                                                    <textTab alignment="left" location="108"/>
-                                                    <textTab alignment="left" location="144"/>
-                                                    <textTab alignment="left" location="180"/>
-                                                    <textTab alignment="left" location="216"/>
-                                                    <textTab alignment="left" location="252"/>
-                                                    <textTab alignment="left" location="288"/>
-                                                    <textTab alignment="left" location="324"/>
-                                                    <textTab alignment="left" location="360"/>
-                                                    <textTab alignment="left" location="396"/>
-                                                    <textTab alignment="left" location="432"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="http://www.linkedin.com/in/tylersingkofer">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <url key="NSLink" string="http://www.linkedin.com/in/tylersingkofer"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2">
                                                 <tabStops>
                                                     <textTab alignment="left" location="36"/>
                                                     <textTab alignment="left" location="72"/>
@@ -1087,7 +1063,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RsV-ck-26Y" kind="push" id="7hG-4M-um0"/>
+                                    <action selector="showCheckInAlert:" destination="e4k-8d-rdC" eventType="touchUpInside" id="wjm-Ap-IY6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRC-XM-Y2L">
@@ -1113,6 +1089,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="owu-XH-zJ8"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="RsV-ck-26Y" kind="push" identifier="segue.push.alert" id="DEv-CK-Nlf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfA-f1-uEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wxI-0Q-MgA" userLabel="Exit" sceneMemberID="exit"/>
@@ -1138,31 +1117,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wd7-Yn-THj">
-                                <rect key="frame" x="0.0" y="87" width="768" height="629"/>
+                                <rect key="frame" x="0.0" y="64" width="768" height="629"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="XUT-PK-vtd" id="oB9-Vm-wY1"/>
-                                    <outlet property="delegate" destination="XUT-PK-vtd" id="tqo-1o-ckG"/>
+                                    <outlet property="dataSource" destination="RsV-ck-26Y" id="USX-3x-Gh3"/>
+                                    <outlet property="delegate" destination="RsV-ck-26Y" id="e03-4n-M6F"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-X9-9Lk">
-                                <rect key="frame" x="282" y="49" width="205" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-xn-znX">
+                                <rect key="frame" x="371" y="791" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6s-Rm-eK4">
-                                <rect key="frame" x="516" y="49" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="searchButtonLastName:" destination="XUT-PK-vtd" eventType="touchUpInside" id="GAY-ID-WDv"/>
+                                    <segue destination="b2r-nn-SNh" kind="unwind" unwindAction="unwindBackToEventListViewController:" id="5Ld-BZ-pBT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1170,8 +1142,12 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="frt-Ga-whk"/>
+                    <connections>
+                        <segue destination="1kZ-8D-1du" kind="push" identifier="segue.push.alert" id="sBR-Ky-KpI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D59-09-pp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="b2r-nn-SNh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2681" y="-1453"/>
         </scene>
@@ -1329,6 +1305,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="cxt-1U-MX3" kind="unwind" unwindAction="unwindBackToEventListViewController:" id="Sff-m8-GAp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEA-Xa-hqu">
+                                <rect key="frame" x="363" y="879" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e4k-8d-rdC" kind="push" id="Uxe-Kj-DbR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -1348,6 +1334,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="HomeTreeHouse.png" width="768" height="172"/>
+        <image name="MicahMogler.jpg" width="254" height="324"/>
         <image name="Singkofer-photo-crop.jpg" width="643" height="877"/>
         <image name="bbaks.jpg" width="2466" height="2969"/>
         <image name="italic.png" width="128" height="128"/>

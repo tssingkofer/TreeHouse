@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111088CD184F9E830052574B /* MicahMogler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111088CC184F9E830052574B /* MicahMogler.jpg */; };
 		5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */; };
 		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
 		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111088CC184F9E830052574B /* MicahMogler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MicahMogler.jpg; sourceTree = "<group>"; };
 		5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInterface.h; sourceTree = "<group>"; };
 		5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInterface.m; sourceTree = "<group>"; };
 		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				681BAA81184F9F8D00DD37DD /* bbaks.jpg */,
+				111088CC184F9E830052574B /* MicahMogler.jpg */,
 				68CA2881184D3E97001D85D6 /* Singkofer-photo-crop.jpg */,
 				68334E3D184D252000017CD7 /* loadingscreen_regular.png */,
 				68334E3E184D252000017CD7 /* loadingscreen_retina.png */,
@@ -435,6 +438,7 @@
 				68CA2882184D3E97001D85D6 /* Singkofer-photo-crop.jpg in Resources */,
 				68374420183DA63800339977 /* HomeTreeHouse.png in Resources */,
 				684FF84918288F3D001EA067 /* TreeHouse_Logo.png in Resources */,
+				111088CD184F9E830052574B /* MicahMogler.jpg in Resources */,
 				68128E9718386E6800947C56 /* right 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
