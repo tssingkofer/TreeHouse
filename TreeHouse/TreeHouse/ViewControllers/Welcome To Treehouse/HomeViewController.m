@@ -19,7 +19,29 @@ ParseInterface *parse;
 @synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool;
 //@synthesize MIName;
 
-
+-(void) Next:(id)sender
+{
+    [insert addObject:@{@"FirstName": fName}];
+    [insert addObject:@{@"LastName": lName}];
+    [insert addObject:@{@"MI": mi}];
+    [insert addObject:@{@"Address": address}];
+    [insert addObject:@{@"City": city}];
+    [insert addObject:@{@"State": state}];
+    [insert addObject:@{@"Zip": zip}];
+    [insert addObject:@{@"PhoneHome": homePhone}];
+    [insert addObject:@{@"PhoneMobile": cellPhone}];
+    [insert addObject:@{@"Email": eMail}];
+    [insert addObject:@{@"DOB": DOB}];
+    [insert addObject:@{@"Age": age}];
+    [insert addObject:@{@"Gender": gender}];
+    [insert addObject:@{@"Grade": grade}];
+    [insert addObject:@{@"School": middleSchool}];
+    [insert addObject:@{@"HighSchool": highSchool}];
+    [insert addObject:@{@"GradDate": gradDate}];
+    [parse submitName:insert];
+    NSLog(@"DOB = %@", DOB);
+    
+}
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSString *fNameString = fNameText.text;
@@ -29,25 +51,7 @@ ParseInterface *parse;
         NSLog(@"Prepare for Segue");
         if ([[segue identifier] isEqualToString:@"Next"]) //enter button name
         {
-            [insert addObject:@{@"FirstName": fName}];
-            [insert addObject:@{@"LastName": lName}];
-            [insert addObject:@{@"MI": mi}];
-            [insert addObject:@{@"Address": address}];
-            [insert addObject:@{@"City": city}];
-            [insert addObject:@{@"State": state}];
-            [insert addObject:@{@"Zip": zip}];
-            [insert addObject:@{@"PhoneHome": homePhone}];
-            [insert addObject:@{@"PhoneMobile": cellPhone}];
-            [insert addObject:@{@"Email": eMail}];
-            [insert addObject:@{@"DOB": DOB}];
-            [insert addObject:@{@"Age": age}];
-            [insert addObject:@{@"Gender": gender}];
-            [insert addObject:@{@"Grade": grade}];
-            [insert addObject:@{@"School": middleSchool}];
-            [insert addObject:@{@"HighSchool": highSchool}];
-            [insert addObject:@{@"GradDate": gradDate}];
-            [parse submitName:insert];
-            NSLog(@"DOB = %@", DOB);
+            
         }
 }
 
@@ -79,6 +83,4 @@ ParseInterface *parse;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)Next:(id)sender {
-}
 @end

@@ -337,6 +337,7 @@
                     <navigationItem key="navigationItem" title="Welcome to Treehouse" id="dXG-pN-0ei">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="hgP-H2-mbI">
                             <connections>
+                                <action selector="Next:" destination="OOf-eP-4GW" id="JQw-ku-lsU"/>
                                 <segue destination="S0C-NF-EzC" kind="push" id="VUB-az-3MN"/>
                             </connections>
                         </barButtonItem>
