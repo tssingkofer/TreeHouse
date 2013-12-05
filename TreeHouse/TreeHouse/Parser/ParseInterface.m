@@ -16,8 +16,9 @@ XMLParser *xmlParser;
 
 - (void) submitName: (NSArray *) field
 {
+    
     //pushString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/welcometotreehouse.php?%@=%@", table,field];
-    //NSLog(@"Sent data %@", pushString);
+    NSLog(@"Sent data %@", field['DOB']);
     //xmlParser = [[XMLParser alloc] loadXMLByURL:pushString];
     
 }

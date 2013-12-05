@@ -42,5 +42,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *middleSchool;
 @property (weak, nonatomic) IBOutlet UITextField *gradDate;
 @property (weak, nonatomic) IBOutlet UITextField *highSchool;
+- (IBAction)Next:(id)sender;
 
 @end

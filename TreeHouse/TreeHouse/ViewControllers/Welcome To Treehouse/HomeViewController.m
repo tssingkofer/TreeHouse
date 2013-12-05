@@ -19,14 +19,15 @@ ParseInterface *parse;
 @synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool;
 //@synthesize MIName;
 
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSString *fNameString = fNameText.text;
     ParentViewController *PVC = [segue destinationViewController];
     PVC.firstName = fNameString;
-
+    NSLog(@"Sender = %@", sender);
         NSLog(@"Prepare for Segue");
-        if ([[segue identifier] isEqualToString:@"done"]) //enter button name
+        if ([[segue identifier] isEqualToString:@"Next"]) //enter button name
         {
             [insert addObject:@{@"FirstName": fName}];
             [insert addObject:@{@"LastName": lName}];
@@ -46,6 +47,7 @@ ParseInterface *parse;
             [insert addObject:@{@"HighSchool": highSchool}];
             [insert addObject:@{@"GradDate": gradDate}];
             [parse submitName:insert];
+            NSLog(@"DOB = %@", DOB);
         }
 }
 
@@ -77,4 +79,6 @@ ParseInterface *parse;
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Next:(id)sender {
+}
 @end
