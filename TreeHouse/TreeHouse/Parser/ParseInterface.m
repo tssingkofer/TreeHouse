@@ -14,11 +14,11 @@ XMLParser *xmlParser;
 @implementation ParseInterface
 @synthesize pushString;
 
-- (void) submitName: (NSString *) field databaseT:(NSString *) table
+- (void) submitName: (NSArray *) field
 {
-    pushString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/welcometotreehouse.php?%@=%@", table,field];
-    NSLog(@"Sent data %@", pushString);
-    xmlParser = [[XMLParser alloc] loadXMLByURL:pushString];
+    //pushString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/welcometotreehouse.php?%@=%@", table,field];
+    //NSLog(@"Sent data %@", pushString);
+    //xmlParser = [[XMLParser alloc] loadXMLByURL:pushString];
     
 }
 @end
