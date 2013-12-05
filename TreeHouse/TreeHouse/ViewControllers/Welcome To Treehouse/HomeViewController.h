@@ -24,4 +24,23 @@
 @property (strong, nonatomic) IBOutlet UITextField *MIName;
 @property (strong, nonatomic) NSMutableArray *insert;
 
+@property (weak, nonatomic) IBOutlet UITextField *fName;
+@property (weak, nonatomic) IBOutlet UITextField *mi;
+@property (weak, nonatomic) IBOutlet UITextField *lName;
+@property (weak, nonatomic) IBOutlet UITextField *address;
+@property (weak, nonatomic) IBOutlet UITextField *city;
+@property (weak, nonatomic) IBOutlet UITextField *state;
+@property (weak, nonatomic) IBOutlet UITextField *zip;
+@property (weak, nonatomic) IBOutlet UITextField *cellPhone;
+
+@property (weak, nonatomic) IBOutlet UITextField *homePhone;
+@property (weak, nonatomic) IBOutlet UITextField *eMail;
+@property (weak, nonatomic) IBOutlet UITextField *DOB;
+@property (weak, nonatomic) IBOutlet UITextField *age;
+@property (weak, nonatomic) IBOutlet UITextField *gender;
+@property (weak, nonatomic) IBOutlet UITextField *grade;
+@property (weak, nonatomic) IBOutlet UITextField *middleSchool;
+@property (weak, nonatomic) IBOutlet UITextField *gradDate;
+@property (weak, nonatomic) IBOutlet UITextField *highSchool;
+
 @end

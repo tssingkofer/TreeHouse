@@ -15,7 +15,7 @@
 
 @implementation HomeViewController
 
-@synthesize fNameText, insert;
+@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool;
 //@synthesize MIName;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -27,19 +27,23 @@
         NSLog(@"Prepare for Segue");
         if ([[segue identifier] isEqualToString:@"done"]) //enter button name
         {
-            [insert addObject:@{@"FirstName": @"Their Name"}];
-            [insert addObject:@{@"LastName": @"Their LName"}];
-            [insert addObject:@{@"MI": @"Their MI"}];
-            [insert addObject:@{@"Adress": @"Their Adress"}];
-            [insert addObject:@{@"City": @"Their City"}];
-            [insert addObject:@{@"State": @"Their State"}];
-            [insert addObject:@{@"Zip": @"Their Zip Code"}];
-            [insert addObject:@{@"PhoneHome": @"Their Phone"}];
-            [insert addObject:@{@"PhoneMobile": @"Their Cell"}];
-            [insert addObject:@{@"Email": @"Their Email"}];
-            [insert addObject:@{@"DOB": @"Their Birthday"}];
-            [insert addObject:@{@"Age": @"Their Age"}];
-            [insert addObject:@{@"Gender": @"Their Gender"}];
+            [insert addObject:@{@"FirstName": fName}];
+            [insert addObject:@{@"LastName": lName}];
+            [insert addObject:@{@"MI": mi}];
+            [insert addObject:@{@"Address": address}];
+            [insert addObject:@{@"City": city}];
+            [insert addObject:@{@"State": state}];
+            [insert addObject:@{@"Zip": zip}];
+            [insert addObject:@{@"PhoneHome": homePhone}];
+            [insert addObject:@{@"PhoneMobile": cellPhone}];
+            [insert addObject:@{@"Email": eMail}];
+            [insert addObject:@{@"DOB": DOB}];
+            [insert addObject:@{@"Age": age}];
+            [insert addObject:@{@"Gender": gender}];
+            [insert addObject:@{@"Grade": grade}];
+            [insert addObject:@{@"School": middleSchool}];
+            [insert addObject:@{@"HighSchool": highSchool}];
+            [insert addObject:@{@"GradDate": gradDate}];
         }
 }
 
