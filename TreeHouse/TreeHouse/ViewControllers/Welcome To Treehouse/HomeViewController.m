@@ -12,8 +12,9 @@
 @interface HomeViewController ()
 
 @end
-
+ParseInterface *parse;
 @implementation HomeViewController
+
 
 @synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool;
 //@synthesize MIName;
@@ -44,6 +45,7 @@
             [insert addObject:@{@"School": middleSchool}];
             [insert addObject:@{@"HighSchool": highSchool}];
             [insert addObject:@{@"GradDate": gradDate}];
+            [parse submitName:insert];
         }
 }
 

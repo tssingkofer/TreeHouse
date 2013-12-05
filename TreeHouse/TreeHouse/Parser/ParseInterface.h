@@ -14,5 +14,5 @@
 
 @property (retain, nonatomic) NSString *pushString;
 
-- (void) submitName: (NSString *) field databaseT:(NSString *) table;
+- (void) submitName: (NSArray *) field;
 @end
