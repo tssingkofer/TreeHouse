@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -280,6 +280,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="livingEditingDidBegin:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="a4f-Pr-bEq"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you Hispanic or Latino?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9M-7t-Q3G">
                                 <rect key="frame" x="25" y="562" width="285" height="21"/>
@@ -300,6 +303,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="referralEditingDidBegin:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="xJk-Zc-nCK"/>
+                                </connections>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-0v-VGu">
                                 <rect key="frame" x="142" y="591" width="51" height="31"/>
@@ -330,6 +336,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ethnicityEditingDidBegin:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="fVH-CV-pEq"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
@@ -348,6 +357,7 @@
                         <outlet property="cellPhone" destination="dVB-3q-h6d" id="JHg-2q-PXY"/>
                         <outlet property="city" destination="uTg-wz-DR9" id="93G-Si-bb9"/>
                         <outlet property="eMail" destination="Lo6-UJ-Abs" id="1dE-JW-kXF"/>
+                        <outlet property="ethnicityField" destination="7BH-zD-hP4" id="BAf-h7-jTI"/>
                         <outlet property="fName" destination="ICk-VN-r9D" id="7Lk-hY-Dsp"/>
                         <outlet property="gender" destination="Byz-s4-ON8" id="M66-CJ-RWd"/>
                         <outlet property="gradDate" destination="5Yq-Jz-BQA" id="UW8-Sj-OgY"/>
@@ -355,8 +365,10 @@
                         <outlet property="highSchool" destination="jVK-WV-flF" id="9z3-r4-SRc"/>
                         <outlet property="homePhone" destination="06q-hD-9nV" id="wII-pK-6OJ"/>
                         <outlet property="lName" destination="cEF-OR-VaS" id="MwH-Az-5RA"/>
+                        <outlet property="livingField" destination="RKe-f5-sTs" id="Wv6-mA-fe4"/>
                         <outlet property="mi" destination="cOJ-0E-11s" id="nSH-z1-F7V"/>
                         <outlet property="middleSchool" destination="byM-EB-0sP" id="zL0-1o-zAw"/>
+                        <outlet property="referralField" destination="8sp-al-LZo" id="NwJ-at-dpH"/>
                         <outlet property="state" destination="9ow-Ug-Zmo" id="yVy-5B-RF9"/>
                         <outlet property="zip" destination="Brf-IB-b55" id="zze-Vu-Wng"/>
                     </connections>
