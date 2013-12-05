@@ -342,10 +342,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="BOD" destination="O01-jj-0Pb" id="jT5-Z9-Lrw"/>
                         <outlet property="DOB" destination="O01-jj-0Pb" id="nJE-cp-mlh"/>
                         <outlet property="address" destination="FaM-t8-5yT" id="cWo-Jz-xkW"/>
-                        <outlet property="adress" destination="FaM-t8-5yT" id="heP-x3-9Fs"/>
                         <outlet property="age" destination="X6L-eM-hZ5" id="yqB-FP-FVV"/>
                         <outlet property="cellPhone" destination="dVB-3q-h6d" id="JHg-2q-PXY"/>
                         <outlet property="city" destination="uTg-wz-DR9" id="93G-Si-bb9"/>
