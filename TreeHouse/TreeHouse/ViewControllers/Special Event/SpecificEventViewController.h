@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SpecificEventViewController : UIViewController
+{
+    NSString *textLastName;
+}
+- (IBAction)showCheckInAlert:(id)sender;
 - (IBAction)unwindBackToSpecificEventViewController:(UIStoryboardSegue *)sender;
+
+@property (retain) NSString *textLastName;
 @end
