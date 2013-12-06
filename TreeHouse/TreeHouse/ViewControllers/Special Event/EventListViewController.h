@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CoreViewController.h"
+#import "XMLParser.h"
+#import "Data.h"
 
-@interface EventListViewController : CoreViewController 
+@interface EventListViewController : UIViewController
+
 - (IBAction)unwindBackToEventListViewController:(UIStoryboardSegue *)sender;
+
+@property (weak, nonatomic) NSString *queryString;
+@property (retain, nonatomic) NSMutableArray *tbList;
+@property (retain, nonatomic) NSString *tblSelect;
+@property (weak, nonatomic) IBOutlet UITableView *DataTableView;
+
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Home View Controller - Welcome to Treehouse-->
@@ -302,12 +302,12 @@
                                 <rect key="frame" x="5" y="66" width="758" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-Cc-B4V">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-Cc-B4V">
                                 <rect key="frame" x="118" y="531" width="203" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Special" image="monthly calendar.png">
+                                <state key="normal" title="Special Events" image="monthly calendar.png">
                                     <color key="titleColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -840,8 +840,8 @@
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="XUT-PK-vtd" id="jpT-gf-RPe"/>
-                                    <outlet property="delegate" destination="XUT-PK-vtd" id="Z7y-4t-7gh"/>
+                                    <outlet property="dataSource" destination="DrA-8m-DCs" id="ajF-Oq-TLT"/>
+                                    <outlet property="delegate" destination="DrA-8m-DCs" id="Flf-8K-Les"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -856,6 +856,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DataTableView" destination="6Nl-4O-FGh" id="T1S-xG-xXE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjI-MW-duj" sceneMemberID="firstResponder"/>
             </objects>
@@ -897,10 +900,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r55-YW-gC9">
+                            <button contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r55-YW-gC9">
                                 <rect key="frame" x="268" y="680" width="233" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Check-In" image="right 1.png"/>
                                 <connections>
                                     <action selector="showCheckInAlert:" destination="e4k-8d-rdC" eventType="touchUpInside" id="wjm-Ap-IY6"/>
@@ -953,6 +957,7 @@
                                 <rect key="frame" x="270" y="701" width="228" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Check-in" image="right 1.png"/>
                                 <connections>
                                     <segue destination="b2r-nn-SNh" kind="unwind" unwindAction="unwindBackToEventListViewController:" id="5Ld-BZ-pBT"/>
