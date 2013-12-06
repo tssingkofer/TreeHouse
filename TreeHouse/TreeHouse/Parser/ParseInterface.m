@@ -33,10 +33,33 @@ XMLParser *xmlParser;
      [insert addObject:@{@"School": middleSchool.text}];
      [insert addObject:@{@"HighSchool": highSchool.text}];
      [insert addObject:@{@"GradDate": gradDate.text}];*/
-    
-    pushString = [NSString stringWithFormat:@"http://10.6.11.31/Projects/welcometotreehouse.php?=%@", field[10]];
+    Global *global = [Global globalData];
+    pushString = [NSString stringWithFormat:@"http://%@/Projects/welcometotreehouse.php?=%@", global.ip,field[10]];
     NSLog(@"Sent data %@", pushString);
     //xmlParser = [[XMLParser alloc] loadXMLByURL:pushString];
     
+}
+-(void) post
+{
+    //website http://stackoverflow.com/questions/15749486/sending-http-post-ios
+    NSString *post = [NSString stringWithFormat:@"&Username=%@&Password=%@",@"username",@"password"];
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *postLength = [NSString stringWithFormat:@"%d",[postData length]];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://localhost/Projects/post.php"]]];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Current-Type"];
+    [request setHTTPBody:postData];
+    NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];
+    
+    if(conn)
+    {
+        NSLog(@"The connection was successful");
+    }
+    else
+    {
+        NSLog(@"There was an error");
+    }
 }
 @end

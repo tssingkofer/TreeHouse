@@ -70,6 +70,9 @@ ParseInterface *parse;
 {
     [super viewDidLoad];
 //    [fNameText becomeFirstResponder];
+    Global *global = [Global globalData];
+    NSLog(@"The ip is: %@", global.ip);
+    
     ParseInterface *parse = [ParseInterface alloc];
     
     livesWith = @[@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"];
@@ -164,5 +167,20 @@ ParseInterface *parse;
 
 - (IBAction)referralEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
+}
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
+{
+    
+}
+
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    
 }
 @end

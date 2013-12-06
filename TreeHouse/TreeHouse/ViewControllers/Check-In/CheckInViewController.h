@@ -10,6 +10,7 @@
 #import "XMLParser.h"
 #import "Data.h"
 #import "MainMenuViewController.h"
+#import "Global.h"
 
 @interface CheckInViewController : UIViewController
 

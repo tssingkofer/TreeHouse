@@ -92,8 +92,8 @@ XMLParser *xmlParser2;
 	// Do any additional setup after loading the view.
     NSLog(@"text: %@", stringFromAlertView);
     //    queryString = @"http://192.168.1.103:8888/projects/youth_checkin_query.php?LastName=";
-    
-    queryString = [NSString stringWithFormat:@"http://10.6.3.199:8888/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+        Global *global = [Global globalData];
+    queryString = [NSString stringWithFormat:@"http://%@/Projects/youth_checkin_query.php?LastName=%@", global.ip,stringFromAlertView];
     
     
     NSLog(@"%@",queryString);
@@ -160,7 +160,8 @@ XMLParser *xmlParser2;
 {
     //tblSelect = (NSString *)indexPath;
     Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
-    pushString = [NSString stringWithFormat:@"http://10.6.3.199:8888/Projects/youth_checkin_query.php?id=%@", currentEntry.youthID];
+    Global *global = [Global globalData];
+    pushString = [NSString stringWithFormat:@"http://%@/Projects/youth_checkin_query.php?id=%@", global.ip,currentEntry.youthID];
     NSLog(@"YouthID is %@", currentEntry.youthID);
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

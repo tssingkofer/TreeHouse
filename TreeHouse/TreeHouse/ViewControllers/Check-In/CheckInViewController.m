@@ -95,14 +95,17 @@ XMLParser *xmlParser2;
     
     //the following url needs to point at whatever server script you are testing against.
     NSLog(@"text: %@", stringFromAlertView);
+    Global *global = [Global globalData];
     
-    queryString = [NSString stringWithFormat:@"http://10.6.3.199:8888/Projects/youth_checkin_query.php?LastName=%@", stringFromAlertView];
+    queryString = [NSString stringWithFormat:@"http://%@/Projects/youth_checkin_query.php?LastName=%@",global.ip, stringFromAlertView];
 
 
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
 
     self.title = @"Check-In";
+
+    
     
 }
 
@@ -163,7 +166,8 @@ XMLParser *xmlParser2;
 {
     //tblSelect = (NSString *)indexPath;
     Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
-    pushString = [NSString stringWithFormat:@"http://10.6.3.199:8888/Projects/youth_checkin_query.php?id=%@", currentEntry.youthID];
+        Global *global = [Global globalData];
+    pushString = [NSString stringWithFormat:@"http://%@/Projects/youth_checkin_query.php?id=%@", global.ip,currentEntry.youthID];
     NSLog(@"YouthID is %@", currentEntry.youthID);
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

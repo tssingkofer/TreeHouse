@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "XMLParser.h"
 #import "Data.h"
-
+#import "Global.h"
 @interface ParseInterface : NSObject
 
 @property (retain, nonatomic) NSString *pushString;
