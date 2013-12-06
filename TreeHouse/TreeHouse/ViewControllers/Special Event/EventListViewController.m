@@ -114,7 +114,7 @@ XMLParser *xmlParser;
     [super viewDidAppear:animated];
     if((unsigned long)[[xmlParser data] count]==0)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Info" message: @"No results found, be sure to enter the entire last name" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; //Gives an alert
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Info" message: @"No events found" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; //Gives an alert
     }
 }
 
