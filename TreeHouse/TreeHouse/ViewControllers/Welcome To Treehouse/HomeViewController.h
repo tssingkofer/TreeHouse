@@ -15,10 +15,23 @@
     //IBOutlet UITextField *fNameText;
     
     IBOutlet UITextField *MIText;
-    
     IBOutlet UITextField *lNameText;
+    
+    UIPickerView *PickerView;
+    NSArray *livesWith;
+    NSArray *ethnicity;
+    NSArray *referral;
 }
+//Actions for selecting a picker field
+- (IBAction)livingEditingDidBegin:(id)sender;
+- (IBAction)ethnicityEditingDidBegin:(id)sender;
+- (IBAction)referralEditingDidBegin:(id)sender;
 
+
+
+@property (strong, nonatomic) IBOutlet UITextField *livingField;
+@property (strong, nonatomic) IBOutlet UITextField *ethnicityField;
+@property (strong, nonatomic) IBOutlet UITextField *referralField;
 
 @property (strong, nonatomic) IBOutlet UITextField *fNameText;
 @property (strong, nonatomic) IBOutlet UITextField *MIName;

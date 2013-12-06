@@ -16,7 +16,7 @@ ParseInterface *parse;
 @implementation HomeViewController
 
 
-@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool;
+@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool, livingField, ethnicityField, referralField;
 //@synthesize MIName;
 
 
@@ -73,10 +73,39 @@ ParseInterface *parse;
 
 }
 
+- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+
+{
+    if ([livingField isFirstResponder]) {
+        livingField.text = [livesWith objectAtIndex:row];
+    }
+    else if ([ethnicityField isFirstResponder]){
+        ethnicityField.text = [ethnicity objectAtIndex:row];
+    }
+    else if ([referralField isFirstResponder]){
+        referralField.text = [referral objectAtIndex:row];
+    }
+    else {
+        return;
+    }
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)livingEditingDidBegin:(id)sender {
+    [PickerView reloadAllComponents];
+}
+
+- (IBAction)ethnicityEditingDidBegin:(id)sender {
+    [PickerView reloadAllComponents];
+}
+
+- (IBAction)referralEditingDidBegin:(id)sender {
+    [PickerView reloadAllComponents];
+}
 @end

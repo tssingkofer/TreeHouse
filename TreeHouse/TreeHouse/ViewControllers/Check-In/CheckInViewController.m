@@ -45,7 +45,6 @@ XMLParser *xmlParser2;
 {
     NSLog(@"Number of elements %lu", (unsigned long)[[xmlParser data] count]);
     return [[xmlParser data] count];
-
 }
 
 
@@ -73,7 +72,10 @@ XMLParser *xmlParser2;
                                [lastName objectAtIndex:0],
                                             [dob objectAtIndex:0]];
 
-        
+        if(students == NULL)
+        {
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Info" message: @"No results found" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show];
+        }
         cell.textLabel.text = students;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
@@ -119,6 +121,10 @@ XMLParser *xmlParser2;
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    if((unsigned long)[[xmlParser data] count]==0)
+    {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Info" message: @"No results found, be sure to enter the entire last name" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; //Gives an alert
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
