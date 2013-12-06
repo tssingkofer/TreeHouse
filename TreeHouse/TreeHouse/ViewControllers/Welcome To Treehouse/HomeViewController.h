@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ParseInterface.h"
+#import "Global.h"
 
 @interface HomeViewController : UIViewController
 

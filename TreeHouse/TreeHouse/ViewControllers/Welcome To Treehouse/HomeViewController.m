@@ -72,6 +72,9 @@ ParseInterface *parse;
 {
     [super viewDidLoad];
     self.button.enabled = NO;//    [fNameText becomeFirstResponder];
+    Global *global = [Global globalData];
+    NSLog(@"The ip is: %@", global);
+    
     ParseInterface *parse = [ParseInterface alloc];
     
     livesWith = @[@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"];
@@ -167,17 +170,14 @@ ParseInterface *parse;
 - (IBAction)referralEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
 }
-
-/*- (IBAction)DonePress:(UIBarButtonItem *)sender
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
 {
-    //UIButton *button=(UIButton*)sender;
-    if ((livingField.text.length  > 0) && (ethnicityField.text.length > 0)  && (referralField.text.length > 0) && (fNameText.text.length>0)) {
-        self.button.enabled = YES;
-    }
-    else {
-        self.button.enabled = NO;
-    }
     
+}
+
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
     
 }*/
 // Checks to ensure there is no nulls.
@@ -190,5 +190,8 @@ ParseInterface *parse;
         self.button.enabled = NO;
     }
 
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    
 }
 @end
