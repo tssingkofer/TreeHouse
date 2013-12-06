@@ -45,6 +45,8 @@ ParseInterface *parse;
     [insert addObject:@{@"School": middleSchool.text}];
     [insert addObject:@{@"HighSchool": highSchool.text}];
     [insert addObject:@{@"GradDate": gradDate.text}];*/
+    
+    
     insert = [NSArray arrayWithObjects:fName.text,lName.text,mi.text,address.text,city.text,state.text,zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text,middleSchool.text,highSchool.text,gradDate.text, nil];
     //insert[0] = DOB.text;
     //[insert addObject:@{@"DOB": DOB.text}];
@@ -69,7 +71,7 @@ ParseInterface *parse;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [fNameText becomeFirstResponder];
+    self.button.enabled = NO;//    [fNameText becomeFirstResponder];
     ParseInterface *parse = [ParseInterface alloc];
     
     livesWith = @[@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"];
@@ -164,5 +166,29 @@ ParseInterface *parse;
 
 - (IBAction)referralEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
+}
+
+/*- (IBAction)DonePress:(UIBarButtonItem *)sender
+{
+    //UIButton *button=(UIButton*)sender;
+    if ((livingField.text.length  > 0) && (ethnicityField.text.length > 0)  && (referralField.text.length > 0) && (fNameText.text.length>0)) {
+        self.button.enabled = YES;
+    }
+    else {
+        self.button.enabled = NO;
+    }
+    
+    
+}*/
+//zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text
+- (IBAction)editingBegan:(UITextField *)sender {
+    if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0)&&(DOB.text.length>0) && (age.text.length>0) && (gender.text.length >0))
+    {
+        self.button.enabled = YES;
+    }
+    else {
+        self.button.enabled = NO;
+    }
+
 }
 @end

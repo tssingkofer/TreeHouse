@@ -183,6 +183,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="Editingended:" destination="OOf-eP-4GW" eventType="valueChanged" id="3Cg-fs-Tzx"/>
+                                    <action selector="editingBegan:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="Oic-vz-khk"/>
                                     <action selector="referralEditingDidBegin:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="xJk-Zc-nCK"/>
                                 </connections>
                             </textField>
@@ -225,6 +227,7 @@
                     <navigationItem key="navigationItem" title="Welcome to Treehouse" id="dXG-pN-0ei">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="hgP-H2-mbI">
                             <connections>
+                                <action selector="DonePress:" destination="OOf-eP-4GW" id="IyK-HS-07N"/>
                                 <segue destination="E7F-hF-bXP" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="4Q7-zx-PrA"/>
                             </connections>
                         </barButtonItem>
@@ -233,6 +236,7 @@
                         <outlet property="DOB" destination="O01-jj-0Pb" id="nJE-cp-mlh"/>
                         <outlet property="address" destination="FaM-t8-5yT" id="cWo-Jz-xkW"/>
                         <outlet property="age" destination="X6L-eM-hZ5" id="yqB-FP-FVV"/>
+                        <outlet property="button" destination="hgP-H2-mbI" id="aqO-R5-q2X"/>
                         <outlet property="cellPhone" destination="dVB-3q-h6d" id="JHg-2q-PXY"/>
                         <outlet property="city" destination="uTg-wz-DR9" id="93G-Si-bb9"/>
                         <outlet property="eMail" destination="Lo6-UJ-Abs" id="1dE-JW-kXF"/>

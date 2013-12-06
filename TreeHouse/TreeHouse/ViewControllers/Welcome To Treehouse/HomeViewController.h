@@ -26,7 +26,10 @@
 - (IBAction)livingEditingDidBegin:(id)sender;
 - (IBAction)ethnicityEditingDidBegin:(id)sender;
 - (IBAction)referralEditingDidBegin:(id)sender;
+- (IBAction)DonePress:(UIBarButtonItem *)sender;
+- (IBAction)editingBegan:(UITextField *)sender;
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *button;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *livingField;
@@ -55,6 +58,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *middleSchool;
 @property (weak, nonatomic) IBOutlet UITextField *gradDate;
 @property (weak, nonatomic) IBOutlet UITextField *highSchool;
+
 
 
 @end
