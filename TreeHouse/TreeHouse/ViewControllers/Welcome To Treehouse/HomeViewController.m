@@ -179,7 +179,8 @@ ParseInterface *parse;
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     
-}*/
+    
+}
 // Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
     if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0) && (age.text.length>0) && (gender.text.length >0))
@@ -190,8 +191,5 @@ ParseInterface *parse;
         self.button.enabled = NO;
     }
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    
 }
 @end
