@@ -14,4 +14,8 @@
 @synthesize lastName = _lastName;
 @synthesize youthID = _youthID;
 @synthesize dob = _dob;
+
+@synthesize activityName = _activityName;
+@synthesize programDate = _programDate;
+
 @end

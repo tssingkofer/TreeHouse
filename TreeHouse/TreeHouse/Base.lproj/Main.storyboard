@@ -836,8 +836,8 @@
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="XUT-PK-vtd" id="jpT-gf-RPe"/>
-                                    <outlet property="delegate" destination="XUT-PK-vtd" id="Z7y-4t-7gh"/>
+                                    <outlet property="dataSource" destination="DrA-8m-DCs" id="ajF-Oq-TLT"/>
+                                    <outlet property="delegate" destination="DrA-8m-DCs" id="Flf-8K-Les"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -852,6 +852,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DataTableView" destination="6Nl-4O-FGh" id="T1S-xG-xXE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjI-MW-duj" sceneMemberID="firstResponder"/>
             </objects>

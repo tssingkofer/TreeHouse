@@ -15,4 +15,8 @@
 @property (strong, nonatomic) NSString *youthID;
 @property (strong, nonatomic) NSString *dob;
 
+@property (strong, nonatomic) NSString *activityName;
+@property (strong, nonatomic) NSString *programDate;
+
+
 @end
