@@ -69,9 +69,9 @@ ParseInterface *parse;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [fNameText becomeFirstResponder];
+    self.button.enabled = NO;//    [fNameText becomeFirstResponder];
     Global *global = [Global globalData];
-    NSLog(@"The ip is: %@", global.ip);
+    NSLog(@"The ip is: %@", global);
     
     ParseInterface *parse = [ParseInterface alloc];
     
