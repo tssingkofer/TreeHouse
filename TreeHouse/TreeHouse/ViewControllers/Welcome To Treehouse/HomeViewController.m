@@ -69,8 +69,65 @@ ParseInterface *parse;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [fNameText becomeFirstResponder];
+//    [fNameText becomeFirstResponder];
+    ParseInterface *parse = [ParseInterface alloc];
+    
+    livesWith = @[@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"];
+    
+    ethnicity = @[@"American Indian/Alaska Native", @"Black/African American", @"Asian", @"Native Hawaiian/PacificIslander", @"White"
+                  ];
+    referral = @[@"Other Teen/Friend", @"Parent/Other Family Member", @"Teacher/School Counselor/School Staff", @"Pastor/Minister/Church Staff", @"Therapist/Social Worker", @"Probation Officer", @"Treehouse staff"
+                      ];
 
+    PickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 43, 320, 480)];
+    
+    PickerView.delegate = self;
+    
+    PickerView.dataSource = self;
+    
+    [PickerView  setShowsSelectionIndicator:YES];
+    
+    livingField.inputView =  PickerView;
+    ethnicityField.inputView = PickerView;
+    referralField.inputView = PickerView;
+    
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    if ([livingField isFirstResponder]) {
+        return [livesWith count];
+    }
+    else if ([ethnicityField isFirstResponder]){
+        return [ethnicity count];
+    }
+    else if ([referralField isFirstResponder]){
+        return [referral count];
+    }
+    else {
+        return 0;
+    }
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    if ([livingField isFirstResponder]) {
+        return [livesWith objectAtIndex:row];
+    }
+    else if ([ethnicityField isFirstResponder]){
+        return [ethnicity objectAtIndex:row];
+    }
+    else if ([referralField isFirstResponder]){
+        return [referral objectAtIndex:row];
+    }
+    else {
+        return 0;
+    }
 }
 
 - (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
