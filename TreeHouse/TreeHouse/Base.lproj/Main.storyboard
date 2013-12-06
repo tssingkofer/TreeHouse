@@ -335,10 +335,9 @@
                         <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome to Treehouse" id="dXG-pN-0ei">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="hgP-H2-mbI">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="hgP-H2-mbI">
                             <connections>
-                                <action selector="Next:" destination="OOf-eP-4GW" id="JQw-ku-lsU"/>
-                                <segue destination="S0C-NF-EzC" kind="push" id="VUB-az-3MN"/>
+                                <segue destination="E7F-hF-bXP" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="4Q7-zx-PrA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -363,6 +362,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPc-o9-4iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="E7F-hF-bXP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1476" y="-210"/>
         </scene>

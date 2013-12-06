@@ -19,40 +19,37 @@ ParseInterface *parse;
 @synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool;
 //@synthesize MIName;
 
--(void) Next:(id)sender
-{
-    [insert addObject:@{@"FirstName": fName}];
-    [insert addObject:@{@"LastName": lName}];
-    [insert addObject:@{@"MI": mi}];
-    [insert addObject:@{@"Address": address}];
-    [insert addObject:@{@"City": city}];
-    [insert addObject:@{@"State": state}];
-    [insert addObject:@{@"Zip": zip}];
-    [insert addObject:@{@"PhoneHome": homePhone}];
-    [insert addObject:@{@"PhoneMobile": cellPhone}];
-    [insert addObject:@{@"Email": eMail}];
-    [insert addObject:@{@"DOB": DOB}];
-    [insert addObject:@{@"Age": age}];
-    [insert addObject:@{@"Gender": gender}];
-    [insert addObject:@{@"Grade": grade}];
-    [insert addObject:@{@"School": middleSchool}];
-    [insert addObject:@{@"HighSchool": highSchool}];
-    [insert addObject:@{@"GradDate": gradDate}];
-    [parse submitName:insert];
-    NSLog(@"DOB = %@", DOB);
-    
-}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSString *fNameString = fNameText.text;
-    ParentViewController *PVC = [segue destinationViewController];
-    PVC.firstName = fNameString;
-    NSLog(@"Sender = %@", sender);
+    ParseInterface *parse = [ParseInterface alloc];
+    //NSString *fNameString = fNameText.text;
+    //ParentViewController *PVC = [segue destinationViewController];
+    //PVC.firstName = fNameString;
+    //NSLog(@"Sender = %@", sender);
         NSLog(@"Prepare for Segue");
-        if ([[segue identifier] isEqualToString:@"Next"]) //enter button name
-        {
-            
-        }
+    /*[insert addObject:@{@"FirstName": fName.text}];
+    [insert addObject:@{@"LastName": lName.text}];
+    [insert addObject:@{@"MI": mi.text}];
+    [insert addObject:@{@"Address": address.text}];
+    [insert addObject:@{@"City": city.text}];
+    [insert addObject:@{@"State": state.text}];
+    [insert addObject:@{@"Zip": zip.text}];
+    [insert addObject:@{@"PhoneHome": homePhone.text}];
+    [insert addObject:@{@"PhoneMobile": cellPhone.text}];
+    [insert addObject:@{@"Email": eMail.text}];
+    [insert addObject:@{@"DOB": DOB.text}];
+    [insert addObject:@{@"Age": age.text}];
+    [insert addObject:@{@"Gender": gender.text}];
+    [insert addObject:@{@"Grade": grade.text}];
+    [insert addObject:@{@"School": middleSchool.text}];
+    [insert addObject:@{@"HighSchool": highSchool.text}];
+    [insert addObject:@{@"GradDate": gradDate.text}];*/
+    insert = [NSArray arrayWithObjects:fName.text,lName.text,mi.text,address.text,city.text,state.text,zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text,middleSchool.text,highSchool.text,gradDate.text, nil];
+    //insert[0] = DOB.text;
+    //[insert addObject:@{@"DOB": DOB.text}];
+    [parse submitName:insert];
+    NSLog(@"DOB = %@", DOB.text);
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
@@ -73,8 +70,7 @@ ParseInterface *parse;
 {
     [super viewDidLoad];
     [fNameText becomeFirstResponder];
-    ParseInterface *parse = [ParseInterface alloc];
-    
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -22,7 +22,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *fNameText;
 @property (strong, nonatomic) IBOutlet UITextField *MIName;
-@property (strong, nonatomic) NSMutableArray *insert;
+@property (strong, nonatomic) NSArray *insert;
 
 @property (weak, nonatomic) IBOutlet UITextField *fName;
 @property (weak, nonatomic) IBOutlet UITextField *mi;
@@ -42,6 +42,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *middleSchool;
 @property (weak, nonatomic) IBOutlet UITextField *gradDate;
 @property (weak, nonatomic) IBOutlet UITextField *highSchool;
-- (IBAction)Next:(id)sender;
+
 
 @end
