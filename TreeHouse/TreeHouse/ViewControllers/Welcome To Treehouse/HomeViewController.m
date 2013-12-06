@@ -180,7 +180,7 @@ ParseInterface *parse;
     
     
 }*/
-//zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text
+// Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
     if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0)&&(DOB.text.length>0) && (age.text.length>0) && (gender.text.length >0))
     {
