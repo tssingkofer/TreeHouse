@@ -1,130 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rf9-Xm-awA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Ethnicity View Controller - Ethnicity-->
-        <scene sceneID="eaC-Ue-c5z">
-            <objects>
-                <viewController id="z01-DM-Ng7" customClass="EthnicityViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oeL-k1-2Jq"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pn4-WA-Mxm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gDi-di-JHH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="What is your ethnicity?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xP4-1B-WDG">
-                                <rect key="frame" x="236" y="207" width="297" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="297" id="pJZ-7r-amA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jtg-IK-ePc">
-                                <rect key="frame" x="0.0" y="242" width="768" height="216"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="z01-DM-Ng7" id="aTR-x3-Szc"/>
-                                    <outlet property="delegate" destination="z01-DM-Ng7" id="U2l-pB-nlH"/>
-                                </connections>
-                            </pickerView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-t7-vj1">
-                                <rect key="frame" x="373" y="134" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you Hispanic or Latino?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGm-lq-AeA">
-                                <rect key="frame" x="27" y="139" width="285" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvO-AQ-Bkc">
-                                <rect key="frame" x="0.0" y="524" width="768" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="z01-DM-Ng7" id="wDa-KR-2ZE"/>
-                                    <outlet property="delegate" destination="z01-DM-Ng7" id="kvB-bx-nQd"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Referred You to TreeHouse?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uN-o5-6LW">
-                                <rect key="frame" x="218" y="482" width="332" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="jtg-IK-ePc" firstAttribute="leading" secondItem="gDi-di-JHH" secondAttribute="leading" id="Gch-c6-QRw"/>
-                            <constraint firstItem="jtg-IK-ePc" firstAttribute="top" secondItem="gDi-di-JHH" secondAttribute="top" constant="246" id="LqK-3H-Xww"/>
-                            <constraint firstItem="xP4-1B-WDG" firstAttribute="top" secondItem="gDi-di-JHH" secondAttribute="top" constant="199" id="ROD-or-dwP"/>
-                            <constraint firstItem="xP4-1B-WDG" firstAttribute="leading" secondItem="gDi-di-JHH" secondAttribute="leading" constant="20" symbolic="YES" id="jIE-HJ-Bda"/>
-                            <constraint firstItem="jtg-IK-ePc" firstAttribute="trailing" secondItem="gDi-di-JHH" secondAttribute="trailing" id="wgg-3k-6uw"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Ethnicity" id="3jC-e9-WeC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z90-7P-kkb">
-                            <connections>
-                                <segue destination="e3w-hs-1mK" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="Ldi-Zh-NlK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="referredPicker" destination="dvO-AQ-Bkc" id="1tX-AE-PtZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RvW-XQ-EMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="e3w-hs-1mK" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="3555" y="-163"/>
-        </scene>
-        <!--Parent View Controller-->
-        <scene sceneID="NdC-pP-WHJ">
-            <objects>
-                <viewController id="S0C-NF-EzC" customClass="ParentViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kxz-zX-Zo6"/>
-                        <viewControllerLayoutGuide type="bottom" id="jVa-uN-i5v"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u0Q-dh-hIM">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LF-pQ-MsC">
-                                <rect key="frame" x="0.0" y="598" width="768" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="S0C-NF-EzC" id="aAF-CU-Rsd"/>
-                                    <outlet property="delegate" destination="S0C-NF-EzC" id="Eup-vK-Oj8"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.9450981021" green="0.89019614459999996" blue="0.77647066119999997" alpha="1" colorSpace="deviceRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6LF-pQ-MsC" secondAttribute="bottom" constant="210" id="CgQ-Tt-kzf"/>
-                            <constraint firstItem="6LF-pQ-MsC" firstAttribute="trailing" secondItem="u0Q-dh-hIM" secondAttribute="trailing" id="WOn-LU-Lda"/>
-                            <constraint firstItem="6LF-pQ-MsC" firstAttribute="leading" secondItem="u0Q-dh-hIM" secondAttribute="leading" id="WkX-6n-sWs"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="YHt-M1-LA1">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="IT6-tf-Ngl">
-                            <connections>
-                                <segue destination="z01-DM-Ng7" kind="push" id="HAO-ZD-yeh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cuF-mz-gHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2635" y="-191"/>
-        </scene>
         <!--Home View Controller - Welcome to Treehouse-->
         <scene sceneID="S4t-yx-3an">
             <objects>
@@ -304,6 +183,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="Editingended:" destination="OOf-eP-4GW" eventType="valueChanged" id="3Cg-fs-Tzx"/>
+                                    <action selector="editingBegan:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="Oic-vz-khk"/>
                                     <action selector="referralEditingDidBegin:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="xJk-Zc-nCK"/>
                                 </connections>
                             </textField>
@@ -346,6 +227,7 @@
                     <navigationItem key="navigationItem" title="Welcome to Treehouse" id="dXG-pN-0ei">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="hgP-H2-mbI">
                             <connections>
+                                <action selector="DonePress:" destination="OOf-eP-4GW" id="IyK-HS-07N"/>
                                 <segue destination="E7F-hF-bXP" kind="unwind" unwindAction="unwindBackToMainMenuViewController:" id="4Q7-zx-PrA"/>
                             </connections>
                         </barButtonItem>
@@ -354,6 +236,7 @@
                         <outlet property="DOB" destination="O01-jj-0Pb" id="nJE-cp-mlh"/>
                         <outlet property="address" destination="FaM-t8-5yT" id="cWo-Jz-xkW"/>
                         <outlet property="age" destination="X6L-eM-hZ5" id="yqB-FP-FVV"/>
+                        <outlet property="button" destination="hgP-H2-mbI" id="aqO-R5-q2X"/>
                         <outlet property="cellPhone" destination="dVB-3q-h6d" id="JHg-2q-PXY"/>
                         <outlet property="city" destination="uTg-wz-DR9" id="93G-Si-bb9"/>
                         <outlet property="eMail" destination="Lo6-UJ-Abs" id="1dE-JW-kXF"/>
@@ -419,12 +302,12 @@
                                 <rect key="frame" x="5" y="66" width="758" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-Cc-B4V">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-Cc-B4V">
                                 <rect key="frame" x="118" y="531" width="203" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Special" image="monthly calendar.png">
+                                <state key="normal" title="Special Events" image="monthly calendar.png">
                                     <color key="titleColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -957,8 +840,8 @@
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="XUT-PK-vtd" id="jpT-gf-RPe"/>
-                                    <outlet property="delegate" destination="XUT-PK-vtd" id="Z7y-4t-7gh"/>
+                                    <outlet property="dataSource" destination="DrA-8m-DCs" id="ajF-Oq-TLT"/>
+                                    <outlet property="delegate" destination="DrA-8m-DCs" id="Flf-8K-Les"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -973,6 +856,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DataTableView" destination="6Nl-4O-FGh" id="T1S-xG-xXE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjI-MW-duj" sceneMemberID="firstResponder"/>
             </objects>
@@ -1014,10 +900,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r55-YW-gC9">
+                            <button contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r55-YW-gC9">
                                 <rect key="frame" x="268" y="680" width="233" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Check-In" image="right 1.png"/>
                                 <connections>
                                     <action selector="showCheckInAlert:" destination="e4k-8d-rdC" eventType="touchUpInside" id="wjm-Ap-IY6"/>
@@ -1070,6 +957,7 @@
                                 <rect key="frame" x="270" y="701" width="228" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.93333339689999995" green="0.59607845540000004" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Check-in" image="right 1.png"/>
                                 <connections>
                                     <segue destination="b2r-nn-SNh" kind="unwind" unwindAction="unwindBackToEventListViewController:" id="5Ld-BZ-pBT"/>

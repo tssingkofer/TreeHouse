@@ -45,6 +45,8 @@ ParseInterface *parse;
     [insert addObject:@{@"School": middleSchool.text}];
     [insert addObject:@{@"HighSchool": highSchool.text}];
     [insert addObject:@{@"GradDate": gradDate.text}];*/
+    
+    
     insert = [NSArray arrayWithObjects:fName.text,lName.text,mi.text,address.text,city.text,state.text,zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text,middleSchool.text,highSchool.text,gradDate.text, nil];
     //insert[0] = DOB.text;
     //[insert addObject:@{@"DOB": DOB.text}];

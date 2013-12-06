@@ -67,6 +67,14 @@ bool            isResults;
         {
             currentEntry.dob = currentNodeContent;
         }
+        if ([elementname isEqualToString:@"ActivityName"])
+        {
+            currentEntry.activityName = currentNodeContent;
+        }
+        if ([elementname isEqualToString:@"ProgramDate"])
+        {
+            currentEntry.programDate = currentNodeContent;
+        }
     }
 	if ([elementname isEqualToString:@"student"])
 	{
