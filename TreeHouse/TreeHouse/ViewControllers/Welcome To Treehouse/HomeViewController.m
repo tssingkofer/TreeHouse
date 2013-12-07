@@ -52,6 +52,9 @@ ParseInterface *parse;
     //[insert addObject:@{@"DOB": DOB.text}];
     [parse submitName:insert];
     NSLog(@"DOB = %@", DOB.text);
+    
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: @"Your information has been submitted" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
