@@ -52,6 +52,9 @@ ParseInterface *parse;
     //[insert addObject:@{@"DOB": DOB.text}];
     [parse submitName:insert];
     NSLog(@"DOB = %@", DOB.text);
+    
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: @"Your information has been submitted" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField*)textField;
@@ -74,7 +77,7 @@ ParseInterface *parse;
     [self.fName becomeFirstResponder];
     self.button.enabled = NO;//    [fNameText becomeFirstResponder];
     Global *global = [Global globalData];
-    NSLog(@"The ip is: %@", global);
+    NSLog(@"The ip is: %@", global.ip);
     
     ParseInterface *parse = [ParseInterface alloc];
     
@@ -176,15 +179,21 @@ ParseInterface *parse;
     
 }
 
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+/*- (IBAction)DonePress:(UIBarButtonItem *)sender
 {
+    //UIButton *button=(UIButton*)sender;
+    if ((livingField.text.length  > 0) && (ethnicityField.text.length > 0)  && (referralField.text.length > 0) && (fNameText.text.length>0)) {
+        self.button.enabled = YES;
+    }
+    else {
+        self.button.enabled = NO;
+    }
     
     
-}
+}*/
 // Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
-    if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0) && (age.text.length>0) && (gender.text.length >0))
+    if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0)&&(DOB.text.length>0) && (age.text.length>0) && (gender.text.length >0))
     {
         self.button.enabled = YES;
         /*NSDAtE *cal = DOB.text;
@@ -195,6 +204,5 @@ ParseInterface *parse;
     else {
         self.button.enabled = NO;
     }
-
 }
 @end
