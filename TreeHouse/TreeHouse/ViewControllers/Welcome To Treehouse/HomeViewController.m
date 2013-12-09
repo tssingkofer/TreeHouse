@@ -71,6 +71,7 @@ ParseInterface *parse;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.fName becomeFirstResponder];
     self.button.enabled = NO;//    [fNameText becomeFirstResponder];
     Global *global = [Global globalData];
     NSLog(@"The ip is: %@", global);
@@ -186,7 +187,10 @@ ParseInterface *parse;
     if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0) && (age.text.length>0) && (gender.text.length >0))
     {
         self.button.enabled = YES;
+        /*NSDAtE *cal = DOB.text;
         
+        NSDateComponents* timeOnEarth = [cal components:unitFlags fromDate:self.dateOfBirth toDate:[NSDate date] options:0];
+        */
     }
     else {
         self.button.enabled = NO;
