@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XMLParser.h"
 #import "Data.h"
+#import "Global.h"
 
 @interface EventListViewController : UIViewController
 
