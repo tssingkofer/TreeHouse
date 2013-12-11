@@ -11,6 +11,8 @@
 		5A06BD45185265AF007E5F31 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A06BD44185265AF007E5F31 /* Global.m */; };
 		5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */; };
 		5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */; };
+		5AC8123B18590959001CECBB /* AboutUs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8123918590959001CECBB /* AboutUs.m */; };
+		5AC8123C18590959001CECBB /* AboutUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8123A18590959001CECBB /* AboutUs.xib */; };
 		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
 		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
 		68128E9418386B2000947C56 /* Logo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9318386B2000947C56 /* Logo_Background.png */; };
@@ -78,6 +80,9 @@
 		5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInterface.h; sourceTree = "<group>"; };
 		5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInterface.m; sourceTree = "<group>"; };
 		5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChristopherDadisman.jpg; sourceTree = "<group>"; };
+		5AC8123818590959001CECBB /* AboutUs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUs.h; path = ../AboutUs.h; sourceTree = "<group>"; };
+		5AC8123918590959001CECBB /* AboutUs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutUs.m; path = ../AboutUs.m; sourceTree = "<group>"; };
+		5AC8123A18590959001CECBB /* AboutUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUs.xib; sourceTree = "<group>"; };
 		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
@@ -261,6 +266,7 @@
 				684FF84718288F3D001EA067 /* Resources */,
 				5A757411183170BD004A39C3 /* Parser */,
 				68CFAD62181F4510004C7A81 /* Main.storyboard */,
+				5AC8123A18590959001CECBB /* AboutUs.xib */,
 				68CFAD68181F4510004C7A81 /* Images.xcassets */,
 				68CFAD57181F4510004C7A81 /* Supporting Files */,
 			);
@@ -309,6 +315,8 @@
 		68DBB794183D581B0043FB36 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5AC8123818590959001CECBB /* AboutUs.h */,
+				5AC8123918590959001CECBB /* AboutUs.m */,
 				68DBB798183D581B0043FB36 /* CoreViewController.h */,
 				68DBB799183D581B0043FB36 /* CoreViewController.m */,
 				68DBB79A183D581B0043FB36 /* MainMenuViewController.h */,
@@ -454,6 +462,7 @@
 				681377A91834388000641BDF /* spotlight@1x.png in Resources */,
 				681377A31834383E00641BDF /* Settings@1x.png in Resources */,
 				70F61F63184FF52D0044A2B9 /* LukeSnell.jpg in Resources */,
+				5AC8123C18590959001CECBB /* AboutUs.xib in Resources */,
 				68334E3F184D252000017CD7 /* loadingscreen_regular.png in Resources */,
 				68128E9818386E6800947C56 /* smile_64.png in Resources */,
 				5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */,
@@ -489,6 +498,7 @@
 				68128E8F1838263F00947C56 /* XMLParser.m in Sources */,
 				5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */,
 				68DBB7B6183D581C0043FB36 /* MainMenuViewController.m in Sources */,
+				5AC8123B18590959001CECBB /* AboutUs.m in Sources */,
 				68DBB7BD183D581C0043FB36 /* HomeViewController.m in Sources */,
 				68DBB7BE183D581C0043FB36 /* ParentViewController.m in Sources */,
 				68DBB7B8183D581C0043FB36 /* EventListViewController.m in Sources */,
