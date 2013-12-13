@@ -51,7 +51,7 @@
 }
 
 - (IBAction)showCheckInAlert:(id)sender {
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Check-In" message:@"Enter Last Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Search", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Check-In" message:@"Enter First Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Search", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [alert show];
 }

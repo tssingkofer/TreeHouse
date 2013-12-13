@@ -97,7 +97,7 @@ XMLParser *xmlParser2;
     NSLog(@"text: %@", stringFromAlertView);
     Global *global = [Global globalData];
     
-    queryString = [NSString stringWithFormat:@"http://%@/Projects/youth_checkin_query.php?LastName=%@",global.ip, stringFromAlertView];
+    queryString = [NSString stringWithFormat:@"http://%@/Projects/youth_checkin_query.php?FirstName=%@",global.ip, stringFromAlertView];
 
 
     NSLog(@"%@",queryString);
