@@ -77,7 +77,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     [self.fName becomeFirstResponder];
     self.button.enabled = NO;
     Global *global = [Global globalData];
-    NSLog(@"The ip is: %@", global.ip);
+    //NSLog(@"The ip is: %@", global.ip);
     
     ParseInterface *parse = [ParseInterface alloc];
     

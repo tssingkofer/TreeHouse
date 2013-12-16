@@ -8,6 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "CheckInViewController.h"
+#import "AboutUs_ViewController.h"
 
 @interface MainMenuViewController ()
 
@@ -62,6 +63,15 @@
 
 - (IBAction)EventButtonPressed:(id)sender {
     textLastName = nil;
+}
+- (IBAction)AppInfo:(UIViewController *)sourceController{
+    //UINib* secondNib = [UINib nibWithNibName:@"AboutUs" bundle:nil];
+    UIStoryboard* secondStoryboard = [UIStoryboard storyboardWithName:@"AboutUs" bundle:nil];
+    //self = [[secondNib instantiateWithOwner:self options:nil] objectAtIndex:0];
+    
+    UIViewController* secondViewController = [secondStoryboard instantiateViewControllerWithIdentifier:@"AboutUs_ViewController"];
+    
+    [sourceController presentViewController: secondViewController animated:YES completion: NULL];
 }
 #pragma mark AlertView Delegate
 

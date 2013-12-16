@@ -1,18 +1,18 @@
 //
-//  AboutUs.m
+//  AboutUs_ViewController.m
 //  TreeHouse
 //
-//  Created by Christopher Dadisman on 12/11/13.
+//  Created by Christopher Dadisman on 12/16/13.
 //  Copyright (c) 2013 Tyler Singkofer. All rights reserved.
 //
 
-#import "AboutUs.h"
+#import "AboutUs_ViewController.h"
 
-@interface AboutUs ()
+@interface AboutUs_ViewController ()
 
 @end
 
-@implementation AboutUs
+@implementation AboutUs_ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
