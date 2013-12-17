@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Meet the Development Team-->
+        <!--About Us View Controller - AboutUs_ViewController-->
         <scene sceneID="nGC-iW-sTv">
             <objects>
-                <viewController nibName="AboutUs" id="gZg-Mz-g8r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUs" title="AboutUs_ViewController" nibName="AboutUs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gZg-Mz-g8r" customClass="AboutUs_ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mFv-kz-Orz"/>
                         <viewControllerLayoutGuide type="bottom" id="fBY-KC-CYa"/>
