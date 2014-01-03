@@ -31,7 +31,7 @@ static Global *sharedSingleton = NULL;
     {
         //initialize variables
         //set the global ip here
-        _ip = @"localhost";
+        _ip = @"10.6.2.169";
     }
     return self;
 }

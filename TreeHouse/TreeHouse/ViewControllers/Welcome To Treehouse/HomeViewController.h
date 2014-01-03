@@ -27,7 +27,6 @@
 - (IBAction)livingEditingDidBegin:(id)sender;
 - (IBAction)ethnicityEditingDidBegin:(id)sender;
 - (IBAction)referralEditingDidBegin:(id)sender;
-- (IBAction)DonePress:(UIBarButtonItem *)sender;
 - (IBAction)editingBegan:(UITextField *)sender;
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *button;

@@ -13,6 +13,7 @@
 		5A60C808185F9DA500F98AF7 /* AboutUs_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A60C807185F9DA500F98AF7 /* AboutUs_ViewController.m */; };
 		5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */; };
 		5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */; };
+		5ABF77AD1860FE18001FF06D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF77AC1860FE18001FF06D /* LoginController.m */; };
 		68128E8F1838263F00947C56 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E8E1838263F00947C56 /* XMLParser.m */; };
 		68128E921838267800947C56 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 68128E911838267800947C56 /* Data.m */; };
 		68128E9418386B2000947C56 /* Logo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 68128E9318386B2000947C56 /* Logo_Background.png */; };
@@ -83,6 +84,8 @@
 		5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInterface.h; sourceTree = "<group>"; };
 		5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInterface.m; sourceTree = "<group>"; };
 		5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChristopherDadisman.jpg; sourceTree = "<group>"; };
+		5ABF77AB1860FE18001FF06D /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginController.h; path = ../LoginController.h; sourceTree = "<group>"; };
+		5ABF77AC1860FE18001FF06D /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginController.m; path = ../LoginController.m; sourceTree = "<group>"; };
 		68128E8D1838263F00947C56 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		68128E8E1838263F00947C56 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		68128E901838267800947C56 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
@@ -321,6 +324,8 @@
 				68DBB79B183D581B0043FB36 /* MainMenuViewController.m */,
 				5A60C806185F9DA500F98AF7 /* AboutUs_ViewController.h */,
 				5A60C807185F9DA500F98AF7 /* AboutUs_ViewController.m */,
+				5ABF77AB1860FE18001FF06D /* LoginController.h */,
+				5ABF77AC1860FE18001FF06D /* LoginController.m */,
 				68DBB795183D581B0043FB36 /* Check-In */,
 				68DBB79C183D581B0043FB36 /* Special Event */,
 				68DBB7A7183D581B0043FB36 /* Welcome To Treehouse */,
@@ -502,6 +507,7 @@
 				5A60C808185F9DA500F98AF7 /* AboutUs_ViewController.m in Sources */,
 				68DBB7BE183D581C0043FB36 /* ParentViewController.m in Sources */,
 				68DBB7B8183D581C0043FB36 /* EventListViewController.m in Sources */,
+				5ABF77AD1860FE18001FF06D /* LoginController.m in Sources */,
 				68DBB7B4183D581C0043FB36 /* CheckInViewController.m in Sources */,
 				68DBB7BA183D581C0043FB36 /* SearchViewController.m in Sources */,
 				68DBB7BC183D581C0043FB36 /* EthnicityViewController.m in Sources */,
