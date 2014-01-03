@@ -64,6 +64,9 @@
 - (IBAction)EventButtonPressed:(id)sender {
     textLastName = nil;
 }
+- (IBAction)AppInfoButtonPressed:(id)sender {
+    textLastName = nil;
+}
 - (IBAction)AppInfo:(UIViewController *)sourceController{
     //UINib* secondNib = [UINib nibWithNibName:@"AboutUs" bundle:nil];
     UIStoryboard* secondStoryboard = [UIStoryboard storyboardWithName:@"AboutUs" bundle:nil];
