@@ -12,5 +12,5 @@
 <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerLocation;
 @property (weak, nonatomic) IBOutlet UITextField *pass;
-
+@property (retain, nonatomic) NSArray *locations;
 @end
