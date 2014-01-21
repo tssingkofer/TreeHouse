@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) NSString *activityName;
 @property (strong, nonatomic) NSString *programDate;
+@property (strong, nonatomic) NSString *exists;
 
 
 @end

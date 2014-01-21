@@ -11,6 +11,7 @@
 		5A06BD45185265AF007E5F31 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A06BD44185265AF007E5F31 /* Global.m */; };
 		5A60C805185F9C9600F98AF7 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A60C804185F9C9600F98AF7 /* AboutUs.storyboard */; };
 		5A60C808185F9DA500F98AF7 /* AboutUs_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A60C807185F9DA500F98AF7 /* AboutUs_ViewController.m */; };
+		5A80117F1884A02F00F2A0E8 /* XMLParseLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80117E1884A02F00F2A0E8 /* XMLParseLogin.m */; };
 		5AAE74C0184FC72E007FD0C1 /* ParseInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */; };
 		5AAE7546184FE918007FD0C1 /* ChristopherDadisman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */; };
 		5ABF77AD1860FE18001FF06D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF77AC1860FE18001FF06D /* LoginController.m */; };
@@ -81,6 +82,8 @@
 		5A60C804185F9C9600F98AF7 /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AboutUs.storyboard; path = ../AboutUs.storyboard; sourceTree = "<group>"; };
 		5A60C806185F9DA500F98AF7 /* AboutUs_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUs_ViewController.h; sourceTree = "<group>"; };
 		5A60C807185F9DA500F98AF7 /* AboutUs_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUs_ViewController.m; sourceTree = "<group>"; };
+		5A80117D1884A02F00F2A0E8 /* XMLParseLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseLogin.h; sourceTree = "<group>"; };
+		5A80117E1884A02F00F2A0E8 /* XMLParseLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseLogin.m; sourceTree = "<group>"; };
 		5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInterface.h; sourceTree = "<group>"; };
 		5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInterface.m; sourceTree = "<group>"; };
 		5AAE7545184FE918007FD0C1 /* ChristopherDadisman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChristopherDadisman.jpg; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				68128E911838267800947C56 /* Data.m */,
 				5AAE74BE184FC72E007FD0C1 /* ParseInterface.h */,
 				5AAE74BF184FC72E007FD0C1 /* ParseInterface.m */,
+				5A80117D1884A02F00F2A0E8 /* XMLParseLogin.h */,
+				5A80117E1884A02F00F2A0E8 /* XMLParseLogin.m */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				68DBB7BB183D581C0043FB36 /* SpecificEventViewController.m in Sources */,
 				68DBB7B5183D581C0043FB36 /* CoreViewController.m in Sources */,
 				68DBB7B7183D581C0043FB36 /* ConfirmCheckInViewController.m in Sources */,
+				5A80117F1884A02F00F2A0E8 /* XMLParseLogin.m in Sources */,
 				68DBB7B0183D581C0043FB36 /* AppDelegate.m in Sources */,
 				68DBB7B9183D581C0043FB36 /* NewEventViewController.m in Sources */,
 				6837441E183DA58A00339977 /* main.m in Sources */,

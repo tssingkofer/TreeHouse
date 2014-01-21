@@ -18,4 +18,5 @@
 @synthesize activityName = _activityName;
 @synthesize programDate = _programDate;
 
+@synthesize exists = _exists;
 @end

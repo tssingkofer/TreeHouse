@@ -68,14 +68,12 @@
     textLastName = nil;
 }
 - (IBAction)AppInfo:(UIViewController *)sourceController{
-    //UINib* secondNib = [UINib nibWithNibName:@"AboutUs" bundle:nil];
+
     UIStoryboard* secondStoryboard = [UIStoryboard storyboardWithName:@"AboutUs" bundle:nil];
-    //self = [[secondNib instantiateWithOwner:self options:nil] objectAtIndex:0];
+
     
     UIViewController* secondViewController = [secondStoryboard instantiateViewControllerWithIdentifier:@"AboutUs"];
     [self.navigationController pushViewController:secondViewController animated:YES];
-
-    //[sourceController presentViewController: secondViewController animated:YES completion: NULL];
     
 }
 #pragma mark AlertView Delegate

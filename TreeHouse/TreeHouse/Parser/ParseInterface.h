@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XMLParser.h"
-#import "Data.h"
 #import "Global.h"
 @interface ParseInterface : NSObject
+{
+    NSMutableData *_responseData;
+}
 
 @property (retain, nonatomic) NSString *pushString;
-
+@property (strong, readonly) NSMutableArray *data2;
 - (void) submitName: (NSArray *) field;
+-(void) login: (NSString *) uName password: (NSString *) pass;
 @end
