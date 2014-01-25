@@ -86,7 +86,7 @@ XMLParser *xmlParser;
     [super viewDidLoad];
     Global *global = [Global globalData];
 
-    queryString = [NSString stringWithFormat: @"http://%@/projects/event_list_view.php",global.ip];
+    queryString = [NSString stringWithFormat: @"http://%@/Projects/event_list_view.php",global.ip];
         
     NSLog(@"%@",queryString);
     xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
