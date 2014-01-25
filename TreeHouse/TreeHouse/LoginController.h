@@ -19,5 +19,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *login;
 -(IBAction) login:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *contLogin;
 - (void) success: (NSMutableArray *) data;
 @end

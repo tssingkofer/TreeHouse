@@ -72,9 +72,24 @@ XMLParseLogin *dat;
     ParseInterface *parse = [ParseInterface alloc];
 
     [parse login:username.text password:pass.text];
-    NSLog(@"test");
 
+    UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    
+    UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
+    
+    [self.navigationController pushViewController:MainViewController animated:YES];
 }
+- (IBAction)contLogin:(id)sender
+{
+    UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+     
+     
+     UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
+     
+     [self.navigationController pushViewController:MainViewController animated:YES];
+}
+
 
 - (void) success: (NSMutableArray *) data
 {
@@ -85,15 +100,21 @@ XMLParseLogin *dat;
     NSLog(@"The entry was %@", test);
     if ([test isEqual: @"Yes"])
     {
-        /*UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LoginController * vc = [LoginController alloc];
+        UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
         
         UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
         
-        [self.navigationController pushViewController:MainViewController animated:YES];*/
+        [self.navigationController pushViewController:MainViewController animated:YES];
         
-        LoginController *vc = [LoginController alloc];
-        [self performSegueWithIdentifier:@"Main" sender:self.navigationController];
+        
+        //[self performSegueWithIdentifier:@"test" sender:nil];
+        
+        
+        //[_contLogin sendActionsForControlEvents:UIControlEventAllEvents];
+        
+
         
     }else{
         if ([test  isEqual: @"No"])
@@ -105,5 +126,22 @@ XMLParseLogin *dat;
         
         
     }
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    NSLog(@"segue from Login");
+    //addToCartViewContollerForItem
+    /*if([[segue identifier] isEqualToString:@"test"]){
+        NSIndexPath *selectedRow = [[self tableView] indexPathForSelectedRow];
+        
+        Item *currentItem = [[Item alloc]init];
+        currentItem = [itemList objectAtIndex:[selectedRow row]];
+        
+        RESTAddToCartViewController *vc = [segue destinationViewController];
+        [vc setCurrentItem:currentItem];
+    }*/
+    
 }
 @end

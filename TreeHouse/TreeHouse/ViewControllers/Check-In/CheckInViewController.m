@@ -178,4 +178,5 @@ XMLParser *xmlParser2;
         xmlParser2 = [[XMLParser alloc] loadXMLByURL:self.pushString];
     }
 }
+
 @end
