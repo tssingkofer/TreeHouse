@@ -9,13 +9,14 @@
 #import "MainMenuViewController.h"
 #import "CheckInViewController.h"
 #import "AboutUs_ViewController.h"
+#import "LoginController.h"
 
 @interface MainMenuViewController ()
 
 @end
 
 @implementation MainMenuViewController
-@synthesize textLastName;
+@synthesize textLastName, loginStatus;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if (textLastName != nil){
@@ -39,6 +40,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     textLastName = nil;
+    
+    LoginController *vc = [[LoginController alloc] init];
+    NSLog(@"%@", vc.loginAU);
+    //NSLog(@"%@", loginStatus);
 }
 
 - (void)didReceiveMemoryWarning

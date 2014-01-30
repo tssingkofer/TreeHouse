@@ -16,5 +16,5 @@
 @property (retain, nonatomic) NSString *pushString;
 @property (strong, readonly) NSMutableArray *data2;
 - (void) submitName: (NSArray *) field;
--(void) login: (NSString *) uName password: (NSString *) pass;
+-(NSMutableArray *) login: (NSString *) uName password: (NSString *) pass;
 @end

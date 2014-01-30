@@ -17,5 +17,7 @@
 - (IBAction)WelcomeButtonPressed:(id)sender;
 - (IBAction)EventButtonPressed:(id)sender;
 
+@property (retain, nonatomic) NSString *loginStatus;
+
 @property (retain) NSString *textLastName;
 @end

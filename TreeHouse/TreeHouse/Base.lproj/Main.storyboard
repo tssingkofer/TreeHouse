@@ -384,14 +384,15 @@
                                     <action selector="editingDidBegin:" destination="zFI-Ah-f0k" eventType="editingDidBegin" id="iHx-5F-k9d"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB2-qE-PwA">
-                                <rect key="frame" x="175" y="424" width="134" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB2-qE-PwA">
+                                <rect key="frame" x="365" y="475" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login - not working">
+                                <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="zFI-Ah-f0k" eventType="touchUpInside" id="UJ8-1K-ELX"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="jSM-uf-UmY"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeTreeHouse.png" translatesAutoresizingMaskIntoConstraints="NO" id="pIt-Lb-BBy">
@@ -417,7 +418,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-QL-Dns">
-                                <rect key="frame" x="287" y="532" width="195" height="30"/>
+                                <rect key="frame" x="287" y="582" width="195" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login without authentication">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -427,7 +428,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-1Z-xbd">
-                                <rect key="frame" x="55" y="492" width="667" height="32"/>
+                                <rect key="frame" x="60" y="513" width="667" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="This page is not working completly working yet. Click login without username and pass">
@@ -449,7 +450,6 @@
                         <outlet property="login" destination="aB2-qE-PwA" id="zpf-S0-JDL"/>
                         <outlet property="pass" destination="71N-as-yxN" id="nHa-BZ-tlX"/>
                         <outlet property="username" destination="goZ-I1-q6y" id="Vxp-y0-K45"/>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="test" id="2zL-ss-Xer"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ft5-HV-uYC" userLabel="First Responder" sceneMemberID="firstResponder"/>

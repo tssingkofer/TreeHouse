@@ -7,6 +7,8 @@
 //
 
 #import "LoginController.h"
+#import "MainMenuViewController.h"
+
 ParseInterface *parse;
 XMLParseLogin *dat;
 @interface LoginController ()
@@ -14,7 +16,7 @@ XMLParseLogin *dat;
 @end
 
 @implementation LoginController
-@synthesize pass, pickerLocation, locations, username;
+@synthesize pass, pickerLocation, locations, username, loginAU;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -72,13 +74,11 @@ XMLParseLogin *dat;
     ParseInterface *parse = [ParseInterface alloc];
 
     [parse login:username.text password:pass.text];
+    
 
-    UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+
     
-    
-    UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
-    
-    [self.navigationController pushViewController:MainViewController animated:YES];
 }
 - (IBAction)contLogin:(id)sender
 {
@@ -96,32 +96,32 @@ XMLParseLogin *dat;
 
     Data *currentEntry = [data objectAtIndex:0];
     NSMutableArray *login = [[NSMutableArray alloc] initWithObjects:currentEntry.exists, nil];
-    NSString *test = [NSString stringWithFormat:@"%@", login[0]];
-    NSLog(@"The entry was %@", test);
-    if ([test isEqual: @"Yes"])
+    NSString *passInfo = [NSString stringWithFormat:@"%@", login[0]];
+    NSLog(@"The entry was %@", passInfo);
+    MainMenuViewController *vc = [[MainMenuViewController alloc] init];
+    vc.loginStatus = loginAU;
+    
+    
+    if ([passInfo isEqual: @"Yes"])
     {
-        LoginController * vc = [LoginController alloc];
-        UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        loginAU = passInfo;
         
-        
-        UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
-        
-        [self.navigationController pushViewController:MainViewController animated:YES];
-        
-        
+        //[self performSegueWithIdentifier:@"test" sender:self];
+        //LoginController * vc = [LoginController alloc];
         //[self performSegueWithIdentifier:@"test" sender:nil];
-        
-        
         //[_contLogin sendActionsForControlEvents:UIControlEventAllEvents];
-        
-
-        
+ 
     }else{
-        if ([test  isEqual: @"No"])
+        if ([passInfo  isEqual: @"No"])
         {
-            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Login Failed: Bad username or password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
-            [alert show];
+            //UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Login Failed: Bad username or password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+            //[alert show];
+            loginAU = passInfo;
             
+        }else
+        {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Unknown Error" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+            [alert show];
         }
         
         
@@ -129,19 +129,29 @@ XMLParseLogin *dat;
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    NSLog(@"segue from Login");
-    //addToCartViewContollerForItem
-    /*if([[segue identifier] isEqualToString:@"test"]){
-        NSIndexPath *selectedRow = [[self tableView] indexPathForSelectedRow];
-        
-        Item *currentItem = [[Item alloc]init];
-        currentItem = [itemList objectAtIndex:[selectedRow row]];
-        
-        RESTAddToCartViewController *vc = [segue destinationViewController];
-        [vc setCurrentItem:currentItem];
-    }*/
     
 }
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    /*UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Waiting for Login" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+    [alert show];
+    
+    if ([loginAU isEqual:@"Yes"])
+    {
+        NSLog(@"The login is complete: %@", loginAU);
+        UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        
+        UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
+        
+        [self.navigationController pushViewController:MainViewController animated:YES];
+    } else
+    {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Login Failed: Bad username or password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+        [alert show];
+        NSLog(@"The login failed: %@", loginAU);
+    }*/
+    return YES;
+}
+
 @end

@@ -21,4 +21,5 @@
 -(IBAction) login:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *contLogin;
 - (void) success: (NSMutableArray *) data;
+@property (retain, nonatomic) NSString *loginAU;
 @end

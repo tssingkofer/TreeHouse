@@ -65,7 +65,7 @@ XMLParseLogin *xmlParser;
     }
     
 }
--(void) login: (NSString *) uName password: (NSString *) pass
+-(NSMutableArray *) login: (NSString *) uName password: (NSString *) pass
 {
     Global *global = [Global globalData];
     //pushString = [NSString stringWithFormat:@"http://%@/Projects/welcometotreehouse.php?=%@", global.ip,field[10]];
@@ -83,48 +83,64 @@ XMLParseLogin *xmlParser;
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Current-Type"];
     [request setHTTPBody:postData];
-    NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];
+    //NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];
 
+    NSURLResponse* response;
+    NSError* error = nil;
     
+    NSData* result = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
-    if(conn)
+    xmlParser = [XMLParseLogin alloc];
+    [xmlParser ParseData:result];
+    if ([[xmlParser data] count] > 0) {
+        return [xmlParser data];
+    } else
     {
-        NSLog(@"The connection was successful");
+        NSString *error = @"Server Error";
+        NSMutableArray *errorC = [[NSMutableArray alloc] init];
+        [errorC addObject:error];
+        return errorC;
     }
-    else
-    {
-        NSLog(@"There was an error");
-    }
+    
 }
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     // A response has been received, this is where we initialize the instance var you created
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
-    _responseData = [[NSMutableData alloc] init];
+    //_responseData = [[NSMutableData alloc] init];
     
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     // Append the new data to the instance variable you declared
-    [_responseData appendData:data];
-    NSLog(@"We've been beamed up scotty!");
+    //[_responseData appendData:data];
+    //NSLog(@"We've been beamed up scotty!");
 }
 - (NSCachedURLResponse *)connection:(NSURLConnection *)connection
                   willCacheResponse:(NSCachedURLResponse*)cachedResponse {
     // Return nil to indicate not necessary to store a cached response for this connection
-    NSLog(@"Caching hit");
+    //NSLog(@"Caching hit");
     return nil;
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
-    NSLog(@"Done Loading");
+    /*NSLog(@"Done Loading");
     //NSLog(@"Data = %@", _responseData);
     
     xmlParser = [XMLParseLogin alloc];
     [xmlParser ParseData:_responseData];
     LoginController *controller = [LoginController alloc];
-    [controller success:[xmlParser data]];
+    if ([[xmlParser data] count] > 0) {
+        [controller success:[xmlParser data]];
+    } else
+    {
+        NSString *error = @"Server Error";
+        NSMutableArray *errorC = [[NSMutableArray alloc] init];
+        [errorC addObject:error];
+        [controller success:errorC];
+    }
+    */
 }
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     // The request has failed for some reason!
