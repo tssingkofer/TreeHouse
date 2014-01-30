@@ -103,6 +103,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     ethnicityField.inputView = PickerView;
     referralField.inputView = PickerView;
     age.delegate = self;
+    zip.delegate = self;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -217,7 +218,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     {
         self.mNameL.hidden = NO;
     }
-    if (address.text > 0)
+    if (address.text.length > 0)
     {
         self.addressL.hidden = YES;
     } else
@@ -238,7 +239,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     {
         self.stateL.hidden = NO;
     }
-    if (zip.text.length>0)
+    if (zip.text.length>0 && zip.text.length==5)
     {
         self.zipL.hidden = YES;
     } else
@@ -266,7 +267,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     {
         self.genderL.hidden = NO;
     }
-    if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0)&&(DOB.text.length>0) && (age.text.length>0) && (gender.text.length >0))
+    if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text.length > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0) && (zip.text.length==5) && (DOB.text.length>0) && (age.text.length>0) && (gender.text.length >0))
     {
         self.button.enabled = YES;
         /*NSDAtE *cal = DOB.text;
@@ -279,16 +280,50 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     }
 }
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    //NSLog(@"Button Tag is : %i",[textField tag]); //this is how I figured out what text box it was after setting the tag in the storyboard
+    
     // Check for non-numeric characters
     NSUInteger lengthOfString = string.length;
     for (NSInteger loopIndex = 0; loopIndex < lengthOfString; loopIndex++) {
         unichar character = [string characterAtIndex:loopIndex];
-        if (character < 48) return NO; // 48 unichar for 0
-        if (character > 57) return NO; // 57 unichar for 9
+        if (character > 57 || character < 48)
+        {
+            if ([textField tag] == 1)
+            {
+                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Zipcode Field" message:@"Enter only valid numbers for your zipcode" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+                [alert show];
+            } else
+            {
+                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Age Field" message:@"Enter only valid numbers for your age" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+                [alert show];
+            }
+
+            return NO; // 57 unichar for 9
+
+        }
     }
     // Check for total length
-    NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
-    if (proposedNewLength > 3) return NO;
-    return YES;
+    if ([textField tag] == 1)
+    {
+        NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
+        if (proposedNewLength > 5)
+        {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Zipcode Field" message:@"Enter only five digits" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            [alert show];
+            return NO;
+        }
+        return YES;
+    } else
+    {
+        NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
+        if (proposedNewLength > 3)
+        {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Age Field" message:@"Enter only three digits" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            [alert show];
+            return NO;
+        }
+        return YES;
+    }
+
 }
 @end

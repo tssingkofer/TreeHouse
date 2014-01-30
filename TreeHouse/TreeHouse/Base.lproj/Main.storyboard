@@ -61,7 +61,7 @@
                                     <action selector="editingBegan:" destination="OOf-eP-4GW" eventType="editingDidEnd" id="s7s-mZ-IIU"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-IB-b55">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-IB-b55">
                                 <rect key="frame" x="617" y="203" width="124" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -121,7 +121,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-eM-hZ5">
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-eM-hZ5">
                                 <rect key="frame" x="25" y="346" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -570,7 +570,6 @@
                                 </state>
                                 <connections>
                                     <action selector="contLogin:" destination="zFI-Ah-f0k" eventType="touchUpInside" id="F5a-Hk-xI5"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="NSq-xp-G79"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-1Z-xbd">

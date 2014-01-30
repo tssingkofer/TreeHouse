@@ -18,6 +18,7 @@
     IBOutlet UITextField *MIText;
     IBOutlet UITextField *lNameText;
     IBOutlet UITextField *age;
+    IBOutlet UITextField *zip;
     
     UIPickerView *PickerView;
     NSArray *livesWith;
@@ -47,7 +48,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *address;
 @property (weak, nonatomic) IBOutlet UITextField *city;
 @property (weak, nonatomic) IBOutlet UITextField *state;
-@property (weak, nonatomic) IBOutlet UITextField *zip;
+@property (retain, nonatomic) IBOutlet UITextField *zip;
 @property (weak, nonatomic) IBOutlet UITextField *cellPhone;
 
 @property (weak, nonatomic) IBOutlet UITextField *homePhone;
