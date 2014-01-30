@@ -17,6 +17,8 @@ ParseInterface *parse;
 
 
 @synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool, livingField, ethnicityField, referralField;
+//warning labels
+@synthesize fNameL, lNameL, addressL, cityL, ageL, stateL, zipL, birthL, genderL, livingL, ethnicityL, referralL;
 //@synthesize MIName;
 
 
@@ -100,7 +102,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     livingField.inputView =  PickerView;
     ethnicityField.inputView = PickerView;
     referralField.inputView = PickerView;
-    
+    age.delegate = self;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -194,6 +196,76 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 }*/
 // Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
+    if (fName.text.length  > 0)
+    {
+        self.fNameL.hidden = YES;
+    } else
+    {
+        self.fNameL.hidden = NO;
+    }
+    if (lName.text.length > 0)
+    {
+        self.lNameL.hidden = YES;
+    } else
+    {
+        self.lNameL.hidden = NO;
+    }
+    if (mi.text.length > 0)
+    {
+        self.mNameL.hidden = YES;
+    } else
+    {
+        self.mNameL.hidden = NO;
+    }
+    if (address.text > 0)
+    {
+        self.addressL.hidden = YES;
+    } else
+    {
+        self.addressL.hidden = NO;
+    }
+    if (city.text.length > 0)
+    {
+        self.cityL.hidden = YES;
+    } else
+    {
+        self.cityL.hidden = NO;
+    }
+    if (state.text.length > 0)
+    {
+        self.stateL.hidden = YES;
+    } else
+    {
+        self.stateL.hidden = NO;
+    }
+    if (zip.text.length>0)
+    {
+        self.zipL.hidden = YES;
+    } else
+    {
+        self.zipL.hidden = NO;
+    }
+    if (DOB.text.length>0)
+    {
+        self.birthL.hidden = YES;
+    } else
+    {
+        self.birthL.hidden = NO;
+    }
+    if (age.text.length>0)
+    {
+        self.ageL.hidden = YES;
+    } else
+    {
+        self.ageL.hidden = NO;
+    }
+    if (gender.text.length >0)
+    {
+        self.genderL.hidden = YES;
+    } else
+    {
+        self.genderL.hidden = NO;
+    }
     if ((fName.text.length  > 0) && (lName.text.length > 0) && (mi.text.length > 0) && (address.text > 0) && (city.text.length > 0) && (state.text.length > 0) && (zip.text.length>0)&&(DOB.text.length>0) && (age.text.length>0) && (gender.text.length >0))
     {
         self.button.enabled = YES;
@@ -205,5 +277,18 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     else {
         self.button.enabled = NO;
     }
+}
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    // Check for non-numeric characters
+    NSUInteger lengthOfString = string.length;
+    for (NSInteger loopIndex = 0; loopIndex < lengthOfString; loopIndex++) {
+        unichar character = [string characterAtIndex:loopIndex];
+        if (character < 48) return NO; // 48 unichar for 0
+        if (character > 57) return NO; // 57 unichar for 9
+    }
+    // Check for total length
+    NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
+    if (proposedNewLength > 3) return NO;
+    return YES;
 }
 @end

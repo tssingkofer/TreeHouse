@@ -10,13 +10,14 @@
 #import "ParseInterface.h"
 #import "Global.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<UITextFieldDelegate>
 
 {
     //IBOutlet UITextField *fNameText;
     
     IBOutlet UITextField *MIText;
     IBOutlet UITextField *lNameText;
+    IBOutlet UITextField *age;
     
     UIPickerView *PickerView;
     NSArray *livesWith;
@@ -28,7 +29,7 @@
 - (IBAction)ethnicityEditingDidBegin:(id)sender;
 - (IBAction)referralEditingDidBegin:(id)sender;
 - (IBAction)editingBegan:(UITextField *)sender;
-
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *button;
 
 
@@ -52,12 +53,25 @@
 @property (weak, nonatomic) IBOutlet UITextField *homePhone;
 @property (weak, nonatomic) IBOutlet UITextField *eMail;
 @property (weak, nonatomic) IBOutlet UITextField *DOB;
-@property (weak, nonatomic) IBOutlet UITextField *age;
+@property (retain, nonatomic) IBOutlet UITextField *age;
 @property (weak, nonatomic) IBOutlet UITextField *gender;
 @property (weak, nonatomic) IBOutlet UITextField *grade;
 @property (weak, nonatomic) IBOutlet UITextField *middleSchool;
 @property (weak, nonatomic) IBOutlet UITextField *gradDate;
 @property (weak, nonatomic) IBOutlet UITextField *highSchool;
+@property (weak, nonatomic) IBOutlet UILabel *fNameL;
+@property (weak, nonatomic) IBOutlet UILabel *mNameL;
+@property (weak, nonatomic) IBOutlet UILabel *lNameL;
+@property (weak, nonatomic) IBOutlet UILabel *addressL;
+@property (weak, nonatomic) IBOutlet UILabel *cityL;
+@property (weak, nonatomic) IBOutlet UILabel *stateL;
+@property (weak, nonatomic) IBOutlet UILabel *zipL;
+@property (weak, nonatomic) IBOutlet UILabel *birthL;
+@property (weak, nonatomic) IBOutlet UILabel *genderL;
+@property (weak, nonatomic) IBOutlet UILabel *ageL;
+@property (weak, nonatomic) IBOutlet UILabel *livingL;
+@property (weak, nonatomic) IBOutlet UILabel *ethnicityL;
+@property (weak, nonatomic) IBOutlet UILabel *referralL;
 
 
 

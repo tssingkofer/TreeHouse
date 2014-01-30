@@ -19,27 +19,7 @@ XMLParseLogin *xmlParser;
 - (void) submitName: (NSArray *) field
 {
     Global *global = [Global globalData];
-    /*[insert addObject:@{@"FirstName": fName.text}];
-     [insert addObject:@{@"LastName": lName.text}];
-     [insert addObject:@{@"MI": mi.text}];
-     [insert addObject:@{@"Address": address.text}];
-     [insert addObject:@{@"City": city.text}];
-     [insert addObject:@{@"State": state.text}];
-     [insert addObject:@{@"Zip": zip.text}];
-     [insert addObject:@{@"PhoneHome": homePhone.text}];
-     [insert addObject:@{@"PhoneMobile": cellPhone.text}];
-     [insert addObject:@{@"Email": eMail.text}];
-     [insert addObject:@{@"DOB": DOB.text}];
-     [insert addObject:@{@"Age": age.text}];
-     [insert addObject:@{@"Gender": gender.text}];
-     [insert addObject:@{@"Grade": grade.text}];
-     [insert addObject:@{@"School": middleSchool.text}];
-     [insert addObject:@{@"HighSchool": highSchool.text}];
-     [insert addObject:@{@"GradDate": gradDate.text}];*/
-    //Global *global = [Global globalData];
-    //pushString = [NSString stringWithFormat:@"http://%@/Projects/welcometotreehouse.php?=%@", global.ip,field[10]];
 
-    //xmlParser = [[XMLParser alloc] loadXMLByURL:pushString];
     NSString *ip = [NSString stringWithFormat:@"http://%@/Projects/post.php", global.ip];
     
     //website http://stackoverflow.com/questions/15749486/sending-http-post-ios
@@ -102,49 +82,5 @@ XMLParseLogin *xmlParser;
         return errorC;
     }
     
-}
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    // A response has been received, this is where we initialize the instance var you created
-    // so that we can append data to it in the didReceiveData method
-    // Furthermore, this method is called each time there is a redirect so reinitializing it
-    // also serves to clear it
-    //_responseData = [[NSMutableData alloc] init];
-    
-}
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    // Append the new data to the instance variable you declared
-    //[_responseData appendData:data];
-    //NSLog(@"We've been beamed up scotty!");
-}
-- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
-                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
-    // Return nil to indicate not necessary to store a cached response for this connection
-    //NSLog(@"Caching hit");
-    return nil;
-}
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    // The request is complete and data has been received
-    // You can parse the stuff in your instance variable now
-    /*NSLog(@"Done Loading");
-    //NSLog(@"Data = %@", _responseData);
-    
-    xmlParser = [XMLParseLogin alloc];
-    [xmlParser ParseData:_responseData];
-    LoginController *controller = [LoginController alloc];
-    if ([[xmlParser data] count] > 0) {
-        [controller success:[xmlParser data]];
-    } else
-    {
-        NSString *error = @"Server Error";
-        NSMutableArray *errorC = [[NSMutableArray alloc] init];
-        [errorC addObject:error];
-        [controller success:errorC];
-    }
-    */
-}
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    // The request has failed for some reason!
-    // Check the error var
-    NSLog(@"There was an error with the connection");
 }
 @end

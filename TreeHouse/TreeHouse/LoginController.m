@@ -108,40 +108,15 @@ XMLParseLogin *dat;
 }
 - (IBAction)contLogin:(id)sender
 {
-    //UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
      
      
-     //UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
+     UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
      
-     //[self.navigationController pushViewController:MainViewController animated:YES];
+     [self.navigationController pushViewController:MainViewController animated:YES];
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-}
-- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
-    /*UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Waiting for Login" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
-    [alert show];
-    
-    if ([loginAU isEqual:@"Yes"])
-    {
-        NSLog(@"The login is complete: %@", loginAU);
-        UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        
-        
-        UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
-        
-        [self.navigationController pushViewController:MainViewController animated:YES];
-    } else
-    {
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Login Failed: Bad username or password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
-        [alert show];
-        NSLog(@"The login failed: %@", loginAU);
-    }*/
-    return YES;
-}
+
 
 @end

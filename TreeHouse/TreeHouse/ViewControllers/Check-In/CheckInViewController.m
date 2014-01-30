@@ -144,24 +144,8 @@ XMLParser *xmlParser2;
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}/*
-- (NSMutableArray *)updateText {
-  
-    NSUInteger cellsCount = [self.dataTableView numberOfRowsInSection:0];
-    NSMutableArray *cellTextArray = [[NSMutableArray alloc] initWithCapacity:cellsCount];
-    
-    for(NSInteger i = 0; i < cellsCount; i++) {
-        
-        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-        //UITableViewCell *cell = [self.dataTableView cellForRowAtIndexPath:indexPath];
-        
-        	Data *currentEntry = [[xmlParser data] objectAtIndex:indexPath.row];
-        
-        [cellTextArray insertObject:[currentEntry firstName] atIndex:i];
-    }
-    
-    return cellTextArray;
-}*/
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //tblSelect = (NSString *)indexPath;
