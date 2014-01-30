@@ -90,7 +90,10 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
                   ];
     referral = @[@"Other Teen/Friend", @"Parent/Other Family Member", @"Teacher/School Counselor/School Staff", @"Pastor/Minister/Church Staff", @"Therapist/Social Worker", @"Probation Officer", @"Treehouse staff"
                       ];
+    stateR = @[@"AL",@"AK”,@”AZ”,@”AR”,@”CA”,@”CO”,@”CT”,@”DE”,@”DC”,@”FL”,@”GA”,@”HI”,@”ID”,@”IL”,@”IN”,@”IA”,@”KS”,@”KY”,@”LA”,@”ME”,@”MD”,@”MA”,@”MI”,@”MN”,@”MS”,@”MO”,@”MT”,@”NE”,@”NV”,@”NH”,@”NJ”,@”NM”,@”NY”,@”NC”,@”ND”,@”OH”,@”OK”,@”OR”,@”PA”,@”RI”,@”SC”,@”SD”,@”TN”,@”TX”,@”UT”,@”VT”,@”VA”,@”WA”,@”WV”,@”WI”,@”WY”,@”AS”,@”GU”,@”MP”,@”PR”,@”VI”,@”UM"];
 
+    stateName = @[@"Alabama”,@”Alaska”,@”Arizona”,@”Arkansas”,@”California”,@”Colorado”,@”Connecticut”,@”Delaware”,@”District of Columbia”,@”Florida”,@”Georgia”,@”Hawaii”,@”Idaho”,@”Illinois”,@”Indiana”,@”Iowa”,@”Kansas”,@”Kentucky”,@”Louisiana",@"Maine”,@”Maryland”,@”Massachusetts”,@”Michigan”,@”Minnesota”,@”Mississippi",@"Missouri”,@”Montana”,@”Nebraska”,@”Nevada”,@”New Hampshire”,@”New Jersey",@"New Mexico”,@”New York”,@”North Carolina”,@”North Dakota”,@”Ohio”,@”Oklahoma”,@”Oregon”,@”Pennsylvania”,@”Rhode Island”,@”South Carolina”,@”South Dakota”,@”Tennessee”,@”Texas”,@”Utah”,@”Vermont”,@”Virginia”,@”Washington”,@”West Virginia”,@”Wisconsin”,@”Wyoming”,@”American Samoa”,@”Guam”,@”Northern Mariana Islands”,@”Puerto Rico”,@”Virgin Islands”,@”U.S. Minor Outlying Islands"];
+    
     PickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 43, 320, 480)];
     
     PickerView.delegate = self;
@@ -102,6 +105,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     livingField.inputView =  PickerView;
     ethnicityField.inputView = PickerView;
     referralField.inputView = PickerView;
+    state.inputView = PickerView;
     age.delegate = self;
     zip.delegate = self;
     mi.delegate = self;
@@ -123,9 +127,13 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     else if ([referralField isFirstResponder]){
         return [referral count];
     }
+    else if ([state isFirstResponder]){
+        return [stateR count];
+    }
     else {
         return 0;
     }
+
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
@@ -138,6 +146,9 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     }
     else if ([referralField isFirstResponder]){
         return [referral objectAtIndex:row];
+    }
+    else if ([state isFirstResponder]){
+        return [stateR objectAtIndex:row];
     }
     else {
         return 0;
@@ -155,6 +166,9 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     }
     else if ([referralField isFirstResponder]){
         referralField.text = [referral objectAtIndex:row];
+    }
+    else if ([state isFirstResponder]){
+        state.text = [stateR objectAtIndex:row];
     }
     else {
         return;
@@ -179,23 +193,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 - (IBAction)referralEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
 }
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
-{
-    
-}
 
-/*- (IBAction)DonePress:(UIBarButtonItem *)sender
-{
-    //UIButton *button=(UIButton*)sender;
-    if ((livingField.text.length  > 0) && (ethnicityField.text.length > 0)  && (referralField.text.length > 0) && (fNameText.text.length>0)) {
-        self.button.enabled = YES;
-    }
-    else {
-        self.button.enabled = NO;
-    }
-    
-    
-}*/
 // Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
     if (fName.text.length  > 0)

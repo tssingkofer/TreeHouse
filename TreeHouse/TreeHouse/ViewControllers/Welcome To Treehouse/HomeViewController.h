@@ -25,6 +25,8 @@
     NSArray *livesWith;
     NSArray *ethnicity;
     NSArray *referral;
+    NSArray *stateR;
+    NSArray *stateName;
 }
 //Actions for selecting a picker field
 - (IBAction)livingEditingDidBegin:(id)sender;
@@ -48,7 +50,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *lName;
 @property (weak, nonatomic) IBOutlet UITextField *address;
 @property (weak, nonatomic) IBOutlet UITextField *city;
-@property (weak, nonatomic) IBOutlet UITextField *state;
+@property (strong, nonatomic) IBOutlet UITextField *state;
 @property (retain, nonatomic) IBOutlet UITextField *zip;
 @property (weak, nonatomic) IBOutlet UITextField *cellPhone;
 
