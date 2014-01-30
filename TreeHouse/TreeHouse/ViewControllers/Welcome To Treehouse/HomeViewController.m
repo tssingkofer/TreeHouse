@@ -104,6 +104,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     referralField.inputView = PickerView;
     age.delegate = self;
     zip.delegate = self;
+    mi.delegate = self;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -286,6 +287,8 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     NSUInteger lengthOfString = string.length;
     for (NSInteger loopIndex = 0; loopIndex < lengthOfString; loopIndex++) {
         unichar character = [string characterAtIndex:loopIndex];
+        if ([textField tag] != 3)
+        {
         if (character > 57 || character < 48)
         {
             if ([textField tag] == 1)
@@ -301,11 +304,14 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
             return NO; // 57 unichar for 9
 
         }
+            
+    }
     }
     // Check for total length
+    NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
     if ([textField tag] == 1)
     {
-        NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
+
         if (proposedNewLength > 5)
         {
             UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Zipcode Field" message:@"Enter only five digits" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
@@ -315,7 +321,8 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
         return YES;
     } else
     {
-        NSUInteger proposedNewLength = textField.text.length - range.length + string.length;
+        if ([textField tag] == 2)
+        {
         if (proposedNewLength > 3)
         {
             UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Age Field" message:@"Enter only three digits" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
@@ -323,6 +330,17 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
             return NO;
         }
         return YES;
+    } else
+    {
+        if (proposedNewLength > 1)
+        {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Middle Initial Field" message:@"Enter only one digit" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            [alert show];
+            return NO;
+        }
+
+        return YES;
+    }
     }
 
 }
