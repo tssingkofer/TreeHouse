@@ -41,9 +41,6 @@
 	// Do any additional setup after loading the view.
     textLastName = nil;
     
-    LoginController *vc = [[LoginController alloc] init];
-    NSLog(@"%@", vc.loginAU);
-    //NSLog(@"%@", loginStatus);
 }
 
 - (void)didReceiveMemoryWarning

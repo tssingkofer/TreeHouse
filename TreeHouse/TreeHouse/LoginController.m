@@ -73,60 +73,50 @@ XMLParseLogin *dat;
 {
     ParseInterface *parse = [ParseInterface alloc];
 
-    [parse login:username.text password:pass.text];
-    
-
-
-
-    
-}
-- (IBAction)contLogin:(id)sender
-{
-    UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-     
-     
-     UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
-     
-     [self.navigationController pushViewController:MainViewController animated:YES];
-}
-
-
-- (void) success: (NSMutableArray *) data
-{
-
+    NSMutableArray *data = [parse login:username.text password:pass.text];
     Data *currentEntry = [data objectAtIndex:0];
     NSMutableArray *login = [[NSMutableArray alloc] initWithObjects:currentEntry.exists, nil];
     NSString *passInfo = [NSString stringWithFormat:@"%@", login[0]];
     NSLog(@"The entry was %@", passInfo);
-    MainMenuViewController *vc = [[MainMenuViewController alloc] init];
-    vc.loginStatus = loginAU;
-    
-    
+
     if ([passInfo isEqual: @"Yes"])
     {
         loginAU = passInfo;
+        UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
-        //[self performSegueWithIdentifier:@"test" sender:self];
-        //LoginController * vc = [LoginController alloc];
-        //[self performSegueWithIdentifier:@"test" sender:nil];
-        //[_contLogin sendActionsForControlEvents:UIControlEventAllEvents];
- 
+        
+        UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
+        
+        [self.navigationController pushViewController:MainViewController animated:YES];
     }else{
         if ([passInfo  isEqual: @"No"])
         {
-            //UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Login Failed: Bad username or password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
-            //[alert show];
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Login Failed: Bad username or password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+            [alert show];
             loginAU = passInfo;
             
         }else
         {
-            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Unknown Error" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Authentication" message:@"Unknown Error, contact your administrator" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
             [alert show];
+            NSLog(@"Login status: %@", passInfo);
         }
         
         
     }
+    
 }
+- (IBAction)contLogin:(id)sender
+{
+    //UIStoryboard* MainMenu = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+     
+     
+     //UIViewController* MainViewController = [MainMenu instantiateViewControllerWithIdentifier:@"Main"];
+     
+     //[self.navigationController pushViewController:MainViewController animated:YES];
+}
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     

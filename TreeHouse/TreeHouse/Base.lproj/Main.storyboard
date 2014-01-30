@@ -366,7 +366,7 @@
                                 <color key="textColor" red="0.20784313725490194" green="0.52941176470588236" blue="0.16862745098039217" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71N-as-yxN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="71N-as-yxN">
                                 <rect key="frame" x="336" y="421" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -375,11 +375,11 @@
                                     <action selector="editingDidBegin:" destination="zFI-Ah-f0k" eventType="editingChanged" id="2jP-gu-wjG"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-I1-q6y">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-I1-q6y">
                                 <rect key="frame" x="336" y="369" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="editingDidBegin:" destination="zFI-Ah-f0k" eventType="editingDidBegin" id="iHx-5F-k9d"/>
                                 </connections>
@@ -392,7 +392,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="zFI-Ah-f0k" eventType="touchUpInside" id="UJ8-1K-ELX"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="jSM-uf-UmY"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeTreeHouse.png" translatesAutoresizingMaskIntoConstraints="NO" id="pIt-Lb-BBy">
@@ -425,13 +424,14 @@
                                 </state>
                                 <connections>
                                     <action selector="contLogin:" destination="zFI-Ah-f0k" eventType="touchUpInside" id="F5a-Hk-xI5"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="NSq-xp-G79"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-1Z-xbd">
-                                <rect key="frame" x="60" y="513" width="667" height="32"/>
+                                <rect key="frame" x="65" y="513" width="667" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="This page is not working completly working yet. Click login without username and pass">
+                                    <fragment content="Login will work once we get the script on the server. Until then use button below">
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
