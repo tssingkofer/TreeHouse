@@ -167,7 +167,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 {
     if ([livingField isFirstResponder]) {
         livingField.text = [livesWith objectAtIndex:row];
-        //[lastLocation insertObject:livingField.text atIndex:0];
+        //[lastLocation insertObject:livingField.text atIndex:0]; //Tyler this is where I was trying to store the row selected
     }
     else if ([ethnicityField isFirstResponder]){
         ethnicityField.text = [ethnicity objectAtIndex:row];
@@ -195,7 +195,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 
 - (IBAction)livingEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
-        [PickerView selectRow:0 inComponent:0 animated:NO];
+        [PickerView selectRow:0 inComponent:0 animated:NO]; // Tyler this is where you can set the select row.
 }
 
 - (IBAction)ethnicityEditingDidBegin:(id)sender {
