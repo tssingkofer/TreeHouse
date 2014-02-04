@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLParseLogin.h"
+#import "Data.h"
+#import "SearchViewController.h"
+#import "Global.h"
+
 
 @interface SpecificEventViewController : UIViewController
 {

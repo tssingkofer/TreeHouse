@@ -8,6 +8,7 @@
 
 #import "SpecificEventViewController.h"
 #import "SearchViewController.h"
+#import "XMLParseLogin.h"
 
 @interface SpecificEventViewController ()
 
