@@ -58,7 +58,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
-                                    <action selector="editingBegan:" destination="OOf-eP-4GW" eventType="editingDidEnd" id="s7s-mZ-IIU"/>
+                                    <action selector="stateBegin:" destination="OOf-eP-4GW" eventType="editingDidEnd" id="6Yu-q6-mWM"/>
+                                    <action selector="stateBegin:" destination="OOf-eP-4GW" eventType="editingDidBegin" id="wNW-4s-VM2"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-IB-b55">
