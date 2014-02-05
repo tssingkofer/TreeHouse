@@ -16,7 +16,7 @@ ParseInterface *parse;
 @implementation HomeViewController
 
 
-@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool, livingField, ethnicityField, referralField;
+@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool, livingField, ethnicityField, referralField, lastLocation;
 //warning labels
 @synthesize fNameL, lNameL, addressL, cityL, ageL, stateL, zipL, birthL, genderL, livingL, ethnicityL, referralL;
 //@synthesize MIName;
@@ -84,15 +84,15 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     
     ParseInterface *parse = [ParseInterface alloc];
     
-    livesWith = @[@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"];
+    livesWith = @[@"",@"Mom", @"Dad", @"Step Mom", @"Step Dad", @"Mom's Boyfriend/Partner", @"Dad's Girlfriend/Partner", @"Brothers", @"Sisters", @"Other Relatives", @"Foster Parents"];
     
-    ethnicity = @[@"American Indian/Alaska Native", @"Black/African American", @"Asian", @"Native Hawaiian/PacificIslander", @"White"
+    ethnicity = @[@"",@"American Indian/Alaska Native", @"Black/African American", @"Asian", @"Native Hawaiian/PacificIslander", @"White"
                   ];
-    referral = @[@"Other Teen/Friend", @"Parent/Other Family Member", @"Teacher/School Counselor/School Staff", @"Pastor/Minister/Church Staff", @"Therapist/Social Worker", @"Probation Officer", @"Treehouse staff"
+    referral = @[@"",@"Other Teen/Friend", @"Parent/Other Family Member", @"Teacher/School Counselor/School Staff", @"Pastor/Minister/Church Staff", @"Therapist/Social Worker", @"Probation Officer", @"Treehouse staff"
                       ];
-    stateR = @[@"AL", @"AK", @"AZ", @"AR", @"CA", @"CO", @"CT", @"DE", @"DC", @"FL", @"GA",@"HI",@"ID",@"IL",@"IN",@"IA",@"KS",@"KY",@"LA",@"ME",@"MD",@"MA",@"MI",@"MN",@"MS",@"MO",@"MT",@"NE",@"NV",@"NH",@"NJ",@"NM",@"NY",@"NC",@"ND",@"OH",@"OK",@"OR",@"PA",@"RI",@"SC",@"SD",@"TN",@"TX",@"UT",@"VT",@"VA",@"WA",@"WV",@"WI",@"WY",@"AS",@"GU",@"MP",@"PR",@"VI",@"UM"];
+    stateR = @[@"",@"AL", @"AK", @"AZ", @"AR", @"CA", @"CO", @"CT", @"DE", @"DC", @"FL", @"GA",@"HI",@"ID",@"IL",@"IN",@"IA",@"KS",@"KY",@"LA",@"ME",@"MD",@"MA",@"MI",@"MN",@"MS",@"MO",@"MT",@"NE",@"NV",@"NH",@"NJ",@"NM",@"NY",@"NC",@"ND",@"OH",@"OK",@"OR",@"PA",@"RI",@"SC",@"SD",@"TN",@"TX",@"UT",@"VT",@"VA",@"WA",@"WV",@"WI",@"WY",@"AS",@"GU",@"MP",@"PR",@"VI",@"UM"];
 
-    stateName = @[@"Alabama",@"Alaska",@"Arizona",@"Arkansas",@"California",@"Colorado",@"Connecticut",@"Delaware",@"District of Columbia",@"Florida",@"Georgia",@"Hawaii",@"Idaho",@"Illinois",@"Indiana",@"Iowa",@"Kansas",@"Kentucky",@"Louisiana",@"Maine",@"Maryland",@"Massachusetts",@"Michigan",@"Minnesota",@"Mississippi",@"Missouri",@"Montana",@"Nebraska",@"Nevada",@"New Hampshire",@"New Jersey",@"New Mexico",@"New York",@"North Carolina",@"North Dakota",@"Ohio",@"Oklahoma",@"Oregon",@"Pennsylvania",@"Rhode Island",@"South Carolina",@"South Dakota",@"Tennessee",@"Texas",@"Utah",@"Vermont",@"Virginia",@"Washington",@"West Virginia",@"Wisconsin",@"Wyoming",@"American Samoa",@"Guam",@"Northern Mariana Islands",@"Puerto Rico",@"Virgin Islands",@"U.S. Minor Outlying Islands"];
+    stateName = @[@"",@"Alabama",@"Alaska",@"Arizona",@"Arkansas",@"California",@"Colorado",@"Connecticut",@"Delaware",@"District of Columbia",@"Florida",@"Georgia",@"Hawaii",@"Idaho",@"Illinois",@"Indiana",@"Iowa",@"Kansas",@"Kentucky",@"Louisiana",@"Maine",@"Maryland",@"Massachusetts",@"Michigan",@"Minnesota",@"Mississippi",@"Missouri",@"Montana",@"Nebraska",@"Nevada",@"New Hampshire",@"New Jersey",@"New Mexico",@"New York",@"North Carolina",@"North Dakota",@"Ohio",@"Oklahoma",@"Oregon",@"Pennsylvania",@"Rhode Island",@"South Carolina",@"South Dakota",@"Tennessee",@"Texas",@"Utah",@"Vermont",@"Virginia",@"Washington",@"West Virginia",@"Wisconsin",@"Wyoming",@"American Samoa",@"Guam",@"Northern Mariana Islands",@"Puerto Rico",@"Virgin Islands",@"U.S. Minor Outlying Islands"];
     
     PickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 43, 320, 480)];
     
@@ -101,6 +101,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     PickerView.dataSource = self;
     
     [PickerView  setShowsSelectionIndicator:YES];
+
     
     livingField.inputView =  PickerView;
     ethnicityField.inputView = PickerView;
@@ -148,8 +149,13 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
         return [referral objectAtIndex:row];
     }
     else if ([state isFirstResponder]){
+        if (row == 0)
+        {
+            return @"";
+        }else{
         NSString *states = [NSString stringWithFormat:@"%@ : %@",[stateName objectAtIndex:row],[stateR objectAtIndex:row]];
         return states;
+        }
     }
     else {
         return 0;
@@ -161,15 +167,19 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 {
     if ([livingField isFirstResponder]) {
         livingField.text = [livesWith objectAtIndex:row];
+        //[lastLocation insertObject:livingField.text atIndex:0]; //Tyler this is where I was trying to store the row selected
     }
     else if ([ethnicityField isFirstResponder]){
         ethnicityField.text = [ethnicity objectAtIndex:row];
+        //[lastLocation insertObject:ethnicityField.text atIndex:1];
     }
     else if ([referralField isFirstResponder]){
         referralField.text = [referral objectAtIndex:row];
+        //[lastLocation insertObject:referralField.text atIndex:2];
     }
     else if ([state isFirstResponder]){
         state.text = [stateR objectAtIndex:row];
+        //[lastLocation insertObject:row atIndex:3];
     }
     else {
         return;
@@ -185,16 +195,22 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 
 - (IBAction)livingEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
+        [PickerView selectRow:0 inComponent:0 animated:NO]; // Tyler this is where you can set the select row.
 }
 
 - (IBAction)ethnicityEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
+        [PickerView selectRow:0 inComponent:0 animated:NO];
 }
 
 - (IBAction)referralEditingDidBegin:(id)sender {
     [PickerView reloadAllComponents];
+        [PickerView selectRow:0 inComponent:0 animated:NO];
 }
-
+- (IBAction)stateBegin:(id)sender{
+    [PickerView reloadAllComponents];
+        [PickerView selectRow:0 inComponent:0 animated:NO];
+}
 // Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
     if (fName.text.length  > 0)

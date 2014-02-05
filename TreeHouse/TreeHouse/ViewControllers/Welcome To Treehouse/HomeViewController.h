@@ -33,6 +33,7 @@
 - (IBAction)ethnicityEditingDidBegin:(id)sender;
 - (IBAction)referralEditingDidBegin:(id)sender;
 - (IBAction)editingBegan:(UITextField *)sender;
+- (IBAction)stateBegin:(id)sender;
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *button;
 
@@ -76,7 +77,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *livingL;
 @property (weak, nonatomic) IBOutlet UILabel *ethnicityL;
 @property (weak, nonatomic) IBOutlet UILabel *referralL;
-
+@property (retain, nonatomic) NSMutableArray *lastLocation;
 
 
 @end
