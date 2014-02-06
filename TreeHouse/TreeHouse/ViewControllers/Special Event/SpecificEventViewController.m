@@ -8,14 +8,13 @@
 
 #import "SpecificEventViewController.h"
 #import "SearchViewController.h"
-#import "XMLParseLogin.h"
+#import "XMLParser.h"
 
-@interface SpecificEventViewController ()
-
-@end
 
 @implementation SpecificEventViewController
-@synthesize textLastName;
+@synthesize textLastName, stringFromAlertView, queryString;
+
+XMLParser *xmlParser;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if (textLastName != nil){
@@ -37,7 +36,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    
+    //the following url needs to point at whatever server script you are testing against.
+    NSLog(@"text: %@", stringFromAlertView);
+    Global *global = [Global globalData];
+    
+    queryString = [NSString stringWithFormat:@"http://%@/Projects/ActivityConfirmation.php?FirstName=%@",global.ip, stringFromAlertView];
+    
+    
+    NSLog(@"%@",queryString);
+    xmlParser = [[XMLParser alloc] loadXMLByURL:queryString];
+    
+    self.title = @"Event Check-In";
+    
+    
+}
+
+- (void)viewDidUnload
+{
+   //[self setDataTableView:nil];
+    [super viewDidUnload];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if((unsigned long)[[xmlParser data] count]==0)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Info" message: @"No results found, be sure to enter the entire first name" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; //Gives an alert
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,8 +88,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
 - (IBAction)showCheckInAlert:(id)sender {
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Check-In" message:@"Enter First Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Search", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Event Check-In" message:@"Enter First Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Search", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [alert show];
 

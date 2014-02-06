@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XMLParseLogin.h"
+#import "XMLParser.h"
 #import "Data.h"
 #import "SearchViewController.h"
 #import "Global.h"
@@ -21,4 +21,6 @@
 - (IBAction)unwindBackToSpecificEventViewController:(UIStoryboardSegue *)sender;
 
 @property (retain) NSString *textLastName;
+@property (weak, nonatomic) NSString *stringFromAlertView;
+@property (weak, nonatomic) NSString *queryString;
 @end
