@@ -16,7 +16,7 @@ ParseInterface *parse;
 @implementation HomeViewController
 
 
-@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool, livingField, ethnicityField, referralField, lastLocation;
+@synthesize fNameText, insert, fName, lName, mi, address, city, state, zip, homePhone, cellPhone, eMail, DOB, age, gender, gradDate, grade, middleSchool, highSchool, livingField, ethnicityField, referralField, lastLocation, Hispanic, freeLunch;
 //warning labels
 @synthesize fNameL, lNameL, addressL, cityL, ageL, stateL, zipL, birthL, genderL, livingL, ethnicityL, referralL;
 //@synthesize MIName;
@@ -47,14 +47,13 @@ ParseInterface *parse;
     [insert addObject:@{@"School": middleSchool.text}];
     [insert addObject:@{@"HighSchool": highSchool.text}];
     [insert addObject:@{@"GradDate": gradDate.text}];*/
-    
-    
-    insert = [NSArray arrayWithObjects:fName.text,lName.text,mi.text,address.text,city.text,state.text,zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text,middleSchool.text,highSchool.text,gradDate.text, nil];
+    //freeLunch.isOn, Hispanic.isOn,
+    NSString *fl = [NSString stringWithFormat:@"%hhd", freeLunch.isOn];
+    NSString *hs = [NSString stringWithFormat:@"%hhd", Hispanic.isOn];
+    insert = [NSArray arrayWithObjects:fName.text,lName.text,mi.text,address.text,city.text,state.text,zip.text,homePhone.text,cellPhone.text,eMail.text,DOB.text,age.text,gender.text,grade.text,middleSchool.text,highSchool.text,gradDate.text, livingField.text, hs, fl, ethnicityField.text, referralField.text, nil];
     //insert[0] = DOB.text;
     //[insert addObject:@{@"DOB": DOB.text}];
     [parse submitName:insert];
-    NSLog(@"DOB = %@", DOB.text);
-    
     
 UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: @"Your information has been submitted" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
@@ -94,6 +93,8 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 
     stateName = @[@"",@"Alabama",@"Alaska",@"Arizona",@"Arkansas",@"California",@"Colorado",@"Connecticut",@"Delaware",@"District of Columbia",@"Florida",@"Georgia",@"Hawaii",@"Idaho",@"Illinois",@"Indiana",@"Iowa",@"Kansas",@"Kentucky",@"Louisiana",@"Maine",@"Maryland",@"Massachusetts",@"Michigan",@"Minnesota",@"Mississippi",@"Missouri",@"Montana",@"Nebraska",@"Nevada",@"New Hampshire",@"New Jersey",@"New Mexico",@"New York",@"North Carolina",@"North Dakota",@"Ohio",@"Oklahoma",@"Oregon",@"Pennsylvania",@"Rhode Island",@"South Carolina",@"South Dakota",@"Tennessee",@"Texas",@"Utah",@"Vermont",@"Virginia",@"Washington",@"West Virginia",@"Wisconsin",@"Wyoming",@"American Samoa",@"Guam",@"Northern Mariana Islands",@"Puerto Rico",@"Virgin Islands",@"U.S. Minor Outlying Islands"];
     
+    genderN = @[@"", @"M", @"F"];
+    
     PickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 43, 320, 480)];
     
     PickerView.delegate = self;
@@ -102,14 +103,37 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     
     [PickerView  setShowsSelectionIndicator:YES];
 
+    datePicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0,43,320,480)];
+    datePicker.date = [NSDate date];
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    NSDateFormatter *format = [[NSDateFormatter alloc]init];
+    format.timeStyle = NSDateFormatterNoStyle;
+    
+
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDate *currentDate = [NSDate date];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    [comps setYear:-100];
+    NSDate *minDate = [gregorian dateByAddingComponents:comps toDate:currentDate  options:0];
+    datePicker.minimumDate = minDate;
+    datePicker.maximumDate = [NSDate date];
+    
+    DOB.inputView = datePicker;
+    DOB.text = [NSString stringWithFormat:@"%@", [format stringFromDate:[NSDate date]]];
+    format.dateFormat = @"YYYY-MM-DD";
+    [datePicker addTarget:self  action:@selector(changeDate:)
+         forControlEvents:UIControlEventValueChanged];
     
     livingField.inputView =  PickerView;
     ethnicityField.inputView = PickerView;
     referralField.inputView = PickerView;
     state.inputView = PickerView;
+    gender.inputView = PickerView;
     age.delegate = self;
     zip.delegate = self;
     mi.delegate = self;
+    gender.delegate = self;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -131,7 +155,9 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     else if ([state isFirstResponder]){
         return [stateR count];
     }
-    else {
+    else if ([gender isFirstResponder]){
+        return [genderN count];
+    } else {
         return 0;
     }
 
@@ -157,7 +183,9 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
         return states;
         }
     }
-    else {
+    else if ([gender isFirstResponder]){
+        return [genderN objectAtIndex:row];
+    } else {
         return 0;
     }
 }
@@ -181,7 +209,9 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
         state.text = [stateR objectAtIndex:row];
         //[lastLocation insertObject:row atIndex:3];
     }
-    else {
+    else if ([gender isFirstResponder]){
+        gender.text = [genderN objectAtIndex:row];
+    } else {
         return;
     }
 }
@@ -210,6 +240,22 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
 - (IBAction)stateBegin:(id)sender{
     [PickerView reloadAllComponents];
         [PickerView selectRow:0 inComponent:0 animated:NO];
+}
+- (IBAction)genderBegin:(id)sender{
+    [PickerView reloadAllComponents];
+    [PickerView selectRow:0 inComponent:0 animated:NO];
+
+}
+- (IBAction)birthEditingDidBegin:(id)sender {
+    //[self.view addSubview:datePicker];
+
+    
+}
+
+-(void) changeDate:(id) sender{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-dd-MM"];
+    DOB.text = [dateFormatter stringFromDate:datePicker.date];
 }
 // Checks to ensure there is no nulls.
 - (IBAction)editingBegan:(UITextField *)sender {
@@ -359,4 +405,5 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Submission" message: 
     }
 
 }
+
 @end

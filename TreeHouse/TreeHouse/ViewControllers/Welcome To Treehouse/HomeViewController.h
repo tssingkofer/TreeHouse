@@ -20,13 +20,16 @@
     IBOutlet UITextField *age;
     IBOutlet UITextField *zip;
     IBOutlet UITextField *mi;
+    IBOutlet UITextField *gender;
     
     UIPickerView *PickerView;
+    UIDatePicker *datePicker;
     NSArray *livesWith;
     NSArray *ethnicity;
     NSArray *referral;
     NSArray *stateR;
     NSArray *stateName;
+    NSArray *genderN;
 }
 //Actions for selecting a picker field
 - (IBAction)livingEditingDidBegin:(id)sender;
@@ -34,8 +37,12 @@
 - (IBAction)referralEditingDidBegin:(id)sender;
 - (IBAction)editingBegan:(UITextField *)sender;
 - (IBAction)stateBegin:(id)sender;
+- (IBAction)genderBegin:(id)sender;
+- (IBAction)birthEditingDidBegin:(id)sender;
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *button;
+@property (weak, nonatomic) IBOutlet UISwitch *Hispanic;
+@property (weak, nonatomic) IBOutlet UISwitch *freeLunch;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *livingField;
@@ -59,7 +66,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *eMail;
 @property (weak, nonatomic) IBOutlet UITextField *DOB;
 @property (retain, nonatomic) IBOutlet UITextField *age;
-@property (weak, nonatomic) IBOutlet UITextField *gender;
+@property (retain, nonatomic) IBOutlet UITextField *gender;
 @property (weak, nonatomic) IBOutlet UITextField *grade;
 @property (weak, nonatomic) IBOutlet UITextField *middleSchool;
 @property (weak, nonatomic) IBOutlet UITextField *gradDate;
@@ -79,5 +86,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *referralL;
 @property (retain, nonatomic) NSMutableArray *lastLocation;
 
+@property(nonatomic, retain) NSDate *date;
 
 @end
