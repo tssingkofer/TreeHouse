@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLParser.h"
+#import "Data.h"
+#import "SearchViewController.h"
+#import "Global.h"
+
 
 @interface SpecificEventViewController : UIViewController
 {
@@ -16,4 +21,6 @@
 - (IBAction)unwindBackToSpecificEventViewController:(UIStoryboardSegue *)sender;
 
 @property (retain) NSString *textLastName;
+@property (weak, nonatomic) NSString *stringFromAlertView;
+@property (weak, nonatomic) NSString *queryString;
 @end
